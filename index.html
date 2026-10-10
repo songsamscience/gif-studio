@@ -1,0 +1,2176 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<!--
+Inline SVG attribution; no icon package runtime.
+Source: https://github.com/lucide-icons/lucide/blob/main/LICENSE
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Pretendard Variable v1.3.9: Copyright (c) 2021, Kil Hyung-jin.
+SIL Open Font License 1.1; fonts are referenced by external CSS, not bundled.
+https://github.com/orioncactus/pretendard/blob/v1.3.9/LICENSE
+-->
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<script>
+try {
+ const savedTheme = localStorage.getItem('ss.theme');
+ document.documentElement.dataset.theme = ['light','dark'].includes(savedTheme) ? savedTheme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+ document.documentElement.classList.toggle('rail-collapsed', localStorage.getItem('ss.rail') === 'collapsed');
+} catch {}
+</script>
+<meta name="description" content="사진과 화면 녹화를 수업용 GIF로. 모든 편집과 변환은 내 기기에서 처리하는 송쌤과학 GIF 스튜디오.">
+<title>송쌤과학 GIF 스튜디오</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2732%27%20height%3D%2732%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%278%27%20fill%3D%27%236b5529%27%2F%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%23fff7e7%27%20stroke-width%3D%272%27%3E%3Crect%20x%3D%278%27%20y%3D%277%27%20width%3D%2716%27%20height%3D%2718%27%20rx%3D%272%27%2F%3E%3Cpath%20d%3D%27M12%207v18M20%207v18M8%2012h4M8%2020h4M20%2012h4M20%2020h4%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+:root{
+ --bg-main:#faf8f5;--bg-card:#ffffff;--bg-soft:#f7f4ed;--bg-input:#faf8f5;
+ --text-main:#3f3522;--text-sub:#686050;--text-mute:#726a5a;
+ --border-soft:#ebe6db;--border-line:#f1ede4;--border-hover:#dfd2b9;
+ --accent:#6b5529;--accent-hover:#564420;--accent-soft:#faf5ea;--primary:#6b5529;--primary-hover:#564420;
+ --rail-bg:#483819;--rail-text:#e6dcc6;--rail-mute:#d0be9a;--rail-line:#ffffff20;--rail-active:#fbf0da;--rail-active-text:#675023;
+ --brand-mark:#655024;--brand-ink:#fcf7ee;
+ --story-bg:#483819;--story-2:#5f4c26;--story-line:#79663e;--story-ink:#fcf7ee;--story-sub:#ded0b5;--story-eyebrow:#f0d8a8;--chosen:#fbf0da;--chosen-ink:#675023;
+ --danger:#a4483a;--danger-soft:#faf0ec;--danger-line:#ecd1c8;--warn:#82672e;--warn-soft:#fbf4e5;--warn-line:#e7dbba;
+ --surface-shadow:0 8px 32px #48381906;--pop-shadow:0 14px 44px #48381922;--scrim:#251d0e90;
+ --checker-a:#f1ede4;--checker-b:#ffffff;--canvas-shadow:0 6px 26px #251d0e24;
+ --rail-width:236px;--white:#ffffff;--focus-shadow:0 0 0 3px #6b552928;
+}
+html[data-theme="dark"]{
+ --bg-main:#1d1911;--bg-card:#2a2419;--bg-soft:#372f20;--bg-input:#332c1e;
+ --text-main:#f4f0e6;--text-sub:#cec4b1;--text-mute:#beb39d;
+ --border-soft:#524832;--border-line:#473d2a;--border-hover:#766647;
+ --accent:#efd49f;--accent-hover:#f4e0b9;--accent-soft:#55472a;--primary:#765e2e;--primary-hover:#846933;
+ --rail-bg:#251d0e;--rail-text:#e6dcc6;--rail-mute:#d0be9a;--rail-line:#ffffff1a;--rail-active:#fbf0da;--rail-active-text:#675023;
+ --brand-mark:#765e2e;--brand-ink:#fcf7ee;
+ --story-bg:#251d0e;--story-2:#3b3019;--story-line:#79663e;--story-ink:#fcf7ee;--story-sub:#ded0b5;--story-eyebrow:#f0d8a8;--chosen:#fbf0da;--chosen-ink:#675023;
+ --danger:#f1b3a1;--danger-soft:#432c25;--danger-line:#6c493e;--warn:#dcc98a;--warn-soft:#393622;--warn-line:#5f5532;
+ --surface-shadow:0 8px 32px #00000020;--pop-shadow:0 14px 44px #00000066;--scrim:#000000a0;
+ --checker-a:#372f20;--checker-b:#2a2419;--canvas-shadow:0 6px 26px #00000050;--focus-shadow:0 0 0 3px #efd49f28;
+}
+*{box-sizing:border-box}html{margin:0;min-width:320px;scroll-behavior:smooth}body{margin:0;min-width:320px;background:var(--bg-main);color:var(--text-main);font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;font-size:13px;letter-spacing:-.025em;line-height:1.5;font-variant-numeric:tabular-nums}button,input,select,textarea{font:inherit;letter-spacing:inherit}button,a,input,select,textarea{touch-action:manipulation}button{cursor:pointer}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}h1,h2,h3,p{margin:0;word-break:keep-all}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:2px}button:disabled{cursor:not-allowed;opacity:.46}button,select,input{transition:background .15s,border-color .15s,color .15s}button{color:inherit}[hidden]{display:none!important}svg{width:18px;height:18px;flex-shrink:0;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.sprite{position:absolute;width:0;height:0;overflow:hidden}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:fixed;top:8px;left:8px;z-index:100;background:var(--bg-card);padding:10px;border:2px solid var(--accent);border-radius:9px;transform:translateY(-150%)}.skip-link:focus{transform:translateY(0)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:38px;padding:8px 13px;border:1px solid var(--border-soft);border-radius:9px;background:var(--bg-card);color:var(--text-main);font-size:12.5px;font-weight:500;line-height:1.25;white-space:nowrap}.btn:hover:not(:disabled){background:var(--bg-soft);border-color:var(--border-hover)}.btn.primary{background:var(--primary);border-color:var(--primary);color:var(--white);font-weight:700}.btn.primary:hover:not(:disabled){background:var(--primary-hover);border-color:var(--primary-hover)}.btn.on,.btn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:700}.btn.danger{color:var(--danger);border-color:var(--danger-line);background:var(--danger-soft)}.btn.icon{padding:0;width:38px;min-width:38px}.btn.lg{min-height:44px}.btn.block{width:100%}.btn.small{min-height:32px;padding:6px 10px;font-size:11.5px}.utility-btn{display:grid;place-items:center;width:40px;min-width:40px;height:40px;border:1px solid var(--border-soft);border-radius:11px;background:var(--bg-card);color:var(--text-sub)}.utility-btn:hover:not(:disabled){background:var(--accent-soft);color:var(--accent)}.toolbar-btn{height:34px;min-width:34px;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:6px 10px;background:transparent;border:1px solid transparent;border-radius:8px;color:var(--text-sub);font-size:12px}.toolbar-btn:hover:not(:disabled){background:var(--accent-soft);color:var(--accent)}.toolbar-btn svg{width:16px;height:16px}kbd{padding:2px 5px;border:1px solid var(--border-soft);border-bottom-width:2px;border-radius:5px;background:var(--bg-input);color:var(--text-mute);font-family:inherit;font-size:10px;font-weight:600;letter-spacing:0}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.14em;line-height:1.4}.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--border-soft);background:var(--bg-card);border-radius:999px;color:var(--text-sub);font-size:11px;font-weight:500;white-space:nowrap}.pill:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent)}.pill.empty:before{background:var(--text-mute)}
+.topbar{height:46px;display:flex;align-items:center;gap:12px;padding:0 22px;border-bottom:1px solid var(--border-soft);background:var(--bg-soft)}.project-field{display:flex;align-items:center;gap:8px;height:34px;min-width:0;padding:0 10px;background:var(--bg-card);border:1px solid var(--border-soft);border-radius:8px}.project-field label{font-size:10px;color:var(--text-mute);white-space:nowrap}.project-field input{width:134px;min-width:0;border:0;background:transparent;color:var(--accent);font-size:12px;font-weight:700;outline:none;padding:5px 0}.project-field:focus-within{border-color:var(--accent);box-shadow:var(--focus-shadow)}.topbar-add{font-weight:700;color:var(--accent)}.privacy-badge{height:30px;display:flex;align-items:center;gap:6px;flex-shrink:0;padding:0 10px;background:var(--bg-card);border:1px solid var(--border-soft);border-radius:999px;color:var(--text-sub);font-size:11px}.privacy-badge svg{width:13px;height:13px}.privacy-short{display:none}.channels{display:flex;align-items:center;gap:3px;padding-left:12px;border-left:1px solid var(--border-soft)}.channel{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;color:var(--accent)}.channel:hover{background:var(--accent-soft)}.channel svg{width:20px;height:20px}.channel .youtube{stroke:none;fill:currentColor}.channel .youtube-cut{fill:var(--bg-soft)}.topbar .history-actions{margin-left:auto;display:flex;align-items:center;gap:2px}.history-actions .toolbar-btn{padding:0}.history-divider{height:18px;width:1px;background:var(--border-soft);margin:0 5px}.app-header{display:flex;align-items:center;gap:22px;min-height:76px;padding:14px 24px;border-bottom:1px solid var(--border-soft);background:var(--bg-card)}.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:var(--brand-mark);color:var(--brand-ink)}.brand-mark svg{width:24px;height:24px}.brand-name{font-size:18px;font-weight:700;letter-spacing:-.06em;line-height:1.25}.brand-sub{margin-top:3px;font-size:10px;font-weight:600;color:var(--text-mute);letter-spacing:.1em}.header-context{min-width:0;padding-left:22px;border-left:1px solid var(--border-soft);color:var(--text-sub);font-size:12px}.header-context strong{font-weight:600;color:var(--text-main)}.header-context small{display:block;margin-top:2px;font-size:10.5px;color:var(--text-mute)}.header-actions{margin-left:auto;display:flex;align-items:center;gap:8px}.header-actions .btn.primary{padding:9px 16px}.header-actions kbd{color:var(--white);background:transparent;border-color:var(--rail-line);font-weight:400;font-size:9px;margin-left:5px}.header-actions .utility-btn{border-color:transparent;background:var(--bg-soft)}
+.app-layout{display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);min-height:calc(100vh - 122px)}.rail{display:flex;flex-direction:column;min-width:0;background:var(--rail-bg);color:var(--rail-text);padding:22px 16px 18px;transition:width .2s}.rail-heading{display:flex;align-items:center;gap:7px;margin-bottom:19px;padding:0 9px;font-weight:700;font-size:12px;color:var(--story-ink)}.rail-count{padding:1px 5px;border:1px solid var(--rail-line);border-radius:5px;color:var(--rail-mute);font-weight:500;font-size:10px}.rail-toggle{display:grid;place-items:center;margin-left:auto;width:25px;height:25px;border:1px solid var(--rail-line);border-radius:7px;background:transparent;color:var(--rail-mute)}.rail-toggle svg{width:14px;height:14px}.rail-group{margin-bottom:22px}.rail-group-title{margin:0 0 8px;padding:0 11px;color:var(--rail-mute);font-size:10px;font-weight:500;letter-spacing:.06em}.rail-nav{display:flex;flex-direction:column;gap:3px}.rail-item{display:flex;align-items:center;gap:9px;min-height:37px;min-width:0;width:100%;padding:8px 11px;border:0;border-radius:9px;background:transparent;color:var(--rail-text);text-align:left;font-size:12.5px;font-weight:500;line-height:1.2}.rail-item:hover{background:var(--rail-line)}.rail-item span{flex:1;min-width:0;white-space:nowrap}.rail-item .key{padding:0;font-size:10px;font-weight:400;color:var(--rail-mute);background:transparent;border:0}.rail-item.active,.rail-item[aria-current="page"]{background:var(--rail-active);color:var(--rail-active-text);font-weight:700;box-shadow:0 2px 8px #00000012}.rail-item.active .key,.rail-item[aria-current="page"] .key{color:var(--rail-active-text)}.rail-foot{margin-top:auto;border-top:1px solid var(--rail-line);padding:20px 10px 0;color:var(--rail-mute)}.rail-foot .eyebrow{color:var(--story-eyebrow);font-size:9px;letter-spacing:.12em}.rail-flow{display:flex;flex-direction:column;gap:10px;margin:13px 0 18px;font-size:11px}.rail-flow span{display:flex;align-items:center;gap:10px}.rail-flow b{font-size:10px;font-weight:500;color:var(--story-eyebrow)}.rail-note{font-size:10.5px;line-height:1.75}.rail-note strong{font-weight:600;color:var(--rail-text)}html.rail-collapsed{--rail-width:68px}html.rail-collapsed .rail{padding:22px 10px}html.rail-collapsed .rail-heading{padding:0;justify-content:center}html.rail-collapsed .rail-heading>span,html.rail-collapsed .rail-count,html.rail-collapsed .rail-group-title,html.rail-collapsed .rail-item span,html.rail-collapsed .rail-item .key,html.rail-collapsed .rail-foot{display:none}html.rail-collapsed .rail-toggle{margin-left:0}html.rail-collapsed .rail-item{justify-content:center;padding:10px 0}html.rail-collapsed .rail-group{margin-bottom:16px}
+.workspace{min-width:0;padding:22px 24px 18px}.contextbar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:32px;margin-bottom:16px}.breadcrumbs-wrap{display:flex;align-items:center;gap:7px;color:var(--text-sub);min-width:0}.breadcrumbs-wrap svg{width:14px;height:14px;color:var(--accent)}#breadcrumbs{min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight:600}.editor-grid{display:grid;grid-template-columns:minmax(292px,310px) minmax(0,1fr);grid-template-areas:"settings stage" "settings timeline";gap:18px;align-items:start}.settings-card,.stage-card,.timeline-card{min-width:0;border:1px solid var(--border-soft);border-radius:18px;background:var(--bg-card);box-shadow:var(--surface-shadow)}.settings-card{grid-area:settings;align-self:stretch;overflow:hidden}.settings-heading{padding:22px 20px 0}.settings-heading .eyebrow{color:var(--text-mute);margin-bottom:8px}.settings-heading h2{font-size:21px;font-weight:700;letter-spacing:-.055em;line-height:1.35}.settings-heading p{margin-top:8px;padding-bottom:18px;border-bottom:1px solid var(--border-line);color:var(--text-sub);font-size:12.5px;line-height:1.75}#settings{padding:18px 20px 22px;min-width:0}.stage-card{grid-area:stage;overflow:hidden}.stage-toolbar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--border-soft);min-height:48px}.stage-toolbar>svg{width:16px;height:16px;color:var(--text-mute)}.stage-toolbar .stage-guidance{font-size:11.5px;color:var(--text-mute);min-width:0;line-height:1.3}.zoom-controls{display:flex;align-items:center;gap:3px;margin-left:auto;flex-shrink:0}.zoom-controls .btn{border-color:transparent;background:transparent;width:26px;min-width:26px;min-height:28px;height:28px;border-radius:7px}.zoom-controls .btn svg{width:14px;height:14px}.zoom-controls .btn:hover{background:var(--bg-soft)}#zoomLabel{min-width:40px;text-align:center;font-size:10.5px;color:var(--text-sub);letter-spacing:0}#fitView{margin-left:4px;border-left:1px solid var(--border-soft);border-radius:0;width:32px}.stage-wrap{position:relative;display:flex;align-items:flex-start;justify-content:flex-start;min-width:0;height:432px;min-height:432px;padding:24px;background:var(--bg-soft);overflow:auto;isolation:isolate}#stageCanvas{display:block;flex:none;margin:auto;max-width:none;max-height:none;width:auto;height:auto;box-shadow:var(--canvas-shadow);background:repeating-conic-gradient(var(--checker-a) 0% 25%,var(--checker-b) 0% 50%) 0/16px 16px;touch-action:none;user-select:none}#stageVideo{display:block;flex:none;margin:auto;max-width:100%;max-height:100%;width:auto;height:auto;box-shadow:var(--canvas-shadow)}.stage-wrap.is-dragover,.stage-wrap.drag-over{outline:3px solid var(--accent);outline-offset:-6px;background:var(--accent-soft)}.stage-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 16px;border-top:1px solid var(--border-soft);color:var(--text-mute);font-size:10px;line-height:1.4}.stage-footer .stage-hint{display:flex;align-items:center;gap:5px}.stage-footer svg{width:12px;height:12px}
+.stage-empty{flex:none;margin:auto;width:100%;max-width:460px;text-align:center;padding:22px 24px 20px;border:2px dashed var(--border-hover);border-radius:18px;background:var(--bg-card)}.film-visual{width:169px;display:flex;gap:5px;margin:0 auto 20px;padding:9px 10px;border:1px solid var(--story-line);border-radius:12px;background:var(--story-bg);transform:rotate(-2deg);position:relative;color:var(--story-sub)}.film-visual:before,.film-visual:after{content:"";position:absolute;left:8px;right:8px;height:2px;background:repeating-linear-gradient(90deg,var(--story-line) 0px,var(--story-line) 5px,transparent 5px,transparent 11px)}.film-visual:before{top:4px}.film-visual:after{bottom:4px}.film-cell{display:flex;align-items:center;justify-content:center;position:relative;flex:1;height:43px;border:1px solid var(--story-line);border-radius:5px;background:var(--story-2)}.film-cell small{position:absolute;top:3px;left:4px;font-size:6px;font-weight:600;letter-spacing:.04em}.film-cell svg{width:16px;height:16px;stroke-width:1.5;margin-top:5px}.film-cell:nth-child(3){transform:rotate(5deg);background:var(--chosen);color:var(--chosen-ink);border-color:var(--chosen)}.stage-empty .eyebrow{color:var(--text-mute);margin-bottom:9px}.stage-empty h2{font-size:23px;font-weight:700;letter-spacing:-.045em;line-height:1.35}.empty-description{margin:10px auto 19px;max-width:340px;color:var(--text-sub);font-size:12px;line-height:1.75}.start-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.start-action{display:flex;align-items:center;text-align:left;min-height:62px;padding:11px;border:1px solid var(--border-soft);border-radius:10px;background:var(--bg-card);gap:9px;color:var(--text-main)}.start-action:hover:not(:disabled){background:var(--bg-soft);border-color:var(--border-hover)}.start-action svg{width:20px;height:20px;color:var(--accent)}.start-action .action-copy{min-width:0;flex:1}.start-action strong{display:block;font-size:12px;font-weight:600;line-height:1.4}.start-action small{display:block;margin-top:4px;font-size:10px;line-height:1.4;color:var(--text-mute)}.start-action.primary{background:var(--primary);border-color:var(--primary);color:var(--white)}.start-action.primary:hover:not(:disabled){background:var(--primary-hover);border-color:var(--primary-hover)}.start-action.primary svg,.start-action.primary small{color:var(--white)}.empty-bottom{display:flex;align-items:center;justify-content:center;gap:5px;flex-wrap:wrap;margin-top:15px;font-size:10.5px;color:var(--text-mute)}.text-button{border:0;background:transparent;padding:4px;color:var(--accent);font-weight:600;font-size:11px;text-decoration:underline;text-underline-offset:3px}.empty-bottom kbd{font-size:9px;padding:1px 4px}
+.timeline-card{grid-area:timeline;overflow:hidden}.timeline-heading{display:flex;align-items:center;gap:9px;padding:11px 14px;border-bottom:1px solid var(--border-line)}.timeline-controls{display:flex;align-items:center;gap:2px}.timeline-controls .btn{width:29px;min-width:29px;min-height:29px;height:29px;padding:0;border-color:transparent;background:transparent;border-radius:7px}.timeline-controls .btn:hover{background:var(--bg-soft)}.timeline-controls #play{background:var(--accent-soft);color:var(--accent);width:32px;min-width:32px}.timeline-controls svg{width:15px;height:15px}#frameSummary{font-size:11px;color:var(--text-sub);margin-left:3px;min-width:0}.timeline-caption{display:flex;align-items:center;gap:5px;margin-left:auto;color:var(--text-mute);font-size:10px;white-space:nowrap}.timeline-caption svg{width:12px;height:12px}#timeline{display:flex;align-items:stretch;gap:8px;min-width:0;min-height:119px;overflow-x:auto;overflow-y:hidden;padding:13px 14px 14px;scrollbar-width:thin;scrollbar-color:var(--border-hover) var(--bg-card)}.timeline-empty{width:100%;align-self:center;padding:13px 8px;color:var(--text-mute);font-size:11px;text-align:center}.frame-item,.frame-card,.frame{position:relative;display:flex;flex-direction:column;flex:0 0 88px;width:88px;max-width:88px;min-width:88px;padding:5px;border:1px solid var(--border-soft);border-radius:9px;background:var(--bg-card);color:var(--text-sub);user-select:none;cursor:pointer;gap:4px}.frame-item.selected,.frame-card.selected,.frame.selected,.frame-item[aria-selected="true"],.frame-card[aria-selected="true"],.frame[aria-selected="true"]{border:2px solid var(--accent);padding:4px;background:var(--accent-soft)}.frame-item.current,.frame-card.current,.frame.current{box-shadow:var(--focus-shadow)}.frame-item img,.frame-card img,.frame img,.frame-item canvas,.frame-card canvas,.frame canvas{display:block;max-width:100%;width:100%;height:52px;object-fit:contain;background:var(--bg-soft);border-radius:5px;box-shadow:none}.frame-item span,.frame-card span,.frame span{font-size:10px;line-height:1.3}.frame-top,.frame-bottom{display:flex;justify-content:space-between;align-items:center;gap:3px}.frame-item .frame-number{font-size:9px;color:var(--text-mute)}.frame-item .frame-duration{color:var(--accent);font-weight:600;font-size:10px}.frame-item input[type="checkbox"]{width:12px;height:12px;accent-color:var(--primary)}.frame-item.dragging,.frame.dragging{opacity:.5}.frame-item.drag-target,.frame.drag-target{border-color:var(--accent)}
+#settings h3{font-size:12px;line-height:1.4;margin-bottom:11px;font-weight:700;color:var(--text-main)}#settings p{color:var(--text-sub);font-size:12px;line-height:1.75}#settings>p:first-child{margin-top:0}#settings p+button,#settings p+.btn{margin-top:12px}#settings>div+div,#settings>section+section{margin-top:16px}.setting-group,.settings-section{padding-bottom:17px;margin-bottom:17px;border-bottom:1px solid var(--border-line)}.setting-group:last-child,.settings-section:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0}.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.row .btn{flex:1}.stack{display:flex;flex-direction:column;gap:9px}.grid2,.cols-2,.two-cols,.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.grid2>*{min-width:0}.field{display:block;min-width:0;margin-bottom:13px}.field-label,.field>label{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;font-size:12.5px;font-weight:500;line-height:1.5}.field-label strong,.field-label output,.field output,.field .value{font-weight:700;color:var(--accent)}label{word-break:keep-all}input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]),select,textarea{min-width:0;max-width:100%;width:100%;min-height:40px;padding:8px 10px;border:1px solid var(--border-soft);border-radius:9px;background:var(--bg-input);color:var(--text-main);font-size:13px}.project-field input#projectName{width:134px;min-height:24px;padding:5px 0;border:0;background:transparent;border-radius:0;color:var(--accent);font-size:12px}textarea{min-height:82px;resize:vertical}input[type="color"]{width:100%;height:40px;padding:4px!important;cursor:pointer}input[type="range"]{width:100%;accent-color:var(--primary);min-height:24px;margin:0}input[type="checkbox"],input[type="radio"]{width:17px;height:17px;accent-color:var(--primary);flex-shrink:0;vertical-align:middle}.check{display:flex;align-items:flex-start;gap:8px;margin:10px 0;color:var(--text-sub);font-size:12px;line-height:1.6}.check input{margin:2px 0 0}.hint{padding:11px 12px;border-radius:10px;background:var(--bg-soft);color:var(--text-sub);font-size:11.5px;line-height:1.7;margin-top:12px;word-break:keep-all}.hint strong{color:var(--text-main);font-weight:600}.hint.warn,.warning{background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn-line)}.hint.danger,.error{background:var(--danger-soft);color:var(--danger);border:1px solid var(--danger-line)}.hint a{font-weight:600}.muted,.small-note{font-size:11px;color:var(--text-mute);line-height:1.65}.divider,hr{height:1px;border:0;background:var(--border-line);margin:18px 0}.seg{display:flex;gap:3px;padding:4px;background:var(--bg-soft);border-radius:10px;min-width:0}.seg button{display:flex;align-items:center;justify-content:center;min-width:0;flex:1;min-height:36px;padding:7px 5px;border:0;border-radius:7px;background:transparent;color:var(--text-sub);font-size:11.5px;font-weight:500}.seg button.active,.seg button[aria-pressed="true"]{background:var(--bg-card);color:var(--accent);font-weight:700;box-shadow:0 1px 5px #00000008}html[data-theme="dark"] .seg button.active,html[data-theme="dark"] .seg button[aria-pressed="true"]{background:var(--accent-soft)}.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-height:64px;padding:9px 7px;border:1px solid var(--border-soft);border-radius:10px;background:var(--bg-card);color:var(--text-sub);font-size:12px}.tile svg{width:20px;height:20px}.tile.active,.tile.on,.tile[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent);border-color:var(--accent);font-weight:700}details{border-top:1px solid var(--border-line);padding-top:14px;margin-top:17px}summary{cursor:pointer;font-size:12px;font-weight:600;color:var(--text-sub);margin-bottom:12px}.mini-stat{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 0;font-size:11.5px;color:var(--text-sub)}.mini-stat b{font-weight:600;color:var(--text-main)}.capture-clock{padding:16px 0;text-align:center;font-size:27px;letter-spacing:-.04em;font-weight:700;color:var(--accent)}.recording-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--danger);margin-right:7px}
+#resultPanel{margin-top:18px;padding:20px;border:1px solid var(--border-soft);border-radius:18px;background:var(--bg-card);box-shadow:var(--surface-shadow);min-width:0}#resultPanel h2{font-size:23px;font-weight:700;letter-spacing:-.045em;margin-bottom:9px}#resultPanel p{font-size:12px;line-height:1.7;color:var(--text-sub)}#resultPanel img{display:block;max-width:100%;max-height:430px;margin:16px auto;border-radius:10px;background:var(--bg-soft);box-shadow:var(--canvas-shadow)}.result-header{display:flex;gap:13px;align-items:center}.result-info{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.result-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.result-stale{font-size:11px;color:var(--warn);background:var(--warn-soft);padding:9px 12px;border-radius:9px}.page-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;color:var(--text-mute);font-size:10px}.page-footer span:last-child{text-align:right}
+.overlay{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:22px;background:var(--scrim);backdrop-filter:blur(5px)}.modal{width:100%;max-width:680px;max-height:calc(100dvh - 44px);overflow:auto;outline:0;border:1px solid var(--border-soft);border-radius:22px;background:var(--bg-card);padding:25px 28px 28px;box-shadow:0 28px 100px #0000003d;animation:modal-in .2s ease}.modal-header{display:flex;align-items:center;gap:13px;padding-bottom:19px;border-bottom:1px solid var(--border-line);margin-bottom:20px}.modal-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--accent-soft);color:var(--accent)}.modal-icon svg{width:21px;height:21px}.modal-header h2{font-size:21px;font-weight:700;letter-spacing:-.055em}.modal-header .utility-btn{margin-left:auto;width:34px;min-width:34px;height:34px}.modal-body{font-size:13px;line-height:1.75;color:var(--text-sub)}.modal-body h3{font-size:14px;color:var(--text-main);margin:17px 0 6px}.modal-body h3:first-child{margin-top:0}.modal-body p+p{margin-top:11px}.modal-body ul,.modal-body ol{padding-left:20px}.modal-body table{width:100%;border-collapse:collapse;font-size:12px}.modal-body th,.modal-body td{padding:8px 9px;border-bottom:1px solid var(--border-line);text-align:left;vertical-align:top}.modal-body th{color:var(--text-main);font-weight:600;background:var(--bg-soft)}.modal-body .btn{margin-top:14px}.toast{position:fixed;left:50%;bottom:24px;z-index:100;max-width:calc(100vw - 28px);width:max-content;padding:12px 17px;border-radius:12px;background:var(--text-main);color:var(--bg-card);font-size:13px;box-shadow:var(--pop-shadow);transform:translateX(-50%);transition:opacity .2s,transform .2s}.toast:empty,.toast:not(.show){display:none}.toast.ok{background:var(--primary);color:var(--white)}.toast.err{background:#a4483a;color:var(--white)}.progress-card{width:100%;max-width:410px;padding:28px;background:var(--bg-card);border:1px solid var(--border-soft);border-radius:22px;box-shadow:var(--pop-shadow)}.progress-card .eyebrow{color:var(--text-mute);margin-bottom:12px}.progress-card h2{font-size:21px;font-weight:700;letter-spacing:-.045em}.progress-card p{color:var(--text-sub);font-size:12px;margin:10px 0 17px;line-height:1.7}progress{display:block;width:100%;height:8px;border:0;border-radius:999px;overflow:hidden;accent-color:var(--primary);background:var(--bg-soft)}progress::-webkit-progress-bar{background:var(--bg-soft);border-radius:999px}progress::-webkit-progress-value{background:var(--primary);border-radius:999px}progress::-moz-progress-bar{background:var(--primary);border-radius:999px}.progress-actions{display:flex;justify-content:flex-end;margin-top:19px}@keyframes modal-in{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
+
+/* 라이브 공유 영상 위의 영역 선택. 위치와 크기는 실제 영상 rect로 설정해요. */
+.capture-region-overlay{position:absolute;left:0;top:0;width:100%;height:100%;z-index:3;overflow:hidden;touch-action:none;user-select:none;cursor:crosshair;isolation:isolate}
+.capture-region-box{position:absolute;left:0;top:0;width:100%;height:100%;border:2px solid var(--white);box-shadow:0 0 0 1px var(--story-bg),0 0 0 9999px var(--scrim);pointer-events:none;min-width:1px;min-height:1px}
+.capture-region-overlay.passive{pointer-events:none;cursor:default}
+.capture-region-overlay.passive .capture-region-box{box-shadow:0 0 0 1px var(--story-bg)}
+.start-actions .start-action:last-child:nth-child(odd){grid-column:1 / -1}
+
+/* 공유 영상에서 선택한 범위를 실제 크롭해 보여 주는 미리보기 */
+.region-live-preview{display:flex;flex-direction:column;gap:10px;min-width:0;padding:14px 16px 16px;border-top:1px solid var(--border-soft);background:var(--bg-card)}
+.region-preview-head,.region-preview-header,.region-live-preview>header{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}
+.region-preview-title,.region-live-preview h3{display:flex;align-items:center;gap:6px;color:var(--text-main);font-size:12px;font-weight:700;line-height:1.5}
+.region-preview-title svg,.region-preview-head>svg{width:15px;height:15px;color:var(--accent)}
+.region-preview-meta,.region-live-preview .pill{flex-shrink:0;max-width:100%;padding:4px 8px;border:1px solid var(--border-soft);border-radius:999px;background:var(--bg-soft);color:var(--text-sub);font-size:10px;font-weight:500;line-height:1.5;white-space:nowrap}
+.region-live-preview canvas,#regionPreviewCanvas{display:block;align-self:center;max-width:100%;width:auto;height:auto;max-height:180px;border:1px solid var(--accent);border-radius:8px;background:repeating-conic-gradient(var(--checker-a) 0% 25%,var(--checker-b) 0% 50%) 0/16px 16px;object-fit:contain}
+.region-preview-note,.region-live-preview>p{margin:0;color:var(--text-mute);font-size:10.5px;line-height:1.7;word-break:keep-all}
+@media(max-width:600px){.region-live-preview{padding:13px 12px;gap:9px}.region-preview-head,.region-preview-header,.region-live-preview>header{flex-wrap:wrap;gap:6px}.region-preview-title,.region-live-preview h3{font-size:11.5px}.region-preview-meta,.region-live-preview .pill{font-size:9.5px}.region-live-preview canvas,#regionPreviewCanvas{max-height:180px}}
+
+/* 화면 공유부터 프레임 가져오기까지 실제 진행 단계 */
+.capture-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;list-style:none;padding:0;margin:0 0 14px;min-width:0}
+.capture-step{display:flex;align-items:center;gap:6px;min-width:0;min-height:34px;padding:7px 8px;border:1px solid var(--border-soft);border-radius:8px;background:var(--bg-soft);color:var(--text-mute);font-size:10.5px;font-weight:500;line-height:1.45;word-break:keep-all}
+.capture-step b{display:grid;place-items:center;flex-shrink:0;min-width:17px;height:17px;padding:0 3px;border:1px solid var(--border-hover);border-radius:5px;background:var(--bg-card);color:var(--text-mute);font-size:9px;font-weight:600;line-height:1;letter-spacing:0}
+.capture-step.active,.capture-step[aria-current="step"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:700}
+.capture-step.active b,.capture-step[aria-current="step"] b{border-color:var(--primary);background:var(--primary);color:var(--white)}
+.capture-step.done{color:var(--accent)}
+.capture-step.done b{border-color:var(--border-hover);background:var(--accent-soft);color:var(--accent)}
+.capture-source{display:block;margin:10px 0;color:var(--text-mute);font-size:10.5px;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+.capture-source strong{color:var(--text-sub);font-weight:600}
+.capture-source svg{width:12px;height:12px;margin-right:4px;vertical-align:-2px}
+@media(max-width:600px){.capture-step{font-size:10.5px;min-height:36px}.capture-source{font-size:10.5px}}
+
+/* 동적 설정과 실제 결과 화면 */
+.stage-wrap:has(.stage-empty:not([hidden])){height:auto}
+.panel-desc{margin-bottom:15px!important;font-size:12.5px!important;line-height:1.75!important}
+#settings .group-title{margin:0 0 10px;color:var(--text-main);font-size:12px;font-weight:700;line-height:1.5}
+#settings .field>span{display:block;margin-bottom:6px;color:var(--text-sub);font-size:12.5px;font-weight:500;line-height:1.5}
+#settings .row>.field{flex:1 1 0;min-width:0;margin-bottom:0}
+#settings .row+.field,#settings .row+button,#settings .row+.btn,#settings .field+.row,#settings .row+.row{margin-top:10px}
+#settings .btn.block+.btn{margin-top:9px}
+#settings>button:not(.block){max-width:100%}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;color:var(--text-sub);font-size:11.5px;line-height:1.5}
+.meta strong{font-weight:600;color:var(--text-main);text-align:right}
+.meta+button,.meta+.btn{margin-top:10px}
+.capture-status{display:flex;flex-direction:column;gap:7px;padding:15px 0;margin:14px 0;border-top:1px solid var(--border-line);border-bottom:1px solid var(--border-line)}
+.capture-status .eyebrow{color:var(--text-mute);font-size:9px}
+.capture-status strong{font-size:15px;font-weight:600;color:var(--text-main);line-height:1.5}
+.capture-status span:last-child{font-size:24px;font-weight:700;color:var(--accent);letter-spacing:-.045em;line-height:1.3}
+.frame-meta{display:block;white-space:nowrap;text-align:center;color:var(--text-sub)}
+#resultPanel .result-heading{padding:20px 22px;margin:-20px -20px 18px;border-radius:17px 17px 0 0;background:var(--story-bg);color:var(--story-ink)}
+#resultPanel .result-heading .eyebrow{display:block;margin-bottom:8px;color:var(--story-eyebrow)}
+#resultPanel .result-heading h2{margin:0;font-size:23px;color:var(--story-ink);line-height:1.35}
+#resultPanel .result-meta{padding:10px 0;color:var(--text-sub);text-align:center;font-size:12px;line-height:1.75}
+#resultPanel .result-filename{margin-bottom:14px;padding:10px 12px;border:1px solid var(--border-soft);border-radius:9px;background:var(--bg-soft);color:var(--text-main);font-size:12px;font-weight:600;overflow-wrap:anywhere;word-break:break-all}
+.theme-sun{display:none}html[data-theme="dark"] .theme-moon{display:none}html[data-theme="dark"] .theme-sun{display:block}
+@media(max-width:600px){#resultPanel .result-heading{margin:-18px -18px 15px;padding:18px;border-radius:17px 17px 0 0}#resultPanel .result-heading h2{font-size:21px}#resultPanel .row .btn{min-height:44px;flex:1 1 100%}}
+
+/* 데스크톱 작업대: 머리 막대는 고정하고 작업 영역 안에서 스크롤해요. */
+@media(min-width:901px){
+ body{height:max(100dvh,600px);overflow:hidden}
+ .app-header{height:76px;min-height:76px}
+ .app-layout{height:calc(max(100dvh,600px) - 122px);min-height:0;overflow:hidden}
+ .workspace{min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--border-hover) var(--bg-main)}
+ .rail{min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--story-line) var(--rail-bg)}
+ .rail-heading,.rail-nav,.rail-foot{flex-shrink:0}
+}
+
+@media(min-width:901px) and (max-width:1180px){:root{--rail-width:206px}.workspace{padding:20px 18px}.editor-grid{grid-template-columns:292px minmax(0,1fr);gap:14px}.header-context{display:none}.stage-wrap{padding:20px 16px}.stage-empty{padding:20px 16px}.start-action{gap:7px;padding:10px 8px}.start-action small{font-size:9.5px}.start-action strong{font-size:11.5px}.stage-toolbar .stage-guidance{font-size:10.5px}.timeline-caption{display:none}}
+@media(max-width:900px){:root{--rail-width:0px}.topbar{padding:0 16px;gap:9px}.app-header{min-height:64px;padding:12px 16px;gap:12px}.brand-mark{width:38px;height:38px;border-radius:12px}.brand-name{font-size:17px}.brand-sub{font-size:9px}.header-context{display:none}.header-actions{gap:6px}.header-actions .btn{padding:8px 11px}.header-actions kbd{display:none}.header-actions .utility-btn{width:36px;min-width:36px;height:36px}.app-layout{display:flex;flex-direction:column;min-height:calc(100vh - 110px)}.rail,html.rail-collapsed .rail{padding:9px 14px;background:var(--rail-bg);border-bottom:1px solid var(--rail-line);display:block}.rail-heading,.rail-foot,html.rail-collapsed .rail-foot{display:none}.rail-nav{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px}.rail-group,html.rail-collapsed .rail-group{display:contents}.rail-group-title{display:none}.rail-item,html.rail-collapsed .rail-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:8px 3px;min-height:53px;text-align:center;border-radius:8px;font-size:10px}.rail-item svg{width:17px;height:17px}.rail-item span,html.rail-collapsed .rail-item span{display:block;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rail-item .key{display:none!important}.workspace{padding:16px}.contextbar{margin-bottom:12px}.editor-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"stage" "timeline" "settings";gap:14px}.settings-card{align-self:start}.settings-heading{padding:21px 22px 0}#settings{padding:17px 22px 22px}.stage-wrap{height:420px;min-height:420px;padding:24px}.stage-empty{max-width:460px}.stage-toolbar{padding:9px 14px}.stage-footer{padding:10px 15px}.topbar .channels{padding-left:7px}.topbar-add{display:none}.project-field input#projectName{width:126px}.settings-heading p{max-width:580px}#settings .grid2{gap:12px}.page-footer{margin-top:16px}}
+@media(max-width:600px){.topbar{padding:0 12px;gap:6px}.project-field{padding:0 8px;flex:1;max-width:187px;gap:6px}.project-field label{font-size:9px}.project-field input#projectName{width:100%;font-size:11px}.privacy-badge{padding:0 8px;font-size:10px;gap:4px}.privacy-full{display:none}.privacy-short{display:inline}.topbar .channels{display:none}.topbar .history-actions{gap:0;margin-left:auto}.history-actions .toolbar-btn{width:27px;min-width:27px}.history-divider{display:none}.app-header{padding:11px 12px;gap:8px}.brand{gap:8px}.brand-mark{width:35px;height:35px;border-radius:11px}.brand-mark svg{width:21px;height:21px}.brand-name{font-size:16px}.brand-sub{font-size:8px;margin-top:2px;letter-spacing:.07em}.header-actions{gap:4px}.header-actions #saveGif{width:34px;padding:0;min-height:34px}.header-actions #saveGif .btn-text{display:none}.header-actions .btn.primary{min-height:36px;padding:8px 10px;font-size:11.5px;gap:5px}.header-actions .btn.primary svg{width:15px;height:15px}.header-actions .utility-btn{width:31px;min-width:31px;height:34px}.header-actions .utility-btn svg{width:16px;height:16px}.rail,html.rail-collapsed .rail{padding:8px 12px}.rail-nav{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}.rail-item,html.rail-collapsed .rail-item{min-height:44px;padding:6px 3px;gap:3px;font-size:9.5px}.rail-item svg{width:15px;height:15px}.workspace{padding:13px 12px 16px}.contextbar{align-items:flex-start;gap:7px;min-height:28px;margin-bottom:11px}.breadcrumbs-wrap{padding-top:4px;gap:5px;max-width:55%}#breadcrumbs{font-size:10.5px}.breadcrumbs-wrap svg{width:12px;height:12px}.pill{font-size:9.5px;padding:5px 7px;gap:4px;max-width:47%;overflow:hidden;text-overflow:ellipsis}.pill:before{flex-shrink:0;width:4px;height:4px}.stage-card,.timeline-card,.settings-card{border-radius:16px}.stage-toolbar{padding:9px 11px;gap:5px}.stage-toolbar>svg{display:none}.stage-toolbar .stage-guidance{font-size:10px;max-width:165px;line-height:1.5}.zoom-controls{gap:0}.zoom-controls .btn{width:24px;min-width:24px}#zoomLabel{min-width:34px;font-size:10px}#fitView{width:27px;margin-left:2px}.stage-wrap{height:370px;padding:18px 13px;min-height:370px}.stage-empty{padding:20px 12px 17px;border-radius:14px}.film-visual{margin-bottom:17px}.stage-empty h2{font-size:22px}.stage-empty .eyebrow{font-size:9px}.empty-description{margin:10px auto 17px;font-size:11px;line-height:1.7;max-width:244px}.start-actions{gap:7px}.start-action{min-height:61px;padding:10px 8px;gap:6px}.start-action svg{width:17px;height:17px}.start-action strong{font-size:11px}.start-action small{font-size:9px;margin-top:3px}.empty-bottom{margin-top:13px;font-size:9.5px;gap:4px}.empty-bottom .text-button{font-size:10px}.stage-footer{padding:10px 11px;font-size:9px}.stage-footer .stage-hint{max-width:59%}.stage-footer>span:last-child{text-align:right;white-space:nowrap}.timeline-heading{padding:10px 11px;gap:5px}#frameSummary{font-size:10px}.timeline-caption{display:none}#timeline{padding:12px;min-height:114px}.settings-heading{padding:21px 18px 0}#settings{padding:18px}#settings input,#settings select,#settings .btn{min-height:44px}#settings .btn.small{min-height:38px}.settings-heading h2{font-size:21px}.page-footer{font-size:9px;align-items:flex-start;line-height:1.7}.page-footer span:first-child{max-width:50%}.page-footer span:last-child{max-width:47%}.modal{padding:21px 19px;border-radius:20px}.overlay{padding:14px}.modal-header{gap:9px}.modal-header h2{font-size:19px}.modal-icon{width:35px;height:35px;border-radius:11px}.modal-header .utility-btn{width:31px;min-width:31px;height:31px}.modal-body{font-size:12.5px}.progress-card{padding:24px}.toast{font-size:12px;padding:11px 14px;bottom:16px}#resultPanel{padding:18px}.result-actions .btn{flex:1;min-height:44px}}
+@media(max-width:370px){.project-field{max-width:160px}.project-field label{display:none}.brand-name{font-size:15px}.brand-sub{font-size:7px}.brand-mark{display:none}.header-actions .btn.primary{padding:8px 9px}.stage-empty h2{font-size:20px}.start-action{gap:5px}.start-action small{display:none}.start-action strong{font-size:10.5px}.start-action svg{width:15px;height:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a href="#workspace" class="skip-link">작업대로 바로 가기</a>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18M17 3v18M3 7h4M3 12h4M3 17h4M17 7h4M17 12h4M17 17h4"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-tab" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 8h18M7 5.5h.01M10 5.5h.01M9 12l-3 3 3 3M15 12l3 3-3 3"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2h4M12 14V9M19 5l-2 2"/><circle cx="12" cy="14" r="8"/></symbol>
+<symbol id="i-crop" viewBox="0 0 24 24"><path d="M6 3v12a3 3 0 0 0 3 3h12M3 6h12a3 3 0 0 1 3 3v12"/></symbol>
+<symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4M12 15v2"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+<symbol id="i-undo" viewBox="0 0 24 24"><path d="M3 7v6h6M3 13a8 8 0 1 1 3 7"/></symbol>
+<symbol id="i-redo" viewBox="0 0 24 24"><path d="M21 7v6h-6M21 13a8 8 0 1 0-3 7"/></symbol>
+<symbol id="i-new" viewBox="0 0 24 24"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7M18 2v8M14 6h8"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.9 13a9 9 0 0 1-9.9-9.9A9 9 0 1 0 20.9 13Z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+<symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M5.5 7h.01M5.5 11h.01M5.5 15h.01"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 12 7-12 7V5Z"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+<symbol id="i-prev" viewBox="0 0 24 24"><path d="m19 20-9-8 9-8v16ZM5 4v16"/></symbol>
+<symbol id="i-next" viewBox="0 0 24 24"><path d="m5 4 9 8-9 8V4ZM19 4v16"/></symbol>
+<symbol id="i-fit" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 12V7a2 2 0 0 0-4 0M14 12V5a2 2 0 0 0-4 0v7M10 11V7a2 2 0 0 0-4 0v7l-1-1a2 2 0 0 0-3 2l4 6h11a4 4 0 0 0 4-4v-6a2 2 0 0 0-3 0v2"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></symbol>
+<symbol id="i-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+<symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V4h6v2M5 6l1 14h12l1-14M10 10v6M14 10v6"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+</defs></svg>
+<div class="topbar" aria-label="프로젝트 도구 막대">
+ <div class="project-field"><label for="projectName">프로젝트</label><input id="projectName" type="text" value="나의 수업 GIF" maxlength="80" spellcheck="false" aria-label="프로젝트 이름"></div>
+ <button id="addImages" class="toolbar-btn topbar-add" title="이미지 불러오기 (Ctrl 또는 Cmd+O)"><svg aria-hidden="true"><use href="#i-plus"/></svg>이미지 추가</button>
+ <button id="privacyButton" class="privacy-badge" title="개인정보와 로컬 처리 안내"><svg aria-hidden="true"><use href="#i-lock"/></svg><span class="privacy-full">내 기기에서만 처리</span><span class="privacy-short">내 기기 처리</span></button>
+ <div class="channels" aria-label="송쌤과학 채널">
+  <a class="channel" href="https://www.youtube.com/@songsamscience" target="_blank" rel="noopener noreferrer" aria-label="송쌤과학 유튜브 채널 새 탭으로 열기" title="송쌤과학 유튜브"><svg viewBox="0 0 24 24" class="youtube" aria-hidden="true"><path d="M22 7.2a3 3 0 0 0-2.1-2.1C18.1 4.6 12 4.6 12 4.6s-6.1 0-7.9.5A3 3 0 0 0 2 7.2a31 31 0 0 0 0 9.6 3 3 0 0 0 2.1 2.1c1.8.5 7.9.5 7.9.5s6.1 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 0-9.6Z"/><path d="m10 8 6 4-6 4Z" class="youtube-cut"/></svg></a>
+  <a class="channel" href="https://www.instagram.com/songsamscience/" target="_blank" rel="noopener noreferrer" aria-label="송쌤과학 인스타그램 채널 새 탭으로 열기" title="송쌤과학 인스타그램"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+ </div>
+ <div class="history-actions"><button id="undo" class="toolbar-btn" aria-label="실행 취소" title="실행 취소 (Ctrl 또는 Cmd+Z)" disabled><svg aria-hidden="true"><use href="#i-undo"/></svg></button><button id="redo" class="toolbar-btn" aria-label="다시 실행" title="다시 실행 (Ctrl 또는 Cmd+Shift+Z)" disabled><svg aria-hidden="true"><use href="#i-redo"/></svg></button><span class="history-divider" aria-hidden="true"></span><button id="newProject" class="toolbar-btn" aria-label="새 프로젝트" title="새 프로젝트 시작"><svg aria-hidden="true"><use href="#i-new"/></svg></button></div>
+</div>
+<header class="app-header">
+ <div class="brand"><div class="brand-mark"><svg aria-hidden="true"><use href="#i-film"/></svg></div><div><h1 class="brand-name">송쌤과학</h1><div class="brand-sub">GIF 스튜디오 · GIF STUDIO</div></div></div>
+ <div class="header-context"><strong>수업의 한 순간을, 움직이는 자료로.</strong><small>사진 연결부터 화면 녹화까지 한 작업대에서 만들어요.</small></div>
+ <div class="header-actions"><button id="saveGif" class="btn" title="먼저 GIF를 만들어 주세요 (Ctrl 또는 Cmd+S)" aria-label="완성 GIF 저장" disabled><svg aria-hidden="true"><use href="#i-download"/></svg><span class="btn-text">GIF 저장</span></button><button id="makeGif" class="btn primary" title="사진 또는 녹화 프레임을 먼저 추가해 주세요 (Ctrl 또는 Cmd+Enter)" disabled><svg aria-hidden="true"><use href="#i-film"/></svg>GIF 만들기<kbd aria-hidden="true">⌘ ↵</kbd></button><button id="helpButton" class="utility-btn" title="사용 도움말 (F1)" aria-label="사용 도움말"><svg aria-hidden="true"><use href="#i-help"/></svg></button><button id="themeButton" class="utility-btn" title="어두운 화면으로 전환" aria-label="어두운 화면으로 전환" aria-pressed="false"><svg class="theme-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="theme-sun" aria-hidden="true"><use href="#i-sun"/></svg></button></div>
+</header>
+<div class="app-layout">
+ <aside id="rail" class="rail" aria-label="GIF 편집 도구">
+  <div class="rail-heading"><span>편집 도구</span><b class="rail-count">10</b><button id="railToggle" class="rail-toggle" aria-label="도구 레일 접기" aria-expanded="true" title="도구 레일 접기 ([)"><svg aria-hidden="true"><use href="#i-panel"/></svg></button></div>
+  <nav class="rail-nav" aria-label="편집 도구 선택">
+   <div class="rail-group"><div class="rail-group-title">가져오기</div>
+    <button class="rail-item active" data-tool="images" data-index="1" aria-current="page" title="이미지 불러오기 (1)"><svg aria-hidden="true"><use href="#i-image"/></svg><span>이미지 불러오기</span><kbd class="key" aria-hidden="true">1</kbd></button>
+    <button class="rail-item" data-tool="record" data-index="2" title="화면·창 녹화 (2)"><svg aria-hidden="true"><use href="#i-monitor"/></svg><span>화면·창 녹화</span><kbd class="key" aria-hidden="true">2</kbd></button>
+    <button class="rail-item" data-tool="tab" data-index="3" title="브라우저 탭 녹화 (3)"><svg aria-hidden="true"><use href="#i-tab"/></svg><span>브라우저 탭 녹화</span><kbd class="key" aria-hidden="true">3</kbd></button>
+    <button class="rail-item" data-tool="region" data-index="0" title="공유 화면 영역 녹화 (0)"><svg aria-hidden="true"><use href="#i-crop"/></svg><span>공유 화면 영역 녹화</span><kbd class="key" aria-hidden="true">0</kbd></button>
+    <button class="rail-item" data-tool="snapshot" data-index="4" title="한 장 캡처 (4)"><svg aria-hidden="true"><use href="#i-camera"/></svg><span>한 장 캡처</span><kbd class="key" aria-hidden="true">4</kbd></button>
+   </div>
+   <div class="rail-group"><div class="rail-group-title">편집하기</div>
+    <button class="rail-item" data-tool="frames" data-index="5" title="프레임 정리 (5)"><svg aria-hidden="true"><use href="#i-film"/></svg><span>프레임 정리</span><kbd class="key" aria-hidden="true">5</kbd></button>
+    <button class="rail-item" data-tool="playback" data-index="6" title="시간·재생 (6)"><svg aria-hidden="true"><use href="#i-timer"/></svg><span>시간·재생</span><kbd class="key" aria-hidden="true">6</kbd></button>
+    <button class="rail-item" data-tool="crop" data-index="7" title="자르기·크기 (7)"><svg aria-hidden="true"><use href="#i-crop"/></svg><span>자르기·크기</span><kbd class="key" aria-hidden="true">7</kbd></button>
+    <button class="rail-item" data-tool="annotate" data-index="8" title="글자·설명 (8)"><svg aria-hidden="true"><use href="#i-type"/></svg><span>글자·설명</span><kbd class="key" aria-hidden="true">8</kbd></button>
+   </div>
+   <div class="rail-group"><div class="rail-group-title">내보내기</div><button class="rail-item" data-tool="export" data-index="9" title="GIF 설정·만들기 (9)"><svg aria-hidden="true"><use href="#i-download"/></svg><span>GIF 설정·만들기</span><kbd class="key" aria-hidden="true">9</kbd></button></div>
+  </nav>
+  <div class="rail-foot"><div class="eyebrow">YOUR CLASS, IN MOTION</div><div class="rail-flow"><span><b>01</b> 사진 또는 화면 불러오기</span><span><b>02</b> 순서와 시간을 다듬기</span><span><b>03</b> GIF로 만들어 저장하기</span></div><p class="rail-note"><strong>파일은 내 기기에 머물러요.</strong><br>페이지를 닫기 전에 완성한 GIF를 저장해 주세요.</p></div>
+ </aside>
+ <main id="workspace" class="workspace" tabindex="-1">
+  <div class="contextbar"><div class="breadcrumbs-wrap"><svg aria-hidden="true"><use href="#i-film"/></svg><span id="breadcrumbs">나의 수업 GIF / 이미지 불러오기</span></div><span id="statusPill" class="pill empty" aria-live="polite">사진을 불러오세요</span></div>
+  <div class="editor-grid">
+   <section class="settings-card" aria-labelledby="toolTitle"><div class="settings-heading"><div class="eyebrow">WORKSPACE OPTIONS</div><h2 id="toolTitle">이미지 불러오기</h2><p id="toolDescription">설정을 바꿔 미리보기에서 확인하고, 완성한 GIF를 저장해요.</p></div><aside id="settings" aria-label="선택한 도구 설정"></aside></section>
+   <section class="stage-card" aria-label="프레임 미리보기">
+    <div class="stage-toolbar"><svg aria-hidden="true"><use href="#i-hand"/></svg><span class="stage-guidance" id="stageGuidance">사진을 끌어 놓거나 붙여 넣어 보세요.</span><div class="zoom-controls" aria-label="미리보기 보기 배율"><button id="zoomOut" class="btn icon" title="미리보기 축소" aria-label="미리보기 축소"><svg aria-hidden="true"><use href="#i-minus"/></svg></button><output id="zoomLabel" aria-live="polite">100%</output><button id="zoomIn" class="btn icon" title="미리보기 확대" aria-label="미리보기 확대"><svg aria-hidden="true"><use href="#i-plus"/></svg></button><button id="fitView" class="btn icon" title="무대에 맞춰 보기" aria-label="무대에 맞춰 보기"><svg aria-hidden="true"><use href="#i-fit"/></svg></button></div></div>
+    <div id="stageWrap" class="stage-wrap"><canvas id="stageCanvas" width="800" height="450" hidden aria-label="현재 프레임 미리보기"></canvas><video id="stageVideo" autoplay muted playsinline hidden aria-label="공유 화면 실시간 미리보기"></video><div id="captureRegionOverlay" class="capture-region-overlay" hidden aria-label="녹화할 영역 드래그 선택"><div id="captureRegionBox" class="capture-region-box" aria-hidden="true"></div></div>
+     <div id="stageEmpty" class="stage-empty"><div class="film-visual" aria-hidden="true"><span class="film-cell"><small>01</small><svg><use href="#i-circle"/></svg></span><span class="film-cell"><small>02</small><svg><use href="#i-arrow"/></svg></span><span class="film-cell"><small>03</small><svg><use href="#i-play"/></svg></span></div><div class="eyebrow">START EDITING</div><h2>수업의 순간을<br>움직이는 GIF로.</h2><p class="empty-description">실험 사진의 변화와 화면 속 움직임을<br>한 편의 짧은 수업 자료로 만들어 보세요.</p>
+      <div class="start-actions"><button class="start-action primary" data-action="images"><svg aria-hidden="true"><use href="#i-image"/></svg><span class="action-copy"><strong>이미지 불러오기</strong><small>사진 여러 장을 연결해요</small></span></button><button class="start-action" data-action="record"><svg aria-hidden="true"><use href="#i-monitor"/></svg><span class="action-copy"><strong>화면·창 녹화</strong><small>움직이는 화면을 담아요</small></span></button><button class="start-action" data-action="tab"><svg aria-hidden="true"><use href="#i-tab"/></svg><span class="action-copy"><strong>브라우저 탭 녹화</strong><small>실험 사이트를 기록해요</small></span></button><button class="start-action" data-action="region"><svg aria-hidden="true"><use href="#i-crop"/></svg><span class="action-copy"><strong>공유 화면 영역 녹화</strong><small>화면 공유 후 범위 선택</small></span></button><button class="start-action" data-action="snapshot"><svg aria-hidden="true"><use href="#i-camera"/></svg><span class="action-copy"><strong>한 장씩 캡처</strong><small>필요한 순간만 모아요</small></span></button></div>
+      <div class="empty-bottom"><span>PNG · JPG · 정지 WebP</span><span aria-hidden="true">·</span><kbd>Ctrl+V</kbd><span aria-hidden="true">·</span><button id="demoButton" class="text-button">예제로 살펴보기</button></div>
+     </div>
+    </div>
+    <div class="stage-footer"><span class="stage-hint"><svg aria-hidden="true"><use href="#i-info"/></svg>배율은 미리보기에만 적용돼요.</span><span>© 2026 송쌤과학</span></div>
+   </section>
+   <section class="timeline-card" aria-label="프레임 타임라인"><div class="timeline-heading"><div class="timeline-controls"><button id="prevFrame" class="btn icon" aria-label="이전 프레임" title="이전 프레임 (←)" disabled><svg aria-hidden="true"><use href="#i-prev"/></svg></button><button id="play" class="btn icon" aria-label="미리보기 재생" title="재생·정지 (Space)" aria-pressed="false" disabled><svg aria-hidden="true"><use href="#i-play"/></svg></button><button id="nextFrame" class="btn icon" aria-label="다음 프레임" title="다음 프레임 (→)" disabled><svg aria-hidden="true"><use href="#i-next"/></svg></button></div><span id="frameSummary" aria-live="polite">0 프레임 · 0.00초</span><span class="timeline-caption"><svg aria-hidden="true"><use href="#i-film"/></svg>프레임을 끌어 순서를 바꿔요</span></div><div id="timeline" role="listbox" aria-label="프레임 목록" aria-multiselectable="true"><div class="timeline-empty">사진 또는 캡처한 순간이 이곳에 모여요.</div></div></section>
+  </div>
+  <div id="resultPanel" hidden aria-live="polite"></div>
+  <footer class="page-footer"><span>사진·녹화 내용은 페이지를 닫으면 사라져요.</span><span>로그인 없이 · 서버 전송 없이</span></footer>
+ </main>
+</div>
+<div id="modalOverlay" class="overlay" hidden><section id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1"><div class="modal-header"><span class="modal-icon"><svg aria-hidden="true"><use href="#i-help"/></svg></span><h2 id="modalTitle">사용 도움말</h2><button id="modalClose" class="utility-btn" aria-label="안내 창 닫기" title="안내 창 닫기 (Esc)"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div><div id="modalBody" class="modal-body"></div></section></div>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<div id="progressOverlay" class="overlay" hidden><section class="progress-card" role="dialog" aria-modal="true" aria-labelledby="progressTitle" aria-describedby="progressDetail"><div class="eyebrow">MAKING YOUR GIF</div><h2 id="progressTitle">GIF를 만들고 있어요</h2><p id="progressDetail" aria-live="polite">프레임을 준비하고 있어요.</p><progress id="progressBar" max="100" value="0" aria-label="작업 진행률"></progress><div class="progress-actions"><button id="cancelTask" class="btn">작업 취소</button></div></section></div>
+<input id="imageInput" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden>
+<script>
+/*
+The MIT License (MIT)
+Copyright (c) 2017 Matt DesLauriers
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+Source: gifenc 1.0.3, npm package gitHead 15e2c3e65ed03c977b42fec48de59b05ee9b9f54.
+Original library bundled below; wrapper uses rgb444 palette functions.
+*/
+(function (global) {
+  function gifWorker() {
+    const exports = {};
+var __defProp = Object.defineProperty;
+var __markAsModule = (target) => __defProp(target, "__esModule", {value: true});
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, {get: all[name], enumerable: true});
+};
+
+// src/index.js
+__markAsModule(exports);
+__export(exports, {
+  GIFEncoder: () => GIFEncoder,
+  applyPalette: () => applyPalette,
+  default: () => src_default,
+  nearestColor: () => nearestColor,
+  nearestColorIndex: () => nearestColorIndex,
+  nearestColorIndexWithDistance: () => nearestColorIndexWithDistance,
+  prequantize: () => prequantize,
+  quantize: () => quantize,
+  snapColorsToPalette: () => snapColorsToPalette
+});
+
+// src/constants.js
+var constants_default = {
+  signature: "GIF",
+  version: "89a",
+  trailer: 59,
+  extensionIntroducer: 33,
+  applicationExtensionLabel: 255,
+  graphicControlExtensionLabel: 249,
+  imageSeparator: 44,
+  signatureSize: 3,
+  versionSize: 3,
+  globalColorTableFlagMask: 128,
+  colorResolutionMask: 112,
+  sortFlagMask: 8,
+  globalColorTableSizeMask: 7,
+  applicationIdentifierSize: 8,
+  applicationAuthCodeSize: 3,
+  disposalMethodMask: 28,
+  userInputFlagMask: 2,
+  transparentColorFlagMask: 1,
+  localColorTableFlagMask: 128,
+  interlaceFlagMask: 64,
+  idSortFlagMask: 32,
+  localColorTableSizeMask: 7
+};
+
+// src/stream.js
+function createStream(initialCapacity = 256) {
+  let cursor = 0;
+  let contents = new Uint8Array(initialCapacity);
+  return {
+    get buffer() {
+      return contents.buffer;
+    },
+    reset() {
+      cursor = 0;
+    },
+    bytesView() {
+      return contents.subarray(0, cursor);
+    },
+    bytes() {
+      return contents.slice(0, cursor);
+    },
+    writeByte(byte) {
+      expand(cursor + 1);
+      contents[cursor] = byte;
+      cursor++;
+    },
+    writeBytes(data, offset = 0, byteLength = data.length) {
+      expand(cursor + byteLength);
+      for (let i = 0; i < byteLength; i++) {
+        contents[cursor++] = data[i + offset];
+      }
+    },
+    writeBytesView(data, offset = 0, byteLength = data.byteLength) {
+      expand(cursor + byteLength);
+      contents.set(data.subarray(offset, offset + byteLength), cursor);
+      cursor += byteLength;
+    }
+  };
+  function expand(newCapacity) {
+    var prevCapacity = contents.length;
+    if (prevCapacity >= newCapacity)
+      return;
+    var CAPACITY_DOUBLING_MAX = 1024 * 1024;
+    newCapacity = Math.max(newCapacity, prevCapacity * (prevCapacity < CAPACITY_DOUBLING_MAX ? 2 : 1.125) >>> 0);
+    if (prevCapacity != 0)
+      newCapacity = Math.max(newCapacity, 256);
+    const oldContents = contents;
+    contents = new Uint8Array(newCapacity);
+    if (cursor > 0)
+      contents.set(oldContents.subarray(0, cursor), 0);
+  }
+}
+
+// src/lzwEncode.js
+var BITS = 12;
+var DEFAULT_HSIZE = 5003;
+var MASKS = [
+  0,
+  1,
+  3,
+  7,
+  15,
+  31,
+  63,
+  127,
+  255,
+  511,
+  1023,
+  2047,
+  4095,
+  8191,
+  16383,
+  32767,
+  65535
+];
+function lzwEncode(width, height, pixels, colorDepth, outStream = createStream(512), accum = new Uint8Array(256), htab = new Int32Array(DEFAULT_HSIZE), codetab = new Int32Array(DEFAULT_HSIZE)) {
+  const hsize = htab.length;
+  const initCodeSize = Math.max(2, colorDepth);
+  accum.fill(0);
+  codetab.fill(0);
+  htab.fill(-1);
+  let cur_accum = 0;
+  let cur_bits = 0;
+  const init_bits = initCodeSize + 1;
+  const g_init_bits = init_bits;
+  let clear_flg = false;
+  let n_bits = g_init_bits;
+  let maxcode = (1 << n_bits) - 1;
+  const ClearCode = 1 << init_bits - 1;
+  const EOFCode = ClearCode + 1;
+  let free_ent = ClearCode + 2;
+  let a_count = 0;
+  let ent = pixels[0];
+  let hshift = 0;
+  for (let fcode = hsize; fcode < 65536; fcode *= 2) {
+    ++hshift;
+  }
+  hshift = 8 - hshift;
+  outStream.writeByte(initCodeSize);
+  output(ClearCode);
+  const length = pixels.length;
+  for (let idx = 1; idx < length; idx++) {
+    next_block: {
+      const c = pixels[idx];
+      const fcode = (c << BITS) + ent;
+      let i = c << hshift ^ ent;
+      if (htab[i] === fcode) {
+        ent = codetab[i];
+        break next_block;
+      }
+      const disp = i === 0 ? 1 : hsize - i;
+      while (htab[i] >= 0) {
+        i -= disp;
+        if (i < 0)
+          i += hsize;
+        if (htab[i] === fcode) {
+          ent = codetab[i];
+          break next_block;
+        }
+      }
+      output(ent);
+      ent = c;
+      if (free_ent < 1 << BITS) {
+        codetab[i] = free_ent++;
+        htab[i] = fcode;
+      } else {
+        htab.fill(-1);
+        free_ent = ClearCode + 2;
+        clear_flg = true;
+        output(ClearCode);
+      }
+    }
+  }
+  output(ent);
+  output(EOFCode);
+  outStream.writeByte(0);
+  return outStream.bytesView();
+  function output(code) {
+    cur_accum &= MASKS[cur_bits];
+    if (cur_bits > 0)
+      cur_accum |= code << cur_bits;
+    else
+      cur_accum = code;
+    cur_bits += n_bits;
+    while (cur_bits >= 8) {
+      accum[a_count++] = cur_accum & 255;
+      if (a_count >= 254) {
+        outStream.writeByte(a_count);
+        outStream.writeBytesView(accum, 0, a_count);
+        a_count = 0;
+      }
+      cur_accum >>= 8;
+      cur_bits -= 8;
+    }
+    if (free_ent > maxcode || clear_flg) {
+      if (clear_flg) {
+        n_bits = g_init_bits;
+        maxcode = (1 << n_bits) - 1;
+        clear_flg = false;
+      } else {
+        ++n_bits;
+        maxcode = n_bits === BITS ? 1 << n_bits : (1 << n_bits) - 1;
+      }
+    }
+    if (code == EOFCode) {
+      while (cur_bits > 0) {
+        accum[a_count++] = cur_accum & 255;
+        if (a_count >= 254) {
+          outStream.writeByte(a_count);
+          outStream.writeBytesView(accum, 0, a_count);
+          a_count = 0;
+        }
+        cur_accum >>= 8;
+        cur_bits -= 8;
+      }
+      if (a_count > 0) {
+        outStream.writeByte(a_count);
+        outStream.writeBytesView(accum, 0, a_count);
+        a_count = 0;
+      }
+    }
+  }
+}
+var lzwEncode_default = lzwEncode;
+
+// src/rgb-packing.js
+function rgb888_to_rgb565(r, g, b) {
+  return r << 8 & 63488 | g << 2 & 992 | b >> 3;
+}
+function rgba8888_to_rgba4444(r, g, b, a) {
+  return r >> 4 | g & 240 | (b & 240) << 4 | (a & 240) << 8;
+}
+function rgb888_to_rgb444(r, g, b) {
+  return r >> 4 << 8 | g & 240 | b >> 4;
+}
+
+// src/pnnquant2.js
+function clamp(value, min, max) {
+  return value < min ? min : value > max ? max : value;
+}
+function sqr(value) {
+  return value * value;
+}
+function find_nn(bins, idx, hasAlpha) {
+  var nn = 0;
+  var err = 1e100;
+  const bin1 = bins[idx];
+  const n1 = bin1.cnt;
+  const wa = bin1.ac;
+  const wr = bin1.rc;
+  const wg = bin1.gc;
+  const wb = bin1.bc;
+  for (var i = bin1.fw; i != 0; i = bins[i].fw) {
+    const bin = bins[i];
+    const n2 = bin.cnt;
+    const nerr2 = n1 * n2 / (n1 + n2);
+    if (nerr2 >= err)
+      continue;
+    var nerr = 0;
+    if (hasAlpha) {
+      nerr += nerr2 * sqr(bin.ac - wa);
+      if (nerr >= err)
+        continue;
+    }
+    nerr += nerr2 * sqr(bin.rc - wr);
+    if (nerr >= err)
+      continue;
+    nerr += nerr2 * sqr(bin.gc - wg);
+    if (nerr >= err)
+      continue;
+    nerr += nerr2 * sqr(bin.bc - wb);
+    if (nerr >= err)
+      continue;
+    err = nerr;
+    nn = i;
+  }
+  bin1.err = err;
+  bin1.nn = nn;
+}
+function create_bin() {
+  return {
+    ac: 0,
+    rc: 0,
+    gc: 0,
+    bc: 0,
+    cnt: 0,
+    nn: 0,
+    fw: 0,
+    bk: 0,
+    tm: 0,
+    mtm: 0,
+    err: 0
+  };
+}
+function create_bin_list(data, format) {
+  const bincount = format === "rgb444" ? 4096 : 65536;
+  const bins = new Array(bincount);
+  const size = data.length;
+  if (format === "rgba4444") {
+    for (let i = 0; i < size; ++i) {
+      const color = data[i];
+      const a = color >> 24 & 255;
+      const b = color >> 16 & 255;
+      const g = color >> 8 & 255;
+      const r = color & 255;
+      const index = rgba8888_to_rgba4444(r, g, b, a);
+      let bin = index in bins ? bins[index] : bins[index] = create_bin();
+      bin.rc += r;
+      bin.gc += g;
+      bin.bc += b;
+      bin.ac += a;
+      bin.cnt++;
+    }
+  } else if (format === "rgb444") {
+    for (let i = 0; i < size; ++i) {
+      const color = data[i];
+      const b = color >> 16 & 255;
+      const g = color >> 8 & 255;
+      const r = color & 255;
+      const index = rgb888_to_rgb444(r, g, b);
+      let bin = index in bins ? bins[index] : bins[index] = create_bin();
+      bin.rc += r;
+      bin.gc += g;
+      bin.bc += b;
+      bin.cnt++;
+    }
+  } else {
+    for (let i = 0; i < size; ++i) {
+      const color = data[i];
+      const b = color >> 16 & 255;
+      const g = color >> 8 & 255;
+      const r = color & 255;
+      const index = rgb888_to_rgb565(r, g, b);
+      let bin = index in bins ? bins[index] : bins[index] = create_bin();
+      bin.rc += r;
+      bin.gc += g;
+      bin.bc += b;
+      bin.cnt++;
+    }
+  }
+  return bins;
+}
+function quantize(rgba, maxColors, opts = {}) {
+  const {
+    format = "rgb565",
+    clearAlpha = true,
+    clearAlphaColor = 0,
+    clearAlphaThreshold = 0,
+    oneBitAlpha = false
+  } = opts;
+  if (!rgba || !rgba.buffer) {
+    throw new Error("quantize() expected RGBA Uint8Array data");
+  }
+  if (!(rgba instanceof Uint8Array) && !(rgba instanceof Uint8ClampedArray)) {
+    throw new Error("quantize() expected RGBA Uint8Array data");
+  }
+  const data = new Uint32Array(rgba.buffer);
+  let useSqrt = opts.useSqrt !== false;
+  const hasAlpha = format === "rgba4444";
+  const bins = create_bin_list(data, format);
+  const bincount = bins.length;
+  const bincountMinusOne = bincount - 1;
+  const heap = new Uint32Array(bincount + 1);
+  var maxbins = 0;
+  for (var i = 0; i < bincount; ++i) {
+    const bin = bins[i];
+    if (bin != null) {
+      var d = 1 / bin.cnt;
+      if (hasAlpha)
+        bin.ac *= d;
+      bin.rc *= d;
+      bin.gc *= d;
+      bin.bc *= d;
+      bins[maxbins++] = bin;
+    }
+  }
+  if (sqr(maxColors) / maxbins < 0.022) {
+    useSqrt = false;
+  }
+  var i = 0;
+  for (; i < maxbins - 1; ++i) {
+    bins[i].fw = i + 1;
+    bins[i + 1].bk = i;
+    if (useSqrt)
+      bins[i].cnt = Math.sqrt(bins[i].cnt);
+  }
+  if (useSqrt)
+    bins[i].cnt = Math.sqrt(bins[i].cnt);
+  var h, l, l2;
+  for (i = 0; i < maxbins; ++i) {
+    find_nn(bins, i, false);
+    var err = bins[i].err;
+    for (l = ++heap[0]; l > 1; l = l2) {
+      l2 = l >> 1;
+      if (bins[h = heap[l2]].err <= err)
+        break;
+      heap[l] = h;
+    }
+    heap[l] = i;
+  }
+  var extbins = maxbins - maxColors;
+  for (i = 0; i < extbins; ) {
+    var tb;
+    for (; ; ) {
+      var b1 = heap[1];
+      tb = bins[b1];
+      if (tb.tm >= tb.mtm && bins[tb.nn].mtm <= tb.tm)
+        break;
+      if (tb.mtm == bincountMinusOne)
+        b1 = heap[1] = heap[heap[0]--];
+      else {
+        find_nn(bins, b1, false);
+        tb.tm = i;
+      }
+      var err = bins[b1].err;
+      for (l = 1; (l2 = l + l) <= heap[0]; l = l2) {
+        if (l2 < heap[0] && bins[heap[l2]].err > bins[heap[l2 + 1]].err)
+          l2++;
+        if (err <= bins[h = heap[l2]].err)
+          break;
+        heap[l] = h;
+      }
+      heap[l] = b1;
+    }
+    var nb = bins[tb.nn];
+    var n1 = tb.cnt;
+    var n2 = nb.cnt;
+    var d = 1 / (n1 + n2);
+    if (hasAlpha)
+      tb.ac = d * (n1 * tb.ac + n2 * nb.ac);
+    tb.rc = d * (n1 * tb.rc + n2 * nb.rc);
+    tb.gc = d * (n1 * tb.gc + n2 * nb.gc);
+    tb.bc = d * (n1 * tb.bc + n2 * nb.bc);
+    tb.cnt += nb.cnt;
+    tb.mtm = ++i;
+    bins[nb.bk].fw = nb.fw;
+    bins[nb.fw].bk = nb.bk;
+    nb.mtm = bincountMinusOne;
+  }
+  let palette = [];
+  var k = 0;
+  for (i = 0; ; ++k) {
+    let r = clamp(Math.round(bins[i].rc), 0, 255);
+    let g = clamp(Math.round(bins[i].gc), 0, 255);
+    let b = clamp(Math.round(bins[i].bc), 0, 255);
+    let a = 255;
+    if (hasAlpha) {
+      a = clamp(Math.round(bins[i].ac), 0, 255);
+      if (oneBitAlpha) {
+        const threshold = typeof oneBitAlpha === "number" ? oneBitAlpha : 127;
+        a = a <= threshold ? 0 : 255;
+      }
+      if (clearAlpha && a <= clearAlphaThreshold) {
+        r = g = b = clearAlphaColor;
+        a = 0;
+      }
+    }
+    const color = hasAlpha ? [r, g, b, a] : [r, g, b];
+    const exists = existsInPalette(palette, color);
+    if (!exists)
+      palette.push(color);
+    if ((i = bins[i].fw) == 0)
+      break;
+  }
+  return palette;
+}
+function existsInPalette(palette, color) {
+  for (let i = 0; i < palette.length; i++) {
+    const p = palette[i];
+    let matchesRGB = p[0] === color[0] && p[1] === color[1] && p[2] === color[2];
+    let matchesAlpha = p.length >= 4 && color.length >= 4 ? p[3] === color[3] : true;
+    if (matchesRGB && matchesAlpha)
+      return true;
+  }
+  return false;
+}
+
+// src/color.js
+function euclideanDistanceSquared(a, b) {
+  var sum = 0;
+  var n;
+  for (n = 0; n < a.length; n++) {
+    const dx = a[n] - b[n];
+    sum += dx * dx;
+  }
+  return sum;
+}
+
+// src/palettize.js
+function roundStep(byte, step) {
+  return step > 1 ? Math.round(byte / step) * step : byte;
+}
+function prequantize(rgba, {roundRGB = 5, roundAlpha = 10, oneBitAlpha = null} = {}) {
+  const data = new Uint32Array(rgba.buffer);
+  for (let i = 0; i < data.length; i++) {
+    const color = data[i];
+    let a = color >> 24 & 255;
+    let b = color >> 16 & 255;
+    let g = color >> 8 & 255;
+    let r = color & 255;
+    a = roundStep(a, roundAlpha);
+    if (oneBitAlpha) {
+      const threshold = typeof oneBitAlpha === "number" ? oneBitAlpha : 127;
+      a = a <= threshold ? 0 : 255;
+    }
+    r = roundStep(r, roundRGB);
+    g = roundStep(g, roundRGB);
+    b = roundStep(b, roundRGB);
+    data[i] = a << 24 | b << 16 | g << 8 | r << 0;
+  }
+}
+function applyPalette(rgba, palette, format = "rgb565") {
+  if (!rgba || !rgba.buffer) {
+    throw new Error("quantize() expected RGBA Uint8Array data");
+  }
+  if (!(rgba instanceof Uint8Array) && !(rgba instanceof Uint8ClampedArray)) {
+    throw new Error("quantize() expected RGBA Uint8Array data");
+  }
+  if (palette.length > 256) {
+    throw new Error("applyPalette() only works with 256 colors or less");
+  }
+  const data = new Uint32Array(rgba.buffer);
+  const length = data.length;
+  const bincount = format === "rgb444" ? 4096 : 65536;
+  const index = new Uint8Array(length);
+  const cache = new Array(bincount);
+  const hasAlpha = format === "rgba4444";
+  if (format === "rgba4444") {
+    for (let i = 0; i < length; i++) {
+      const color = data[i];
+      const a = color >> 24 & 255;
+      const b = color >> 16 & 255;
+      const g = color >> 8 & 255;
+      const r = color & 255;
+      const key = rgba8888_to_rgba4444(r, g, b, a);
+      const idx = key in cache ? cache[key] : cache[key] = nearestColorIndexRGBA(r, g, b, a, palette);
+      index[i] = idx;
+    }
+  } else {
+    const rgb888_to_key = format === "rgb444" ? rgb888_to_rgb444 : rgb888_to_rgb565;
+    for (let i = 0; i < length; i++) {
+      const color = data[i];
+      const b = color >> 16 & 255;
+      const g = color >> 8 & 255;
+      const r = color & 255;
+      const key = rgb888_to_key(r, g, b);
+      const idx = key in cache ? cache[key] : cache[key] = nearestColorIndexRGB(r, g, b, palette);
+      index[i] = idx;
+    }
+  }
+  return index;
+}
+function nearestColorIndexRGBA(r, g, b, a, palette) {
+  let k = 0;
+  let mindist = 1e100;
+  for (let i = 0; i < palette.length; i++) {
+    const px2 = palette[i];
+    const a2 = px2[3];
+    let curdist = sqr2(a2 - a);
+    if (curdist > mindist)
+      continue;
+    const r2 = px2[0];
+    curdist += sqr2(r2 - r);
+    if (curdist > mindist)
+      continue;
+    const g2 = px2[1];
+    curdist += sqr2(g2 - g);
+    if (curdist > mindist)
+      continue;
+    const b2 = px2[2];
+    curdist += sqr2(b2 - b);
+    if (curdist > mindist)
+      continue;
+    mindist = curdist;
+    k = i;
+  }
+  return k;
+}
+function nearestColorIndexRGB(r, g, b, palette) {
+  let k = 0;
+  let mindist = 1e100;
+  for (let i = 0; i < palette.length; i++) {
+    const px2 = palette[i];
+    const r2 = px2[0];
+    let curdist = sqr2(r2 - r);
+    if (curdist > mindist)
+      continue;
+    const g2 = px2[1];
+    curdist += sqr2(g2 - g);
+    if (curdist > mindist)
+      continue;
+    const b2 = px2[2];
+    curdist += sqr2(b2 - b);
+    if (curdist > mindist)
+      continue;
+    mindist = curdist;
+    k = i;
+  }
+  return k;
+}
+function snapColorsToPalette(palette, knownColors, threshold = 5) {
+  if (!palette.length || !knownColors.length)
+    return;
+  const paletteRGB = palette.map((p) => p.slice(0, 3));
+  const thresholdSq = threshold * threshold;
+  const dim = palette[0].length;
+  for (let i = 0; i < knownColors.length; i++) {
+    let color = knownColors[i];
+    if (color.length < dim) {
+      color = [color[0], color[1], color[2], 255];
+    } else if (color.length > dim) {
+      color = color.slice(0, 3);
+    } else {
+      color = color.slice();
+    }
+    const r = nearestColorIndexWithDistance(paletteRGB, color.slice(0, 3), euclideanDistanceSquared);
+    const idx = r[0];
+    const distanceSq = r[1];
+    if (distanceSq > 0 && distanceSq <= thresholdSq) {
+      palette[idx] = color;
+    }
+  }
+}
+function sqr2(a) {
+  return a * a;
+}
+function nearestColorIndex(colors, pixel, distanceFn = euclideanDistanceSquared) {
+  let minDist = Infinity;
+  let minDistIndex = -1;
+  for (let j = 0; j < colors.length; j++) {
+    const paletteColor = colors[j];
+    const dist = distanceFn(pixel, paletteColor);
+    if (dist < minDist) {
+      minDist = dist;
+      minDistIndex = j;
+    }
+  }
+  return minDistIndex;
+}
+function nearestColorIndexWithDistance(colors, pixel, distanceFn = euclideanDistanceSquared) {
+  let minDist = Infinity;
+  let minDistIndex = -1;
+  for (let j = 0; j < colors.length; j++) {
+    const paletteColor = colors[j];
+    const dist = distanceFn(pixel, paletteColor);
+    if (dist < minDist) {
+      minDist = dist;
+      minDistIndex = j;
+    }
+  }
+  return [minDistIndex, minDist];
+}
+function nearestColor(colors, pixel, distanceFn = euclideanDistanceSquared) {
+  return colors[nearestColorIndex(colors, pixel, distanceFn)];
+}
+
+// src/index.js
+function GIFEncoder(opt = {}) {
+  const {initialCapacity = 4096, auto = true} = opt;
+  const stream = createStream(initialCapacity);
+  const HSIZE = 5003;
+  const accum = new Uint8Array(256);
+  const htab = new Int32Array(HSIZE);
+  const codetab = new Int32Array(HSIZE);
+  let hasInit = false;
+  return {
+    reset() {
+      stream.reset();
+      hasInit = false;
+    },
+    finish() {
+      stream.writeByte(constants_default.trailer);
+    },
+    bytes() {
+      return stream.bytes();
+    },
+    bytesView() {
+      return stream.bytesView();
+    },
+    get buffer() {
+      return stream.buffer;
+    },
+    get stream() {
+      return stream;
+    },
+    writeHeader,
+    writeFrame(index, width, height, opts = {}) {
+      const {
+        transparent = false,
+        transparentIndex = 0,
+        delay = 0,
+        palette = null,
+        repeat = 0,
+        colorDepth = 8,
+        dispose = -1
+      } = opts;
+      let first = false;
+      if (auto) {
+        if (!hasInit) {
+          first = true;
+          writeHeader();
+          hasInit = true;
+        }
+      } else {
+        first = Boolean(opts.first);
+      }
+      width = Math.max(0, Math.floor(width));
+      height = Math.max(0, Math.floor(height));
+      if (first) {
+        if (!palette) {
+          throw new Error("First frame must include a { palette } option");
+        }
+        encodeLogicalScreenDescriptor(stream, width, height, palette, colorDepth);
+        encodeColorTable(stream, palette);
+        if (repeat >= 0) {
+          encodeNetscapeExt(stream, repeat);
+        }
+      }
+      const delayTime = Math.round(delay / 10);
+      encodeGraphicControlExt(stream, dispose, delayTime, transparent, transparentIndex);
+      const useLocalColorTable = Boolean(palette) && !first;
+      encodeImageDescriptor(stream, width, height, useLocalColorTable ? palette : null);
+      if (useLocalColorTable)
+        encodeColorTable(stream, palette);
+      encodePixels(stream, index, width, height, colorDepth, accum, htab, codetab);
+    }
+  };
+  function writeHeader() {
+    writeUTFBytes(stream, "GIF89a");
+  }
+}
+function encodeGraphicControlExt(stream, dispose, delay, transparent, transparentIndex) {
+  stream.writeByte(33);
+  stream.writeByte(249);
+  stream.writeByte(4);
+  if (transparentIndex < 0) {
+    transparentIndex = 0;
+    transparent = false;
+  }
+  var transp, disp;
+  if (!transparent) {
+    transp = 0;
+    disp = 0;
+  } else {
+    transp = 1;
+    disp = 2;
+  }
+  if (dispose >= 0) {
+    disp = dispose & 7;
+  }
+  disp <<= 2;
+  const userInput = 0;
+  stream.writeByte(0 | disp | userInput | transp);
+  writeUInt16(stream, delay);
+  stream.writeByte(transparentIndex || 0);
+  stream.writeByte(0);
+}
+function encodeLogicalScreenDescriptor(stream, width, height, palette, colorDepth = 8) {
+  const globalColorTableFlag = 1;
+  const sortFlag = 0;
+  const globalColorTableSize = colorTableSize(palette.length) - 1;
+  const fields = globalColorTableFlag << 7 | colorDepth - 1 << 4 | sortFlag << 3 | globalColorTableSize;
+  const backgroundColorIndex = 0;
+  const pixelAspectRatio = 0;
+  writeUInt16(stream, width);
+  writeUInt16(stream, height);
+  stream.writeBytes([fields, backgroundColorIndex, pixelAspectRatio]);
+}
+function encodeNetscapeExt(stream, repeat) {
+  stream.writeByte(33);
+  stream.writeByte(255);
+  stream.writeByte(11);
+  writeUTFBytes(stream, "NETSCAPE2.0");
+  stream.writeByte(3);
+  stream.writeByte(1);
+  writeUInt16(stream, repeat);
+  stream.writeByte(0);
+}
+function encodeColorTable(stream, palette) {
+  const colorTableLength = 1 << colorTableSize(palette.length);
+  for (let i = 0; i < colorTableLength; i++) {
+    let color = [0, 0, 0];
+    if (i < palette.length) {
+      color = palette[i];
+    }
+    stream.writeByte(color[0]);
+    stream.writeByte(color[1]);
+    stream.writeByte(color[2]);
+  }
+}
+function encodeImageDescriptor(stream, width, height, localPalette) {
+  stream.writeByte(44);
+  writeUInt16(stream, 0);
+  writeUInt16(stream, 0);
+  writeUInt16(stream, width);
+  writeUInt16(stream, height);
+  if (localPalette) {
+    const interlace = 0;
+    const sorted = 0;
+    const palSize = colorTableSize(localPalette.length) - 1;
+    stream.writeByte(128 | interlace | sorted | 0 | palSize);
+  } else {
+    stream.writeByte(0);
+  }
+}
+function encodePixels(stream, index, width, height, colorDepth = 8, accum, htab, codetab) {
+  lzwEncode_default(width, height, index, colorDepth, stream, accum, htab, codetab);
+}
+function writeUInt16(stream, short) {
+  stream.writeByte(short & 255);
+  stream.writeByte(short >> 8 & 255);
+}
+function writeUTFBytes(stream, text) {
+  for (var i = 0; i < text.length; i++) {
+    stream.writeByte(text.charCodeAt(i));
+  }
+}
+function colorTableSize(length) {
+  return Math.max(Math.ceil(Math.log2(length)), 1);
+}
+var src_default = GIFEncoder;
+
+  let encoder, settings, pending = null, accepted = 0, outputCount = 0;
+  let exactDuration = 0, emittedTicks = 0;
+  const maxTicks = 65535;
+  function hash(data) {
+    let h = 2166136261;
+    for (let i = 0; i < data.length; i++) h = Math.imul(h ^ data[i], 16777619);
+    return h >>> 0;
+  }
+  function same(a, b) {
+    if (a.hash !== b.hash || a.rgba.length !== b.rgba.length) return false;
+    for (let i = 0; i < a.rgba.length; i++) if (a.rgba[i] !== b.rgba[i]) return false;
+    return true;
+  }
+  function flush() {
+    if (!pending) return;
+    const palette = exports.quantize(pending.rgba, settings.colors, { format: 'rgb444' });
+    const indexed = exports.applyPalette(pending.rgba, palette, 'rgb444');
+    exactDuration += pending.delay;
+    let ticks = Math.max(2, Math.round(exactDuration / 10) - emittedTicks);
+    while (ticks > 0) {
+      let part = Math.min(maxTicks, ticks);
+      if (ticks - part === 1) part -= 1; // no 10 ms tail after splitting long holds
+      encoder.writeFrame(indexed, settings.width, settings.height, {
+        palette, delay: part * 10, repeat: settings.repeat, transparent: false, dispose: 1,
+        colorDepth: Math.max(2, Math.ceil(Math.log2(palette.length)))
+      });
+      outputCount++;
+      emittedTicks += part;
+      ticks -= part;
+    }
+    pending = null;
+  }
+  self.onmessage = function(event) {
+    const message = event.data;
+    try {
+      if (message.op === 'start') {
+        settings = message.settings;
+        encoder = exports.GIFEncoder();
+        pending = null; accepted = 0; outputCount = 0; exactDuration = 0; emittedTicks = 0;
+        self.postMessage({ id: message.id, type: 'ready' });
+      } else if (message.op === 'frame') {
+        if (!encoder) throw new Error('인코더를 먼저 시작해 주세요.');
+        if (accepted >= 600) throw new Error('최대 600프레임까지 만들 수 있어요.');
+        const rgba = new Uint8ClampedArray(message.buffer);
+        if (rgba.length !== settings.width * settings.height * 4) throw new Error('프레임 크기가 출력 크기와 달라요.');
+        const next = { rgba, delay: message.delay, hash: settings.dedupe ? hash(rgba) : 0 };
+        if (pending && settings.dedupe && same(pending, next)) pending.delay += next.delay;
+        else { flush(); pending = next; }
+        accepted++;
+        self.postMessage({ id: message.id, type: 'frame', done: accepted, total: settings.total,
+          written: outputCount, duration: emittedTicks * 10 });
+      } else if (message.op === 'finish') {
+        if (!accepted) throw new Error('GIF로 만들 프레임을 추가해 주세요.');
+        flush(); encoder.finish();
+        const bytes = encoder.bytes();
+        self.postMessage({ id: message.id, type: 'done', buffer: bytes.buffer, frameCount: outputCount,
+          sourceFrameCount: accepted, duration: emittedTicks * 10, width: settings.width, height: settings.height }, [bytes.buffer]);
+        encoder = null; pending = null;
+      }
+    } catch (error) {
+      self.postMessage({ id: message.id, type: 'error', message: error.message || String(error) });
+    }
+  };
+
+  }
+
+  class GifExport {
+    constructor({ onProgress = () => {} } = {}) {
+      this.onProgress = onProgress;
+      this.worker = null; this.url = null; this.requests = new Map(); this.serial = 0;
+      this.state = 'idle'; this.inFlight = false; this.signal = null; this.abortHandler = null;
+    }
+    report(value) { try { this.onProgress(value); } catch (_) {} }
+    async start({ width, height, colors = 128, repeat = 0, dedupe = true, total, signal } = {}) {
+      this.cancel();
+      width = Number(width); height = Number(height); colors = Number(colors); repeat = Number(repeat);
+      if (![width, height].every(x => Number.isInteger(x) && x >= 1 && x <= 1280))
+        throw new Error('출력 가로와 세로는 1~1280px 정수로 설정해 주세요.');
+      if (!Number.isInteger(colors) || colors < 2 || colors > 256) throw new Error('GIF 색수는 2~256색으로 설정해 주세요.');
+      if (!Number.isInteger(repeat) || repeat < -1 || repeat > 65535) throw new Error('반복 횟수 설정이 올바르지 않아요.');
+      if (typeof Worker === 'undefined') throw new Error('이 브라우저는 GIF 제작에 필요한 Worker를 지원하지 않아요.');
+      if (signal && signal.aborted) throw this.aborted();
+      this.url = URL.createObjectURL(new Blob(['(' + gifWorker.toString() + ')();'], { type: 'text/javascript' }));
+      try { this.worker = new Worker(this.url); }
+      catch (error) { this.cleanup(); throw new Error('GIF 작업을 시작하지 못했어요. Worker 실행을 허용하는 브라우저에서 다시 열어 주세요.'); }
+      this.worker.onmessage = event => {
+        const response = event.data;
+        const request = this.requests.get(response.id);
+        if (!request) return;
+        this.requests.delete(response.id);
+        if (response.type === 'error') {
+          const error = new Error(response.message);
+          request.reject(error); this.fail(error);
+        } else {
+          if (response.type === 'frame') this.report({ phase: 'encoding', done: response.done, total: response.total, written: response.written });
+          request.resolve(response);
+        }
+      };
+      this.worker.onerror = event => this.fail(new Error(event.message || 'GIF 인코딩 중 오류가 발생했어요.'));
+      this.worker.onmessageerror = () => this.fail(new Error('GIF 작업 데이터를 읽지 못했어요.'));
+      this.state = 'starting';
+      if (signal) { this.signal = signal; this.abortHandler = () => this.cancel(); signal.addEventListener('abort', this.abortHandler, { once: true }); }
+      await this.request({ op: 'start', settings: { width, height, colors, repeat, dedupe: !!dedupe,
+        total: Number.isInteger(total) && total >= 1 ? total : undefined } });
+      this.state = 'active';
+      this.report({ phase: 'encoding', done: 0, total });
+      return this;
+    }
+    request(message, transfer = []) {
+      return new Promise((resolve, reject) => {
+        if (!this.worker) { reject(this.aborted()); return; }
+        const id = ++this.serial;
+        this.requests.set(id, { resolve, reject });
+        try { this.worker.postMessage({ ...message, id }, transfer); }
+        catch (error) { this.requests.delete(id); reject(error); }
+      });
+    }
+    async addFrame(rgba, delay = 500) {
+      if (this.state !== 'active') throw new Error('GIF 인코더가 준비되지 않았어요.');
+      if (this.inFlight) throw new Error('이전 프레임 처리가 끝날 때까지 기다려 주세요.');
+      delay = Number(delay);
+      if (!Number.isFinite(delay) || delay < 0 || delay > 86400000) throw new Error('프레임 표시 시간을 다시 설정해 주세요.');
+      delay = Math.max(20, delay);
+      let buffer;
+      if (rgba instanceof ArrayBuffer) buffer = rgba;
+      else if (rgba instanceof Uint8Array || rgba instanceof Uint8ClampedArray) {
+        buffer = rgba.byteOffset === 0 && rgba.byteLength === rgba.buffer.byteLength
+          ? rgba.buffer : rgba.slice().buffer;
+      } else throw new Error('RGBA 픽셀 데이터를 전달해 주세요.');
+      this.inFlight = true;
+      try { return await this.request({ op: 'frame', buffer, delay }, [buffer]); }
+      finally { this.inFlight = false; }
+    }
+    async finish() {
+      if (this.state !== 'active' || this.inFlight) throw new Error('프레임 처리가 끝나면 GIF를 마무리할 수 있어요.');
+      this.state = 'finishing';
+      try {
+        const result = await this.request({ op: 'finish' });
+        const answer = { blob: new Blob([result.buffer], { type: 'image/gif' }), frameCount: result.frameCount,
+          sourceFrameCount: result.sourceFrameCount, duration: result.duration, width: result.width, height: result.height };
+        this.report({ phase: 'complete', done: result.sourceFrameCount, total: result.sourceFrameCount,
+          written: result.frameCount, duration: result.duration, bytes: answer.blob.size });
+        this.state = 'complete'; return answer;
+      } finally { this.cleanup(); }
+    }
+    async encode({ frames, signal, ...options } = {}) {
+      if (!Array.isArray(frames) || !frames.length) throw new Error('GIF로 만들 프레임을 추가해 주세요.');
+      try {
+        await this.start({ ...options, total: frames.length, signal });
+        for (const frame of frames) await this.addFrame(frame.rgba, frame.delay);
+        return await this.finish();
+      } catch (error) { this.cancel(); throw error; }
+    }
+    aborted() { return new DOMException('GIF 만들기를 취소했어요.', 'AbortError'); }
+    fail(error) {
+      for (const request of this.requests.values()) request.reject(error);
+      this.requests.clear(); this.state = 'error'; this.cleanup();
+    }
+    cleanup() {
+      if (this.worker) this.worker.terminate(); this.worker = null;
+      if (this.url) URL.revokeObjectURL(this.url); this.url = null;
+      if (this.signal && this.abortHandler) this.signal.removeEventListener('abort', this.abortHandler);
+      this.signal = null; this.abortHandler = null;
+    }
+    cancel() {
+      const hadWork = this.worker !== null;
+      const error = this.aborted();
+      for (const request of this.requests.values()) request.reject(error);
+      this.requests.clear(); this.cleanup(); this.state = 'idle'; this.inFlight = false;
+      if (hadWork) this.report({ phase: 'cancelled', done: 0 });
+    }
+  }
+  global.GifExport = GifExport;
+})(typeof window !== 'undefined' ? window : globalThis);
+
+</script>
+<script>
+/* 송쌤과학 GIF 스튜디오 — 화면 공유·녹화·로컬 프레임 추출 */
+(function (global) {
+  'use strict';
+
+  const MAX_BYTES = 128 * 1024 * 1024;
+  const now = () => performance.now();
+  const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+  const abortError = () => new DOMException('작업을 취소했어요.', 'AbortError');
+  const callback = (fn, value) => {
+    if (typeof fn === 'function') {
+      try { fn(value); } catch (error) { console.error('캡처 상태 표시 오류', error); }
+    }
+  };
+  const captureMessage = (error) => {
+    const name = error && error.name;
+    if (name === 'NotAllowedError') return '화면 공유가 허용되지 않았어요. 다시 선택하거나 브라우저와 macOS의 화면 녹화 권한을 확인해 주세요.';
+    if (name === 'AbortError') return '화면 공유 또는 작업을 취소했어요. 다시 선택해 주세요.';
+    if (name === 'NotReadableError') return '선택한 화면을 읽을 수 없어요. 시스템 화면 녹화 권한을 확인한 뒤 브라우저를 다시 열어 주세요.';
+    if (name === 'NotFoundError') return '공유할 화면을 찾지 못했어요. 녹화할 창이나 탭을 먼저 열어 주세요.';
+    if (name === 'InvalidStateError') return '화면 선택은 활성 화면에서 단추를 눌러 시작해 주세요.';
+    if (name === 'SecurityError') return '이 페이지에서는 화면 공유가 차단되어 있어요. HTTPS 또는 localhost에서 열어 주세요.';
+    return error && error.message ? error.message : '화면을 처리하지 못했어요. 공유를 종료한 뒤 다시 선택해 주세요.';
+  };
+
+  function waitEvent(target, event, {signal, timeout = 15000, errorEvent = 'error'} = {}) {
+    return new Promise((resolve, reject) => {
+      if (signal && signal.aborted) { reject(abortError()); return; }
+      let timer;
+      const cleanup = () => {
+        clearTimeout(timer);
+        target.removeEventListener(event, success);
+        if (errorEvent) target.removeEventListener(errorEvent, fail);
+        if (signal) signal.removeEventListener('abort', aborted);
+      };
+      const success = (value) => { cleanup(); resolve(value); };
+      const fail = () => { cleanup(); reject(new Error('영상을 읽을 수 없어요. 이 브라우저가 지원하는 녹화 형식인지 확인해 주세요.')); };
+      const aborted = () => { cleanup(); reject(abortError()); };
+      target.addEventListener(event, success, {once: true});
+      if (errorEvent) target.addEventListener(errorEvent, fail, {once: true});
+      if (signal) signal.addEventListener('abort', aborted, {once: true});
+      timer = setTimeout(() => { cleanup(); reject(new Error('영상 준비가 너무 오래 걸려요. 구간이나 출력 크기를 줄여 다시 시도해 주세요.')); }, timeout);
+    });
+  }
+
+  function pngBlob(canvas, signal) {
+    return new Promise((resolve, reject) => {
+      if (signal && signal.aborted) { reject(abortError()); return; }
+      canvas.toBlob((blob) => {
+        if (signal && signal.aborted) { reject(abortError()); return; }
+        if (blob) resolve(blob);
+        else reject(new Error('화면 이미지를 만들지 못했어요. 출력 크기를 줄여 다시 시도해 주세요.'));
+      }, 'image/png');
+    });
+  }
+
+  class GifCapture {
+    constructor({onState, onPreview, onProgress, onError} = {}) {
+      this.onState = onState;
+      this.onPreview = onPreview;
+      this.onProgress = onProgress;
+      this.onError = onError;
+      this.state = 'idle';
+      this.mode = 'record';
+      this.stream = null;
+      this.video = null;
+      this.recorder = null;
+      this.result = null;
+      this.sourceInfo = null;
+      this.maxSeconds = 15;
+      this._epoch = 0;
+      this._elapsed = 0;
+      this._activeSince = 0;
+      this._chunks = [];
+      this._byteCount = 0;
+      this._tickTimer = null;
+      this._countTimer = null;
+      this._countReject = null;
+      this._stopPromise = null;
+      this._stopResolve = null;
+      this._stopReject = null;
+      this._recordingError = null;
+    }
+
+    static support() {
+      const display = !!(navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia);
+      const secure = global.isSecureContext !== false;
+      return {
+        capture: display && secure,
+        recording: display && secure && typeof MediaRecorder !== 'undefined',
+        reason: !secure ? ' 화면 녹화는 HTTPS 또는 localhost에서 사용할 수 있어요.' : !display ? '이 브라우저는 화면 공유를 지원하지 않아요. PC의 Chrome 또는 Edge에서 열어 주세요.' : typeof MediaRecorder === 'undefined' ? '이 브라우저는 영상 녹화를 지원하지 않아요. PC의 Chrome 또는 Edge에서 열어 주세요.' : ''
+      };
+    }
+
+    static mimeType() {
+      if (typeof MediaRecorder === 'undefined') return '';
+      const choices = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm', 'video/mp4;codecs=avc1.42E01E', 'video/mp4'];
+      if (typeof MediaRecorder.isTypeSupported !== 'function') return '';
+      return choices.find((type) => MediaRecorder.isTypeSupported(type)) || '';
+    }
+
+    elapsed() {
+      return this._elapsed + (this.state === 'recording' && this._activeSince ? (now() - this._activeSince) / 1000 : 0);
+    }
+
+    _emit(state, extra = {}) {
+      this.state = state;
+      callback(this.onState, {state, elapsed: this.elapsed(), maxSeconds: this.maxSeconds, mode: this.mode, selectedSurface: this.sourceInfo?.displaySurface || 'unknown', sourceWidth: this.sourceInfo?.width || 0, sourceHeight: this.sourceInfo?.height || 0, ...extra});
+    }
+
+    _error(error) {
+      const message = captureMessage(error);
+      callback(this.onError, message);
+      return new Error(message, {cause: error});
+    }
+
+    _clearTimers() {
+      clearInterval(this._tickTimer);
+      clearTimeout(this._countTimer);
+      this._tickTimer = this._countTimer = null;
+    }
+
+    _releaseStream() {
+      const stream = this.stream;
+      this.stream = null;
+      if (stream) stream.getTracks().forEach((track) => {
+        track.onended = null;
+        track.stop();
+      });
+      if (this.video) {
+        this.video.pause();
+        this.video.srcObject = null;
+        this.video.remove();
+        this.video = null;
+      }
+      callback(this.onPreview, null);
+    }
+
+    async select(mode = 'record') {
+      const support = GifCapture.support();
+      if (!support.capture || (mode !== 'snapshot' && !support.recording)) {
+        throw this._error(new Error(support.reason));
+      }
+      this.close();
+      this.mode = ['record', 'tab', 'snapshot', 'region'].includes(mode) ? mode : 'record';
+      const epoch = this._epoch;
+      this.result = null;
+      this._emit('selecting');
+      // displaySurface is a preference for the browser's picker, never a forced
+      // screen selection. The permission call stays in the initiating click.
+      const request = this.mode === 'tab'
+        ? {video: {displaySurface: 'browser'}, audio: false, preferCurrentTab: false, selfBrowserSurface: 'exclude', surfaceSwitching: 'include'}
+        : this.mode === 'region'
+          ? {video: {displaySurface: 'monitor'}, audio: false, preferCurrentTab: false, selfBrowserSurface: 'exclude', surfaceSwitching: 'exclude'}
+          : {video: true, audio: false};
+      let stream;
+      try {
+        stream = await navigator.mediaDevices.getDisplayMedia(request);
+        if (epoch !== this._epoch) {
+          stream.getTracks().forEach((track) => track.stop());
+          throw abortError();
+        }
+        const track = stream.getVideoTracks()[0];
+        if (!track || track.readyState === 'ended') throw new Error('공유할 영상이 없어요. 화면이나 탭을 다시 선택해 주세요.');
+        // Explicitly discard accidental audio tracks even if a browser supplies one.
+        stream.getAudioTracks().forEach((audioTrack) => { audioTrack.stop(); stream.removeTrack(audioTrack); });
+        this.stream = stream;
+        this.video = document.createElement('video');
+        this.video.muted = true;
+        this.video.playsInline = true;
+        this.video.setAttribute('aria-hidden', 'true');
+        this.video.srcObject = stream;
+        if (this.video.readyState < 1) await waitEvent(this.video, 'loadedmetadata');
+        if (epoch !== this._epoch) throw abortError();
+        await this.video.play();
+        if (epoch !== this._epoch) throw abortError();
+        const settings = typeof track.getSettings === 'function' ? track.getSettings() : {};
+        this.sourceInfo = {
+          displaySurface: ['monitor', 'window', 'browser'].includes(settings.displaySurface) ? settings.displaySurface : 'unknown',
+          width: this.video.videoWidth || settings.width || 0,
+          height: this.video.videoHeight || settings.height || 0
+        };
+        track.onended = () => {
+          if (['recording', 'paused', 'stopping'].includes(this.state)) {
+            this.stop().catch(() => {});
+          } else {
+            this.close();
+          }
+        };
+        callback(this.onPreview, stream);
+        this._emit(this.mode === 'snapshot' ? 'snapshot' : 'ready');
+        return stream;
+      } catch (error) {
+        if (stream && stream !== this.stream) stream.getTracks().forEach((track) => track.stop());
+        if (epoch === this._epoch) {
+          this._releaseStream();
+          this._emit('idle');
+          throw this._error(error);
+        }
+        throw abortError();
+      }
+    }
+
+    async start({countdown = 3, maxSeconds = 15} = {}) {
+      if (this.state !== 'ready' || !this.stream) throw this._error(new Error('먼저 녹화할 화면을 선택해 주세요.'));
+      const epoch = this._epoch;
+      this.maxSeconds = clamp(Number(maxSeconds) || 15, 1, 30);
+      this._elapsed = 0;
+      this._activeSince = 0;
+      this._chunks = [];
+      this._byteCount = 0;
+      this.result = null;
+      this._recordingError = null;
+      const seconds = clamp(Number(countdown) || 0, 0, 5);
+      if (seconds > 0) {
+        const finishAt = now() + seconds * 1000;
+        await new Promise((resolve, reject) => {
+          this._countReject = reject;
+          const tick = () => {
+            if (epoch !== this._epoch || !this.stream) { this._countReject = null; reject(abortError()); return; }
+            const remaining = Math.max(0, Math.ceil((finishAt - now()) / 1000));
+            if (!remaining) { this._countReject = null; this._countTimer = null; resolve(); return; }
+            this._emit('countdown', {remaining});
+            this._countTimer = setTimeout(tick, Math.min(150, finishAt - now()));
+          };
+          tick();
+        });
+      }
+      if (epoch !== this._epoch || !this.stream) throw abortError();
+      try {
+        const mimeType = GifCapture.mimeType();
+        this.recorder = new MediaRecorder(this.stream, mimeType ? {mimeType} : {});
+        this._stopPromise = new Promise((resolve, reject) => { this._stopResolve = resolve; this._stopReject = reject; });
+        // Automatic stop may happen before the caller explicitly awaits stop().
+        this._stopPromise.catch(() => {});
+        const recorder = this.recorder;
+        recorder.ondataavailable = (event) => {
+          if (epoch !== this._epoch) return;
+          if (event.data && event.data.size) {
+            this._chunks.push(event.data);
+            this._byteCount += event.data.size;
+          }
+          if (this._byteCount >= MAX_BYTES && ['recording', 'paused'].includes(this.state)) {
+            callback(this.onProgress, {phase: 'recording', message: '녹화 데이터가 128MB에 도달해 자동 정지했어요. 녹화 결과는 유지했어요. 구간이나 크기를 줄여 주세요.', elapsed: this.elapsed(), maxSeconds: this.maxSeconds});
+            this.stop().catch(() => {});
+          } else if (this.state === 'recording' && this.elapsed() >= this.maxSeconds) {
+            this.stop().catch(() => {});
+          }
+        };
+        recorder.onerror = (event) => {
+          this._recordingError = event.error || new Error('녹화를 이어갈 수 없어요. 준비된 영상이 있으면 결과를 유지해요. 다시 화면을 선택해 주세요.');
+          callback(this.onError, captureMessage(this._recordingError));
+          this.stop().catch(() => {});
+        };
+        recorder.onstop = () => {
+          if (epoch !== this._epoch) return;
+          if (this.state === 'recording') this._freezeElapsed();
+          this._clearTimers();
+          const settings = this.stream && this.stream.getVideoTracks()[0] ? this.stream.getVideoTracks()[0].getSettings() : {};
+          const width = (this.video && this.video.videoWidth) || settings.width || 0;
+          const height = (this.video && this.video.videoHeight) || settings.height || 0;
+          const mime = recorder.mimeType || (this._chunks[0] && this._chunks[0].type) || mimeType || 'video/webm';
+          const blob = new Blob(this._chunks, {type: mime});
+          this._chunks = [];
+          this.recorder = null;
+          this._releaseStream();
+          if (!blob.size) {
+            const error = this._error(this._recordingError || new Error('녹화 영상이 비어 있어요. 화면을 다시 선택하고 조금 더 길게 녹화해 주세요.'));
+            this._emit('idle');
+            if (this._stopReject) this._stopReject(error);
+          } else {
+            this.result = {blob, duration: this._elapsed, width, height, mime};
+            this._emit('recorded', {result: this.result});
+            if (this._stopResolve) this._stopResolve(this.result);
+          }
+          this._stopResolve = this._stopReject = null;
+        };
+        recorder.start(500);
+        this._activeSince = now();
+        this._emit('recording');
+        this._tickTimer = setInterval(() => {
+          if (this.state !== 'recording') return;
+          this._emit('recording');
+          callback(this.onProgress, {phase: 'recording', elapsed: this.elapsed(), maxSeconds: this.maxSeconds});
+          if (this.elapsed() >= this.maxSeconds) this.stop().catch(() => {});
+        }, 100);
+      } catch (error) {
+        this._clearTimers();
+        if (this._stopReject) this._stopReject(error);
+        this._stopResolve = this._stopReject = null;
+        this.recorder = null;
+        this._releaseStream();
+        this._emit('idle');
+        throw this._error(error);
+      }
+    }
+
+    _freezeElapsed() {
+      if (this._activeSince) this._elapsed += (now() - this._activeSince) / 1000;
+      this._activeSince = 0;
+    }
+
+    pause() {
+      if (this.state !== 'recording' || !this.recorder || this.recorder.state !== 'recording') return false;
+      this.recorder.pause();
+      this._freezeElapsed();
+      this._emit('paused');
+      return true;
+    }
+
+    resume() {
+      if (this.state !== 'paused' || !this.recorder || this.recorder.state !== 'paused') return false;
+      this.recorder.resume();
+      this._activeSince = now();
+      this._emit('recording');
+      return true;
+    }
+
+    async stop() {
+      if (this.state === 'recorded' && this.result) return this.result;
+      if (this.state === 'stopping') return this._stopPromise;
+      if (this.state === 'countdown') {
+        this._clearTimers();
+        if (this._countReject) this._countReject(abortError());
+        this._countReject = null;
+        this._emit('ready');
+        return null;
+      }
+      if (!this.recorder || !['recording', 'paused'].includes(this.state)) return null;
+      const promise = this._stopPromise;
+      if (this.state === 'recording') this._freezeElapsed();
+      this._emit('stopping');
+      this._clearTimers();
+      if (this.recorder.state !== 'inactive') {
+        try { this.recorder.stop(); }
+        catch (error) {
+          this._releaseStream();
+          this.recorder = null;
+          this._emit('idle');
+          const reported = this._error(error);
+          if (this._stopReject) this._stopReject(reported);
+          this._stopResolve = this._stopReject = null;
+        }
+      }
+      return promise;
+    }
+
+    async snapshot() {
+      if (this.state !== 'snapshot' || !this.stream || !this.video) throw this._error(new Error('한 장 캡처에서 공유할 화면을 먼저 선택해 주세요.'));
+      const epoch = this._epoch;
+      const video = this.video;
+      try {
+        if (video.readyState < 2) await waitEvent(video, 'loadeddata');
+        if (epoch !== this._epoch) throw abortError();
+        const sourceWidth = video.videoWidth;
+        const sourceHeight = video.videoHeight;
+        if (!sourceWidth || !sourceHeight) throw new Error('공유 영상이 아직 준비되지 않았어요. 잠시 뒤 캡처해 주세요.');
+        const scale = Math.min(1, 1280 / Math.max(sourceWidth, sourceHeight));
+        const width = Math.max(1, Math.round(sourceWidth * scale));
+        const height = Math.max(1, Math.round(sourceHeight * scale));
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const context = canvas.getContext('2d', {alpha: false});
+        if (!context) throw new Error('이미지 처리 화면을 준비하지 못했어요. 다른 작업을 닫고 다시 캡처해 주세요.');
+        context.drawImage(video, 0, 0, width, height);
+        const blob = await pngBlob(canvas);
+        canvas.width = canvas.height = 1;
+        if (epoch !== this._epoch) throw abortError();
+        return {blob, width, height};
+      } catch (error) {
+        if (epoch !== this._epoch) throw abortError();
+        throw this._error(error);
+      }
+    }
+
+    close() {
+      this._epoch++;
+      this._clearTimers();
+      if (this._countReject) this._countReject(abortError());
+      this._countReject = null;
+      if (this.recorder) {
+        this.recorder.ondataavailable = this.recorder.onerror = this.recorder.onstop = null;
+        if (this.recorder.state !== 'inactive') { try { this.recorder.stop(); } catch (_) {} }
+        this.recorder = null;
+      }
+      if (this._stopReject) this._stopReject(abortError());
+      this._stopResolve = this._stopReject = null;
+      this._stopPromise = null;
+      this._chunks = [];
+      this._byteCount = 0;
+      this.result = null;
+      this.sourceInfo = null;
+      this._releaseStream();
+      this._elapsed = this._activeSince = 0;
+      this._emit('idle');
+    }
+
+    destroy() { this.close(); }
+  }
+
+  async function seekVideo(video, time, signal) {
+    if (signal && signal.aborted) throw abortError();
+    // Reuse the decoded frame only if no seek is needed and pixels are available.
+    if (Math.abs(video.currentTime - time) < 0.0001 && !video.seeking) {
+      if (video.readyState < 2) await waitEvent(video, 'loadeddata', {signal});
+      return;
+    }
+    await new Promise((resolve, reject) => {
+      let timer;
+      const cleanup = () => {
+        clearTimeout(timer);
+        video.removeEventListener('seeked', complete);
+        video.removeEventListener('error', fail);
+        if (signal) signal.removeEventListener('abort', aborted);
+      };
+      const complete = () => { cleanup(); resolve(); };
+      const fail = () => { cleanup(); reject(new Error('영상 위치를 읽지 못했어요. 구간을 줄여 다시 시도해 주세요.')); };
+      const aborted = () => { cleanup(); reject(abortError()); };
+      video.addEventListener('seeked', complete, {once: true});
+      video.addEventListener('error', fail, {once: true});
+      if (signal) signal.addEventListener('abort', aborted, {once: true});
+      timer = setTimeout(fail, 15000);
+      try { video.currentTime = time; }
+      catch (error) { cleanup(); reject(error); }
+    });
+    if (video.readyState < 2) await waitEvent(video, 'loadeddata', {signal});
+  }
+
+  async function finiteDuration(video, endHint, signal) {
+    if (Number.isFinite(video.duration) && video.duration > 0) return video.duration;
+    // MediaRecorder WebM often has no duration header. A seek to the end lets
+    // the browser inspect the last timestamp without rewriting the video.
+    try {
+      await seekVideo(video, 1e10, signal);
+    } catch (error) {
+      if (signal && signal.aborted) throw error;
+      if (!Number.isFinite(endHint) || endHint <= 0) throw error;
+    }
+    let duration = video.duration;
+    if ((!Number.isFinite(duration) || duration <= 0) && video.seekable.length) duration = video.seekable.end(video.seekable.length - 1);
+    if (!Number.isFinite(duration) || duration <= 0) duration = endHint;
+    if (!Number.isFinite(duration) || duration <= 0) throw new Error('영상 길이를 읽지 못했어요. 화면을 다시 녹화해 주세요.');
+    return duration;
+  }
+
+  function sourceRegionPixels(region, sourceWidth, sourceHeight) {
+    if (region == null) return {x: 0, y: 0, width: sourceWidth, height: sourceHeight};
+    const values = ['x', 'y', 'w', 'h'].map(key => Number(region[key]));
+    if (values.some(value => !Number.isFinite(value))) throw new Error('녹화 영역 좌표를 읽지 못했어요. 화면 안에서 영역을 다시 선택해 주세요.');
+    const x = clamp(values[0], 0, 1);
+    const y = clamp(values[1], 0, 1);
+    const w = clamp(values[2], 0, 1 - x);
+    const h = clamp(values[3], 0, 1 - y);
+    if (w <= 0 || h <= 0) throw new Error('녹화 영역이 비어 있어요. 너비와 높이가 있는 영역을 다시 선택해 주세요.');
+    const left = Math.min(sourceWidth - 1, Math.floor(x * sourceWidth + 1e-7));
+    const top = Math.min(sourceHeight - 1, Math.floor(y * sourceHeight + 1e-7));
+    const right = Math.min(sourceWidth, Math.ceil((x + w) * sourceWidth - 1e-7));
+    const bottom = Math.min(sourceHeight, Math.ceil((y + h) * sourceHeight - 1e-7));
+    return {x: left, y: top, width: Math.max(1, right - left), height: Math.max(1, bottom - top)};
+  }
+
+  async function extractGifFrames(blob, {start = 0, end, fps = 10, width = 800, region, maxFrames = 600, onProgress, signal} = {}) {
+    if (!(blob instanceof Blob) || !blob.size) throw new Error('프레임으로 만들 녹화 영상이 없어요.');
+    if (signal && signal.aborted) throw abortError();
+    const video = document.createElement('video');
+    video.muted = true;
+    video.playsInline = true;
+    video.preload = 'auto';
+    const url = URL.createObjectURL(blob);
+    const canvas = document.createElement('canvas');
+    const frames = [];
+    try {
+      video.src = url;
+      if (video.readyState < 1) await waitEvent(video, 'loadedmetadata', {signal});
+      const duration = await finiteDuration(video, Number(end), signal);
+      const from = clamp(Number(start) || 0, 0, duration);
+      const to = Number.isFinite(Number(end)) ? clamp(Number(end), from, duration) : duration;
+      const length = to - from;
+      if (length < 0.02) throw new Error('변환할 구간을 0.02초 이상 선택해 주세요.');
+      const rate = clamp(Number(fps) || 10, 1, 30);
+      const limit = Math.floor(clamp(Number(maxFrames) || 600, 1, 600));
+      const count = Math.ceil(length * rate - 1e-7);
+      if (count > limit) throw new Error('선택한 구간은 ' + count + '프레임이에요. 최대 ' + limit + '프레임이 되도록 FPS를 줄이거나 구간을 짧게 선택해 주세요.');
+      const sourceWidth = video.videoWidth;
+      const sourceHeight = video.videoHeight;
+      if (!sourceWidth || !sourceHeight) throw new Error('영상 크기를 읽지 못했어요. 다시 녹화해 주세요.');
+      // Area selection uses normalized source coordinates. Crop before sizing so
+      // the selected area's aspect ratio and output dimensions remain accurate.
+      const sourceRegion = sourceRegionPixels(region, sourceWidth, sourceHeight);
+      const requestedWidth = clamp(Number(width) || 800, 1, 1280);
+      const scale = Math.min(1, requestedWidth / sourceRegion.width, 1280 / Math.max(sourceRegion.width, sourceRegion.height));
+      const targetWidth = Math.max(1, Math.round(sourceRegion.width * scale));
+      const targetHeight = Math.max(1, Math.round(sourceRegion.height * scale));
+      canvas.width = targetWidth;
+      canvas.height = targetHeight;
+      const context = canvas.getContext('2d', {alpha: false});
+      if (!context) throw new Error('이미지 처리 화면을 준비하지 못했어요. 출력 크기를 줄여 다시 시도해 주세요.');
+      callback(onProgress, {phase: 'extracting', current: 0, total: count});
+      for (let i = 0; i < count; i++) {
+        if (signal && signal.aborted) throw abortError();
+        const position = from + i / rate;
+        // The last sample is inside the decodable range, never at video.duration.
+        await seekVideo(video, Math.min(position, Math.max(0, duration - 0.001)), signal);
+        context.drawImage(video, sourceRegion.x, sourceRegion.y, sourceRegion.width, sourceRegion.height, 0, 0, targetWidth, targetHeight);
+        const imageBlob = await pngBlob(canvas, signal);
+        const remaining = (to - position) * 1000;
+        frames.push({blob: imageBlob, width: targetWidth, height: targetHeight, delay: Math.max(20, Math.min(1000 / rate, remaining))});
+        callback(onProgress, {phase: 'extracting', current: i + 1, total: count});
+      }
+      return {frames, width: targetWidth, height: targetHeight, sourceRegion, duration: frames.reduce((sum, frame) => sum + frame.delay, 0) / 1000};
+    } catch (error) {
+      frames.length = 0;
+      if (error && error.name === 'AbortError') throw error;
+      throw new Error(captureMessage(error), {cause: error});
+    } finally {
+      video.pause();
+      video.removeAttribute('src');
+      video.load();
+      video.remove();
+      URL.revokeObjectURL(url);
+      canvas.width = canvas.height = 1;
+    }
+  }
+
+  global.GifCapture = GifCapture;
+  global.extractGifFrames = extractGifFrames;
+})(window);
+
+</script>
+<script>
+/* 송쌤과학 GIF 스튜디오 V1.0 — 로컬 프레임 편집기 */
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, Number(x) || 0));
+  const uid = () => crypto.randomUUID?.() || 'f' + Date.now() + Math.random().toString(36).slice(2);
+  const clone = value => JSON.parse(JSON.stringify(value));
+  const defaults = () => ({width:800,height:450,fit:'contain',matte:'#ffffff',colors:128,fps:10,direction:'forward',repeat:'infinite',count:3,dedupe:true});
+  const names = {images:'이미지 불러오기',record:'화면·창 녹화',tab:'브라우저 탭 녹화',snapshot:'한 장씩 캡처',frames:'프레임 정리',playback:'시간·재생',crop:'자르기·크기',annotate:'글자·설명',export:'GIF 설정',region:'공유 화면 영역 녹화'};
+  const descriptions = {images:'사진을 순서대로 연결해 움직이는 수업 자료를 만들어요.',record:'선택한 화면이나 프로그램 창을 짧게 기록해요.',tab:'열어 둔 실험 사이트의 탭을 직접 골라 녹화해요.',snapshot:'공유 화면의 중요한 순간을 한 장씩 담아요.',frames:'필요한 장면만 남기고 순서를 바꿔요.',playback:'중요한 장면은 오래, 반복 방식은 자유롭게.',crop:'수업에 필요한 영역만 남기고 크기를 맞춰요.',annotate:'한글 설명과 표시를 프레임에 더해요.',export:'품질과 용량을 고른 뒤 GIF로 저장해요.',region:'공유 화면에서 필요한 영역을 골라 움직임을 담아요.'};
+  const sources = new Map();
+  let state = {frames:[],out:defaults(),crop:null,title:'나의 수업 GIF'};
+  let tool = 'images', cursor = 0, selected = new Set(), undo = [], redo = [];
+  let dirty = false, busy = false, aborter = null, exporter = null, result = null;
+  let toastTimer, playbackTimer, playing = false, playbackSequence = [], playPosition = 0, playBase = 0;
+  let zoom = 1, viewFit = true, paintVersion = 0, bitmapCache = null, bitmapKey = null;
+  let captureState = {state:'idle',mode:'record',elapsed:0,maxSeconds:15}, recording = null;
+  let recordSettings = {countdown:3,maxSeconds:15}, extractSettings = {start:0,end:0};
+  let captureRegion={x:0,y:0,w:1,h:1}, recordingRegion=null, regionPointer=null;
+  let regionConfirmed=false, confirmedRegion=null, confirmedSourceSize=null, regionPreviewRequest=null;
+  let overlayDraft = null, pointerDraft = null, annotationKind = 'text', modalReturn = null, progressReturn = null;
+  try { const saved=JSON.parse(localStorage.getItem('ss.gif.options') || 'null'); if(saved){const d=defaults();for(const k of Object.keys(d))if(k in saved)d[k]=saved[k]; d.width=clamp(d.width,16,1280);d.height=clamp(d.height,16,1280);d.colors=[64,128,256].includes(d.colors)?d.colors:128;d.fps=[5,10,15,20].includes(d.fps)?d.fps:10;if(!/^#[0-9a-f]{6}$/i.test(d.matte))d.matte='#ffffff';state.out=d;} } catch {}
+  const captureSupported = window.isSecureContext && !!navigator.mediaDevices?.getDisplayMedia;
+  const recordSupported = captureSupported && typeof MediaRecorder !== 'undefined';
+  const activeFrame = () => state.frames[cursor];
+  const count = () => state.frames.length;
+  const captureActive = () => ['selecting','ready','countdown','recording','paused','stopping','snapshot'].includes(captureState.state);
+  const locked = () => busy || ['selecting','countdown','recording','paused','stopping'].includes(captureState.state);
+  const time = ms => (ms / 1000).toLocaleString('ko-KR',{maximumFractionDigits:2}) + ' 초';
+  const bytes = n => n < 1024*1024 ? (n/1024).toFixed(1)+' KB' : (n/1048576).toFixed(2)+' MB';
+  const selectedFrames = () => state.frames.filter(f => selected.has(f.id));
+  const frameSequence = () => { let list = [...state.frames]; if(state.out.direction==='reverse') list.reverse(); if(state.out.direction==='pingpong'&&list.length>2)list=list.concat(list.slice(1,-1).reverse()); return list; };
+  const totalTime = () => frameSequence().reduce((sum,f)=>sum+f.delay,0);
+  function cropPixels(){const {width:w,height:h}=state.out;const c=state.crop || {x:0,y:0,w:1,h:1};const x=Math.round(c.x*w),y=Math.round(c.y*h);return {x,y,w:Math.max(1,Math.min(w-x,Math.round(c.w*w))),h:Math.max(1,Math.min(h-y,Math.round(c.h*h)))};}
+  function toast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').classList.add('show');toastTimer=setTimeout(()=>{$('toast').classList.remove('show');$('toast').textContent='';},3200);}
+  function persist(){try{localStorage.setItem('ss.gif.options',JSON.stringify(state.out));}catch{}}
+  function releaseResult(){if(result){URL.revokeObjectURL(result.url);result=null;}$('resultPanel').hidden=true;$('saveGif').disabled=true;}
+  function collectSources(){const keep=new Set(state.frames.map(f=>f.source));for(const hist of [...undo,...redo])for(const f of hist.frames)keep.add(f.source);for(const [id,src] of sources)if(!keep.has(id)){URL.revokeObjectURL(src.url);URL.revokeObjectURL(src.thumb);sources.delete(id);}if(bitmapKey&&!keep.has(bitmapKey)){bitmapCache?.close?.();bitmapKey=null;bitmapCache=null;}}
+  function snapshot(){return clone(state);}
+  function commit(fn,message){if(locked()){toast('진행 중인 작업을 마친 뒤 편집해 주세요.');return;}stopPlayback();undo.push(snapshot());if(undo.length>50)undo.shift();redo=[];fn();dirty=true;releaseResult();persist();cursor=clamp(cursor,0,Math.max(0,count()-1));selected=new Set([...selected].filter(id=>state.frames.some(f=>f.id===id)));if(!selected.size&&activeFrame())selected.add(activeFrame().id);collectSources();render();if(message)toast(message);}
+  function restore(direction){if(locked())return;const from=direction==='undo'?undo:redo,to=direction==='undo'?redo:undo;if(!from.length)return;stopPlayback();to.push(snapshot());state=from.pop();cursor=clamp(cursor,0,Math.max(0,count()-1));selected=new Set(activeFrame()?[activeFrame().id]:[]);dirty=true;releaseResult();persist();collectSources();render();}
+  function setTool(next,force=false){if(busy&&!force)return;if(captureActive()&&next!==tool&&!force){toast('현재 도구에서 공유를 종료한 뒤 다른 도구를 선택해 주세요.');return;}if(overlayDraft)applyDraft();tool=next;renderSettings();renderStatus();renderCanvas();document.querySelectorAll('#rail [data-tool]').forEach(b=>{b.classList.toggle('active',b.dataset.tool===tool);b.setAttribute('aria-current',b.dataset.tool===tool?'page':'false');});}
+  function setCurrent(index,multi=false,range=false){stopPlayback();const f=state.frames[index];if(!f)return;if(range){const start=Math.min(cursor,index),end=Math.max(cursor,index);selected=new Set(state.frames.slice(start,end+1).map(x=>x.id));}else if(multi){if(selected.has(f.id)&&selected.size>1)selected.delete(f.id);else selected.add(f.id);}else selected=new Set([f.id]);cursor=index;renderTimeline();renderStatus();renderSettings();renderCanvas();}
+  function renderStatus(){const c=cropPixels();$('projectName').value=state.title;$('breadcrumbs').textContent=state.title+' / '+names[tool];$('statusPill').textContent=count()?`${count()} 프레임`+' · '+time(totalTime())+' · '+c.w+' × '+c.h:'이미지를 불러오세요';$('frameSummary').textContent=count()?`${cursor+1} / ${count()} 프레임 · ${time(activeFrame()?.delay||0)}`:'0 프레임 · 준비됐어요';$('undo').disabled=locked()||!undo.length;$('redo').disabled=locked()||!redo.length;$('makeGif').disabled=locked()||!count()||captureActive();$('makeGif').title=!count()?'이미지나 캡처 프레임을 먼저 추가해 주세요.':captureActive()?'화면 공유를 종료한 뒤 GIF를 만들 수 있어요.':'GIF 만들기 (Ctrl+Enter)';$('saveGif').disabled=!result||locked();$('prevFrame').disabled=!count()||locked();$('nextFrame').disabled=!count()||locked();$('play').disabled=!count()||locked();$('play').setAttribute('aria-label',playing?'미리보기 정지':'미리보기 재생');$('play').setAttribute('aria-pressed',String(playing));$('play').innerHTML=playing?'Ⅱ':'▶';$('newProject').disabled=locked();$('addImages').disabled=locked()||captureActive();$('projectName').disabled=locked();document.querySelectorAll('[data-action="record"],[data-action="tab"],[data-action="region"]').forEach(b=>{b.disabled=!recordSupported||busy||captureActive();b.title=recordSupported?'화면 공유 선택창 열기':'이 환경은 화면 녹화를 지원하지 않아요. PC의 Chrome·Edge와 HTTPS/localhost를 사용해 주세요.';});document.querySelectorAll('[data-action="snapshot"]').forEach(b=>{b.disabled=!captureSupported||busy||captureActive();b.title=captureSupported?'화면 공유 후 한 장씩 담기':'이 환경은 화면 공유를 지원하지 않아요.';});}
+  function render(){renderStatus();renderSettings();renderTimeline();renderCanvas();}
+  const btn=(action,label,disabled=false,cls='')=>`<button type="button" class="btn ${cls}" data-action="${action}" ${disabled?'disabled':''}>${label}</button>`;
+  const field=(id,label,value,type='number',attrs='')=>`<label class="field" for="${id}"><span>${label}</span><input id="${id}" type="${type}" value="${esc(value)}" ${attrs}></label>`;
+  const select=(id,label,options,current)=>`<label class="field" for="${id}"><span>${label}</span><select id="${id}">${options.map(([value,text])=>`<option value="${value}" ${String(value)===String(current)?'selected':''}>${text}</option>`).join('')}</select></label>`;
+  const hint=(text,extra='')=>`<p class="hint ${extra}">${text}</p>`;
+  const divider=()=>'<hr class="divider">';
+  function renderSettings(){
+    $('toolTitle').textContent=names[tool];if($('toolDescription'))$('toolDescription').textContent=descriptions[tool];if($('stageGuidance'))$('stageGuidance').textContent=tool==='crop'?'드래그하거나 숫자로 자르기 영역을 골라 주세요.':tool==='annotate'?'설명 위치를 고르고 적용할 범위를 확인해 주세요.':tool==='region'?'공유 화면에서 범위를 고르고 영역 확정을 눌러 주세요.':'사진을 끌어 놓거나 붙여 넣어 보세요.';const off=!count()||locked(), sel=selectedFrames(), o=state.out,c=cropPixels();let html='';
+    if(tool==='images') html+=btn('pick','이미지 불러오기',locked()||captureActive(),'primary block')+hint('PNG · JPEG · 정지 WebP<br>여러 장 선택 · 끌어 놓기 · Ctrl+V')+divider()+`<p class="group-title">불러온 이미지</p><div class="meta"><span>프레임</span><strong>${count()} 장</strong></div><div class="meta"><span>재생 시간</span><strong>${time(totalTime())}</strong></div>`+btn('sort','파일 이름순 정렬',off)+hint('사진을 더 불러오면 마지막 프레임 뒤에 이어 붙여요. 애니메이션 GIF 가져오기는 다음 버전에서 제공해요.')+divider()+btn('demo','예제로 사용해 보기',locked()||captureActive())+hint('직접 생성한 실험 도식 4장을 실제 프레임으로 불러와요.');
+    if(['record','tab','region','snapshot'].includes(tool)){
+      const snap=tool==='snapshot', regionMode=tool==='region', supported=snap?captureSupported:recordSupported;
+      html+=hint(regionMode?'먼저 브라우저 선택창에서 <strong>전체 화면·창·탭</strong> 중 하나를 공유해요. 다음으로 이 사이트의 미리보기에서 사각형 범위를 정하고 확정해요.':snap?'공유 화면에서 현재 모습을 한 장씩 추가해요.':'녹화할 화면을 열어 둔 뒤 브라우저 선택창에서 <strong>'+ (tool==='tab'?'해당 탭':'화면 또는 창')+'</strong>을 골라 주세요.');
+      if(regionMode)html+=`<ol id="captureSteps" class="capture-steps" aria-label="영역 녹화 순서">${captureStepsHTML()}</ol>`;
+      if(!supported)html+=hint('이 환경은 화면 '+(snap?'공유':'녹화')+'를 지원하지 않아요. PC Chrome·Edge에서 HTTPS 또는 localhost로 열어 주세요.','warn');
+      html+=`<div class="capture-status" role="status"><span class="eyebrow">${captureState.state==='recording'?'RECORDING':captureState.state==='paused'?'PAUSED':'SCREEN CAPTURE'}</span><strong>${regionMode&&captureState.state==='ready'?regionReadyText():({idle:'화면을 선택해 주세요',selecting:'공유할 화면을 선택하는 중',ready:'녹화할 준비가 됐어요',countdown:`${captureState.remaining||0}초 뒤 시작해요`,recording:'녹화 중이에요',paused:'잠시 멈췄어요',stopping:'녹화를 마무리해요',recorded:'녹화가 완료됐어요',snapshot:'한 장씩 담을 준비가 됐어요'})[captureState.state]||'준비됐어요'}</strong><span>${time((captureState.elapsed||0)*1000)}</span></div>`;
+      if(!captureActive())html+=btn('selectCapture',regionMode?'1. 공유할 화면 선택':snap?'캡처 화면 선택':'녹화 화면 선택',!supported||busy,'primary block');
+      else if(captureState.state==='ready')html+=btn('startRecord',regionMode?'3. 선택 영역 녹화 시작':'녹화 시작',busy||regionMode&&(!regionConfirmed||!regionSourceSize().width),'primary block')+btn('closeCapture','공유 종료',false);
+      else if(captureState.state==='snapshot')html+=btn('takeSnapshot','현재 화면 캡처',busy,'primary block')+btn('closeCapture','공유 종료',busy);
+      else if(['recording','paused'].includes(captureState.state))html+=`<div class="row">${btn(captureState.state==='paused'?'resumeRecord':'pauseRecord',captureState.state==='paused'?'계속 녹화':'일시정지')}${btn('stopRecord','녹화 정지',false,'primary')}</div>`;
+      else if(captureState.state==='countdown')html+=btn('closeCapture','시작 취소',false);
+      if(regionMode)html+=regionSettingsHTML();
+      if(!snap){html+=divider()+`<div class="row">${select('maxSeconds','최대 녹화',[['15','15 초'],['30','30 초']],recordSettings.maxSeconds)}${select('countdown','시작 대기',[['3','3 초'],['0','바로 시작']],recordSettings.countdown)}</div>`+select('captureFPS','추출 FPS',[[5,'5 FPS'],[10,'10 FPS'],[15,'15 FPS'],[20,'20 FPS']],o.fps)+hint('소리 없는 GIF로 만들어요. 정지 후 구간과 영역을 고를 수 있어요.');
+        if(recording){html+=divider()+`<p class="group-title">녹화 구간 선택 · ${time(recording.duration*1000)}</p><div class="row">${field('extractStart','시작 (초)',extractSettings.start,'number','min="0" step="0.1"')}${field('extractEnd','끝 (초)',extractSettings.end,'number','min="0" step="0.1"')}</div>`+btn('extract',regionMode?'4. 선택 구간을 프레임으로 가져오기':'구간을 프레임으로 가져오기',busy||captureActive(),'primary block')+hint('선택 구간'+(recording.region?'과 녹화 영역':'')+'을 '+o.fps+' FPS로 추출한 뒤 자르기·설명을 편집해요. 기존 프레임 뒤에 추가돼요.');}}
+      html+=hint('브라우저의 공유 중지로도 녹화를 마칠 수 있어요. 다른 앱에서 작동하는 전역 단축키는 사용하지 않아요.');
+    }
+    if(tool==='frames')html+=`<p class="group-title">${sel.length} 프레임 선택</p><div class="row">${btn('selectAll','전체 선택',off)}${btn('duplicate','복제',off)}</div><div class="row">${btn('moveEarlier','앞으로 이동',off)}${btn('moveLater','뒤로 이동',off)}</div>`+btn('delete','선택 프레임 삭제',off,'danger block')+divider()+hint('썸네일을 끌어 순서를 바꿔요.<br>Shift: 범위 선택 · Ctrl/Cmd: 여러 개 선택')+`<div class="row">${btn('trimBefore','현재 이전 지우기',off||cursor===0)}${btn('trimAfter','현재 이후 지우기',off||cursor===count()-1)}</div>`;
+    if(tool==='playback')html+=field('frameDelay','표시 시간 (ms)',sel[0]?.delay||500,'number','min="20" max="60000" step="10"')+`<div class="row">${btn('delaySelected','선택에 적용',off)}${btn('delayAll','전체에 적용',off)}</div>`+select('direction','재생 방향',[['forward','순서대로'],['reverse','거꾸로'],['pingpong','왕복 재생']],o.direction)+select('repeat','반복 방식',[['once','한 번'],['infinite','무한 반복'],['count','총 횟수 지정']],o.repeat)+(o.repeat==='count'?field('repeatCount','총 재생 횟수',o.count,'number','min="2" max="100" step="1"'):'')+divider()+`<div class="row">${btn('faster','2배 빠르게',off)}${btn('slower','2배 느리게',off)}</div>`+hint('표시 시간을 바꿔 실제 재생 속도를 조절해요. FPS는 녹화 영상의 프레임 추출에 사용해요.')+`<div class="meta"><span>한 순환의 길이</span><strong>${time(totalTime())}</strong></div>`;
+    if(tool==='crop'){
+      const d=overlayDraft?.type==='crop'?overlayDraft.crop:c;
+      html+=`<p class="group-title">작업 캔버스 크기</p><div class="row">${field('outputWidth','가로 (px)',o.width,'number','min="16" max="1280" step="1"')}${field('outputHeight','세로 (px)',o.height,'number','min="16" max="1280" step="1"')}</div><label class="check"><input id="sizeLock" type="checkbox" checked> 비율 유지</label>`+select('sizePreset','가로 프리셋',[[480,'480 px'],[640,'640 px'],[800,'800 px'],[1024,'1024 px']],o.width)+select('fitMode','사진 맞추기',[['contain','비율 유지 + 여백'],['cover','비율 유지 + 채우기']],o.fit)+field('matte','여백·배경색',o.matte,'color')+divider()+`<p class="group-title">자르기 영역</p><div class="row">${field('cropX','X (px)',d.x,'number',`min="0" max="${o.width-1}"`)}${field('cropY','Y (px)',d.y,'number',`min="0" max="${o.height-1}"`)}</div><div class="row">${field('cropW','너비 (px)',d.w,'number',`min="1" max="${o.width}"`)}${field('cropH','높이 (px)',d.h,'number',`min="1" max="${o.height}"`)}</div><div class="row">${btn('applyCrop','영역 적용',off,'primary')}${btn('resetCrop','자르기 초기화',off||!state.crop)}</div>`+hint('무대에서 드래그하거나 숫자로 영역을 정해요. 크롭은 모든 프레임에 적용돼요.')+`<div class="meta"><span>저장 크기</span><strong>${c.w} × ${c.h} px</strong></div>`;
+    }
+    if(tool==='annotate') html+=select('annotationKind','설명 도구',[['text','한글 자막'],['arrow','화살표'],['rect','강조 사각형'],['mask','불투명 가리기']],annotationKind)+select('annotationScope','적용 범위',[['current','현재 프레임'],['selected','선택 프레임'],['all','모든 프레임']],'current')+(annotationKind==='text'?`<label class="field" for="captionText"><span>글자 내용</span><textarea id="captionText" rows="3" maxlength="300" placeholder="예: 시간이 지날수록 색이 변해요"></textarea></label>`:'')+`<div class="row">${field('annotationColor','글자·선·가리기 색','#332b1e','color')}${field('annotationSize',annotationKind==='text'?'글자 크기 (px)':'선 굵기 (px)',annotationKind==='text'?32:4,'number',annotationKind==='text'?'min="8" max="160"':'min="1" max="30"')}</div><div class="row">${field('annotationX','X (px)',Math.round(o.width*.08))}${field('annotationY','Y (px)',Math.round(o.height*.82))}</div>`+(annotationKind!=='text'?`<div class="row">${field('annotationW','너비 (px)',Math.round(o.width*.4))}${field('annotationH','높이 (px)',Math.round(o.height*.2))}</div>`:'')+btn('addAnnotation',annotationKind==='text'?'자막 추가':'표시 추가',off,'primary block')+hint(annotationKind==='text'?'숫자로 위치를 정하고 자막을 추가해요. 줄바꿈을 지원해요.':'무대에서 드래그하거나 숫자로 표시할 영역을 정해요. 가리기는 불투명하게 저장돼요.')+divider()+`<div class="row">${btn('clearAnnotations','현재 설명 지우기',off||!activeFrame()?.annotations.length)}${btn('clearAllAnnotations','모든 설명 지우기',off)}</div>`;
+    if(tool==='export')html+=`<p class="group-title">품질 프리셋</p><div class="seg" role="group" aria-label="품질 프리셋">${btn('presetSmall','작은 용량',locked())}${btn('presetBalanced','균형',locked())}${btn('presetClear','선명함',locked())}</div>`+hint('작은 용량 480 px · 5 FPS · 64색<br>균형 800 px · 10 FPS · 128색<br>선명함 1024 px · 15 FPS · 256색<br>이미지 프레임의 표시 시간은 유지해요.')+divider()+select('colors','팔레트 색수',[[64,'64색'],[128,'128색'],[256,'256색']],o.colors)+select('exportFPS','다음 녹화 추출 FPS',[[5,'5 FPS'],[10,'10 FPS'],[15,'15 FPS'],[20,'20 FPS']],o.fps)+`<label class="check"><input id="dedupe" type="checkbox" ${o.dedupe?'checked':''}> 같은 연속 프레임 합치기</label>`+hint('프레임을 합칠 때 표시 시간을 더해 움직임의 길이를 유지해요. 반투명 이미지는 배경색에 합성해요.')+`<div class="meta"><span>크기</span><strong>${c.w} × ${c.h} px</strong></div><div class="meta"><span>재생 길이</span><strong>${time(totalTime())}</strong></div>`+btn('make','GIF 만들기',off||captureActive(),'primary block')+hint('실제 파일 용량은 GIF 생성 후 확인할 수 있어요.');
+    $('settings').innerHTML=html;
+    if(locked())$('settings').querySelectorAll('input,select,textarea').forEach(el=>el.disabled=true);
+  }
+  function renderTimeline(){const holder=$('timeline');holder.replaceChildren();for(const [index,f] of state.frames.entries()){const b=document.createElement('button');b.type='button';b.className='frame-item'+(selected.has(f.id)?' selected':'')+(index===cursor?' current':'');b.dataset.id=f.id;b.dataset.index=index;b.draggable=!locked();b.setAttribute('aria-pressed',String(selected.has(f.id)));b.setAttribute('aria-label','프레임 '+`${index+1}: ${f.name}, ${f.delay}ms`);b.title=f.name+' · '+f.delay+' ms';const image=document.createElement('img');image.src=sources.get(f.source)?.thumb||'';image.alt='';image.draggable=false;const text=document.createElement('span');text.className='frame-meta';text.textContent=String(index+1).padStart(2,'0')+' · '+f.delay+' ms';b.append(image,text);holder.append(b);}if(!count()){const p=document.createElement('p');p.className='timeline-empty';p.textContent='불러온 이미지와 캡처한 장면이 여기에 차곡차곡 놓여요.';holder.append(p);}}
+  async function sourceImage(id){const src=sources.get(id);if(!src)throw new Error('원본 프레임을 읽을 수 없어요. 이미지를 다시 불러와 주세요.');let img;try{img=await createImageBitmap(src.blob,{imageOrientation:'from-image'});}catch{img=new Image();img.src=src.url;await img.decode();}return img;}
+  async function compose(frame,raw=false){
+    const image=await sourceImage(frame.source),o=state.out;const base=document.createElement('canvas');base.width=o.width;base.height=o.height;const ctx=base.getContext('2d',{willReadFrequently:true});ctx.fillStyle=o.matte;ctx.fillRect(0,0,o.width,o.height);const iw=image.width||image.naturalWidth,ih=image.height||image.naturalHeight;const scale=o.fit==='cover'?Math.max(o.width/iw,o.height/ih):Math.min(o.width/iw,o.height/ih);const w=iw*scale,h=ih*scale;ctx.drawImage(image,(o.width-w)/2,(o.height-h)/2,w,h);image.close?.();for(const a of frame.annotations)drawAnnotation(ctx,a,o.width,o.height);
+    if(raw||!state.crop)return base;const c=cropPixels(),out=document.createElement('canvas');out.width=c.w;out.height=c.h;out.getContext('2d',{willReadFrequently:true}).drawImage(base,c.x,c.y,c.w,c.h,0,0,c.w,c.h);base.width=0;base.height=0;return out;
+  }
+  function drawAnnotation(ctx,a,w,h){ctx.save();ctx.fillStyle=a.color;ctx.strokeStyle=a.color;ctx.lineWidth=Math.max(1,a.size*w);ctx.lineJoin='round';ctx.lineCap='round';const x=a.x*w,y=a.y*h,aw=a.w*w,ah=a.h*h;if(a.type==='text'){ctx.font=`700 ${Math.max(8,a.size*w)}px "Pretendard Variable",Pretendard,Arial,sans-serif`;ctx.textBaseline='top';ctx.lineWidth=Math.max(2,a.size*w*.12);ctx.strokeStyle=a.color==='#ffffff'?'#332b1e':'#ffffff';for(const [i,line] of a.text.split('\n').entries()){ctx.strokeText(line,x,y+i*a.size*w*1.35);ctx.fillText(line,x,y+i*a.size*w*1.35);}}else if(a.type==='rect'){ctx.strokeRect(x,y,aw,ah);}else if(a.type==='mask'){ctx.fillRect(x,y,aw,ah);}else if(a.type==='arrow'){const x2=x+aw,y2=y+ah,angle=Math.atan2(ah,aw),head=Math.max(12,a.size*w*4);ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x2,y2);ctx.moveTo(x2-head*Math.cos(angle-Math.PI/6),y2-head*Math.sin(angle-Math.PI/6));ctx.lineTo(x2,y2);ctx.lineTo(x2-head*Math.cos(angle+Math.PI/6),y2-head*Math.sin(angle+Math.PI/6));ctx.stroke();}ctx.restore();}
+  async function renderCanvas(){
+    const version=++paintVersion,canvas=$('stageCanvas'),video=$('stageVideo');renderRegionOverlay();if(captureActive()){canvas.hidden=true;$('stageEmpty').hidden=true;video.hidden=false;return;}if(recording&&['record','tab','region'].includes(tool)){canvas.hidden=true;$('stageEmpty').hidden=true;video.hidden=false;video.controls=true;if(video.getAttribute('src')!==recording.url){video.srcObject=null;video.src=recording.url;video.pause();}requestAnimationFrame(renderRegionOverlay);return;}video.hidden=true;
+    if(!count()){canvas.hidden=true;$('stageEmpty').hidden=false;return;}$('stageEmpty').hidden=true;canvas.hidden=false;
+    try{const frame=activeFrame();const raw=tool==='crop'||tool==='annotate';const rendered=await compose(frame,raw);if(version!==paintVersion){rendered.width=0;rendered.height=0;return;}canvas.width=rendered.width;canvas.height=rendered.height;const ctx=canvas.getContext('2d');ctx.drawImage(rendered,0,0);rendered.width=0;rendered.height=0;
+      if(tool==='crop'){const r=overlayDraft?.type==='crop'?overlayDraft.crop:cropPixels();ctx.fillStyle='rgba(30,25,17,.48)';ctx.fillRect(0,0,canvas.width,r.y);ctx.fillRect(0,r.y,r.x,r.h);ctx.fillRect(r.x+r.w,r.y,canvas.width-r.x-r.w,r.h);ctx.fillRect(0,r.y+r.h,canvas.width,canvas.height-r.y-r.h);ctx.strokeStyle='#fff';ctx.lineWidth=Math.max(2,canvas.width/400);ctx.setLineDash([8,6]);ctx.strokeRect(r.x,r.y,r.w,r.h);}
+      if(overlayDraft?.type==='annotation')drawAnnotation(ctx,overlayDraft.annotation,state.out.width,state.out.height);
+      fitCanvas();canvas.style.cursor=tool==='crop'||tool==='annotate'?'crosshair':'default';
+    }catch(error){if(version===paintVersion)toast(error.message);}
+  }
+  function fitCanvas(){const canvas=$('stageCanvas');if(canvas.hidden)return;const parent=$('stageWrap');const availableW=Math.max(160,parent.clientWidth-48),availableH=Math.max(180,parent.clientHeight-48);if(viewFit)zoom=Math.min(1,availableW/canvas.width,availableH/canvas.height);canvas.style.width=Math.max(1,canvas.width*zoom)+'px';canvas.style.height=Math.max(1,canvas.height*zoom)+'px';$('zoomLabel').textContent=Math.round(zoom*100)+'%';}
+  function stopPlayback(){playing=false;clearTimeout(playbackTimer);renderStatus();}
+  function playToggle(){if(playing){stopPlayback();return;}if(!count()||locked()||captureActive())return;if(overlayDraft)applyDraft();playbackSequence=frameSequence();playPosition=0;playing=true;playBase=performance.now();schedulePlayback();}
+  function schedulePlayback(){if(!playing||!playbackSequence.length)return;const t=performance.now()-playBase,total=playbackSequence.reduce((s,f)=>s+f.delay,0);let elapsed=t;const limit=state.out.repeat==='once'?1:state.out.repeat==='count'?state.out.count:Infinity;if(t>=total*limit){stopPlayback();return;}elapsed%=total;let accum=0,index=0;for(;index<playbackSequence.length-1;index++){if(elapsed<accum+playbackSequence[index].delay)break;accum+=playbackSequence[index].delay;}const f=playbackSequence[index];cursor=state.frames.findIndex(x=>x.id===f.id);selected=new Set([f.id]);renderStatus();renderTimeline();renderCanvas();playbackTimer=setTimeout(schedulePlayback,Math.max(16,accum+f.delay-elapsed));}
+  function canvasBlob(canvas,type='image/png'){return new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error('이미지 프레임을 만들 수 없어요. 출력 크기를 줄여 주세요.')),type));}
+  async function prepareSource(blob,name){let image;try{image=await createImageBitmap(blob,{imageOrientation:'from-image'});}catch{const url=URL.createObjectURL(blob);try{image=new Image();image.src=url;await image.decode();}finally{URL.revokeObjectURL(url);}}const w=image.width||image.naturalWidth,h=image.height||image.naturalHeight;if(!w||!h)throw new Error('읽을 수 없는 이미지예요.');const thumbnail=document.createElement('canvas');thumbnail.width=160;thumbnail.height=90;const ctx=thumbnail.getContext('2d');ctx.fillStyle='#f3f0e8';ctx.fillRect(0,0,160,90);const scale=Math.min(160/w,90/h);ctx.drawImage(image,(160-w*scale)/2,(90-h*scale)/2,w*scale,h*scale);const thumb=await canvasBlob(thumbnail,'image/jpeg');image.close?.();thumbnail.width=0;const id=uid();sources.set(id,{blob,url:URL.createObjectURL(blob),thumb:URL.createObjectURL(thumb),w,h,name});return id;}
+  function frameFromSource(id,delay=500){const src=sources.get(id);return {id:uid(),source:id,name:src.name,delay,annotations:[]};}
+  function addPrepared(frames,label){const first=count()===0;undo.push(snapshot());if(undo.length>50)undo.shift();redo=[];state.frames.push(...frames);if(first&&frames.length){const src=sources.get(frames[0].source);state.out.height=Math.max(16,Math.round(state.out.width*src.h/src.w));if(state.out.height>1280){state.out.width=Math.round(state.out.width*1280/state.out.height);state.out.height=1280;}state.crop=null;}cursor=count()-frames.length;selected=new Set(frames.map(f=>f.id));dirty=true;releaseResult();persist();render();toast(label);}
+  async function animatedImage(file){const buf=new Uint8Array(await file.arrayBuffer());if(file.type==='image/webp'||/\.webp$/i.test(file.name)){for(let i=12;i<buf.length-8;){const tag=String.fromCharCode(...buf.slice(i,i+4));if(tag==='ANIM'||tag==='ANMF')return true;const n=buf[i+4]|buf[i+5]<<8|buf[i+6]<<16|buf[i+7]<<24;if(n<0)break;i+=8+n+(n%2);}}if(file.type==='image/png'||/\.png$/i.test(file.name)){for(let i=8;i<buf.length-12;){const n=(buf[i]*16777216)+(buf[i+1]<<16)+(buf[i+2]<<8)+buf[i+3];const tag=String.fromCharCode(...buf.slice(i+4,i+8));if(tag==='acTL')return true;i+=12+n;}}return false;}
+  function beginTask(title){busy=true;stopPlayback();aborter=new AbortController();progressReturn=document.activeElement;$('progressTitle').textContent=title;$('progressDetail').textContent='준비하고 있어요.';$('progressBar').value=0;$('progressOverlay').hidden=false;$('cancelTask').focus();renderStatus();return aborter.signal;}
+  function progress(message,n,total){$('progressDetail').textContent=message;if(total){$('progressBar').value=n/total*100;$('progressBar').setAttribute('aria-valuetext',n+' / '+total);}else $('progressBar').removeAttribute('value');}
+  function finishTask(){busy=false;aborter=null;exporter=null;$('progressOverlay').hidden=true;renderStatus();renderSettings();if(!$('modalOverlay').hidden)$('modalClose').focus();else if(progressReturn?.isConnected)progressReturn.focus();}
+  async function importFiles(files){if(locked()||captureActive())return;files=[...files];if(!files.length)return;const capacity=600-count();if(files.length>capacity){toast('최대600프레임까지 추가할 수 있어요. 일부 파일만 불러와요.');files=files.slice(0,capacity);}if(!files.length)return;const signal=beginTask('이미지를 불러와요'),prepared=[],errors=[];try{for(const [i,file] of files.entries()){if(signal.aborted)throw new DOMException('취소','AbortError');progress(`${i+1} / ${files.length} 이미지를 읽어요.`,i,files.length);if(!(/^image\/(png|jpeg|webp)$/.test(file.type)||/\.(png|jpe?g|webp)$/i.test(file.name))){errors.push(file.name+': PNG·JPEG·정지 WebP를 사용해 주세요.');continue;}if(file.size>50*1048576){errors.push(file.name+': 50 MB 이하 이미지를 사용해 주세요.');continue;}try{if(await animatedImage(file)){errors.push(file.name+': 움직이는 이미지의 전체 프레임 가져오기는 다음 버전에서 제공해요.');continue;}const id=await prepareSource(file,file.name||'붙여넣은 이미지.png');prepared.push(frameFromSource(id));}catch(err){errors.push(file.name+': 이미지를 읽을 수 없어요.');}}
+      if(signal.aborted)throw new DOMException('취소','AbortError');if(prepared.length)addPrepared(prepared,prepared.length+'개 프레임을 불러왔어요.');if(errors.length)showModal('일부 파일을 불러오지 못했어요',`<p>정상 이미지는 그대로 추가했어요.</p><ul>${errors.map(err=>`<li>${esc(err)}</li>`).join('')}</ul>`);if(prepared.length)setTool('frames',true);
+    }catch(error){if(error.name==='AbortError'){for(const f of prepared){const s=sources.get(f.source);if(s){URL.revokeObjectURL(s.url);URL.revokeObjectURL(s.thumb);sources.delete(f.source);}}toast('불러오기를 취소했어요. 기존 프레임은 유지돼요.');}else toast(error.message);}finally{finishTask();$('imageInput').value='';}}
+  async function loadDemo(){if(locked()||captureActive())return;const signal=beginTask('실험 예제를 만들어요');const prepared=[];try{for(let i=0;i<4;i++){if(signal.aborted)throw new DOMException('취소','AbortError');const c=document.createElement('canvas');c.width=800;c.height=450;const x=c.getContext('2d');x.fillStyle='#f9f7f1';x.fillRect(0,0,800,450);x.fillStyle='#332b1e';x.font='700 30px sans-serif';x.fillText('물질의 확산 관찰',48,52);x.font='18px sans-serif';x.fillStyle='#716348';x.fillText('색소가 물 전체로 퍼지는 과정을 비교해요.',48,86);x.strokeStyle='#7f7767';x.lineWidth=3;x.beginPath();x.moveTo(275,125);x.lineTo(275,350);x.quadraticCurveTo(275,372,300,372);x.lineTo(500,372);x.quadraticCurveTo(525,372,525,350);x.lineTo(525,125);x.stroke();x.fillStyle=['#ece8ce','#e1ddb9','#d2c993','#bdb374'][i];x.fillRect(279,192,242,170);for(let j=0;j<45;j++){const spread=30+i*28;const px=400+Math.sin(j*17)*spread,py=220+Math.cos(j*11)*Math.min(110,35+i*24);x.fillStyle='#705537';x.beginPath();x.arc(px,py,3.5,0,Math.PI*2);x.fill();}x.font='700 20px sans-serif';x.fillStyle='#594022';x.fillText(['처음','잠시 후','더 시간이 지난 후','고르게 퍼진 상태'][i],48,409);x.fillStyle='#77684e';x.font='14px sans-serif';x.fillText('송쌤과학 · 개념을 설명하는 도식 예제',470,409);const id=await prepareSource(await canvasBlob(c),`확산 관찰 ${i+1}.png`);prepared.push(frameFromSource(id,800));progress((i+1)+' / 4 예제 프레임',i+1,4);}if(signal.aborted)throw new DOMException('취소','AbortError');addPrepared(prepared,'실제 예제4장을 불러왔어요. GIF를 만들어 보세요.');setTool('frames',true);}catch(e){collectSources();toast(e.name==='AbortError'?'예제 만들기를 취소했어요.':e.message);}finally{finishTask();}}
+  function updateSize(width,height){width=Math.round(clamp(width,16,1280));height=Math.round(clamp(height,16,1280));commit(()=>{state.out.width=width;state.out.height=height;},'작업 크기를 바꿨어요.');}
+  function setPreset(kind){const p={small:[480,5,64],balanced:[800,10,128],clear:[1024,15,256]}[kind];let h=Math.round(state.out.height*p[0]/state.out.width),w=p[0];if(h>1280){w=Math.round(w*1280/h);h=1280;}commit(()=>Object.assign(state.out,{width:w,height:Math.max(16,h),fps:p[1],colors:p[2]}),'출력 크기·색수와 다음 녹화 FPS를 바꿨어요.');}
+  function changeDelay(scope,multiplier){const ids=new Set(scope==='all'?state.frames.map(f=>f.id):selected);let delay=$('frameDelay')?Number($('frameDelay').value):500;if(!multiplier&&(!Number.isFinite(delay)||delay<20||delay>60000)){toast('표시 시간은20~60,000ms로 입력해 주세요.');return;}commit(()=>{for(const f of state.frames)if(ids.has(f.id))f.delay=Math.round(clamp(multiplier?f.delay*multiplier:delay,20,60000)/10)*10;},'표시 시간을 적용했어요.');}
+  function deleteSelected(){if(!selected.size)return;commit(()=>{state.frames=state.frames.filter(f=>!selected.has(f.id));},'선택 프레임을 지웠어요. Ctrl+Z로 되돌릴 수 있어요.');}
+  function moveSelected(dir){commit(()=>{const f=state.frames;if(dir<0){for(let i=1;i<f.length;i++)if(selected.has(f[i].id)&&!selected.has(f[i-1].id))[f[i],f[i-1]]=[f[i-1],f[i]];}else{for(let i=f.length-2;i>=0;i--)if(selected.has(f[i].id)&&!selected.has(f[i+1].id))[f[i],f[i+1]]=[f[i+1],f[i]];}cursor=f.findIndex(x=>selected.has(x.id));});}
+  function readCrop(){const o=state.out,x=Math.round(clamp($('cropX')?.value,0,o.width-1)),y=Math.round(clamp($('cropY')?.value,0,o.height-1));return {x,y,w:Math.round(clamp($('cropW')?.value,1,o.width-x)),h:Math.round(clamp($('cropH')?.value,1,o.height-y))};}
+  function applyCrop(r){commit(()=>{state.crop={x:r.x/state.out.width,y:r.y/state.out.height,w:r.w/state.out.width,h:r.h/state.out.height};overlayDraft=null;},'모든 프레임에 자르기를 적용했어요.');}
+  function readAnnotation(rect){const o=state.out,color=$('annotationColor')?.value||'#332b1e',size=clamp($('annotationSize')?.value,annotationKind==='text'?8:1,annotationKind==='text'?160:30)/o.width;const a={type:annotationKind,color,size,x:clamp(rect?.x??$('annotationX')?.value,0,o.width)/o.width,y:clamp(rect?.y??$('annotationY')?.value,0,o.height)/o.height,w:clamp(rect?.w??$('annotationW')?.value,-o.width,o.width)/o.width,h:clamp(rect?.h??$('annotationH')?.value,-o.height,o.height)/o.height,text:$('captionText')?.value?.trim()||''};if(annotationKind==='text'&&!a.text){toast('자막 내용을 입력해 주세요.');return null;}return a;}
+  function addAnnotation(a){if(!a)return;const scope=$('annotationScope')?.value||'current',ids=new Set(scope==='all'?state.frames.map(f=>f.id):scope==='selected'?[...selected]:[activeFrame()?.id]);commit(()=>{for(const f of state.frames)if(ids.has(f.id))f.annotations.push(clone(a));overlayDraft=null;},'설명을 추가했어요.');}
+  function applyDraft(){const d=overlayDraft;if(!d)return;overlayDraft=null;if(d.type==='crop')applyCrop(d.crop);else addAnnotation(d.annotation);toast('편집 내용을 적용했어요. Ctrl+Z로 되돌릴 수 있어요.');}
+  function pointerPoint(event){const r=$('stageCanvas').getBoundingClientRect();return {x:clamp((event.clientX-r.left)/r.width*state.out.width,0,state.out.width),y:clamp((event.clientY-r.top)/r.height*state.out.height,0,state.out.height)};}
+  $('stageCanvas').addEventListener('pointerdown',e=>{if(!count()||locked()||!['crop','annotate'].includes(tool))return;if(tool==='annotate'&&annotationKind==='text'){const p=pointerPoint(e);$('annotationX').value=Math.round(p.x);$('annotationY').value=Math.round(p.y);return;}stopPlayback();pointerDraft={start:pointerPoint(e),last:null};$('stageCanvas').setPointerCapture(e.pointerId);e.preventDefault();});
+  $('stageCanvas').addEventListener('pointermove',e=>{if(!pointerDraft)return;const p=pointerPoint(e),s=pointerDraft.start;pointerDraft.last=p;const rect={x:Math.round(Math.min(s.x,p.x)),y:Math.round(Math.min(s.y,p.y)),w:Math.max(1,Math.round(Math.abs(p.x-s.x))),h:Math.max(1,Math.round(Math.abs(p.y-s.y)))};if(tool==='crop')overlayDraft={type:'crop',crop:rect};else{const arrow=annotationKind==='arrow'?{x:s.x,y:s.y,w:p.x-s.x,h:p.y-s.y}:rect;const a=readAnnotation(arrow);if(a)overlayDraft={type:'annotation',annotation:a};}renderCanvas();});
+  $('stageCanvas').addEventListener('pointerup',e=>{if(!pointerDraft)return;pointerDraft=null;try{$('stageCanvas').releasePointerCapture(e.pointerId);}catch{}if(overlayDraft?.type==='crop'){const r=overlayDraft.crop;for(const [id,value] of [['cropX',r.x],['cropY',r.y],['cropW',r.w],['cropH',r.h]])if($(id))$(id).value=value;toast('영역을 골랐어요. 영역 적용을 눌러 주세요.');}else if(overlayDraft?.type==='annotation')applyDraft();});
+  $('stageCanvas').addEventListener('pointercancel',()=>{pointerDraft=null;overlayDraft=null;renderCanvas();});
+  function clearRecording(){if(recording?.url)URL.revokeObjectURL(recording.url);recording=null;}
+  function regionSourceSize(){
+    const v=$('stageVideo');
+    return {width:v.videoWidth||recording?.width||captureState.sourceWidth||0,height:v.videoHeight||recording?.height||captureState.sourceHeight||0};
+  }
+  function regionPixels(region=captureRegion,size=regionSourceSize()){
+    const {width:W,height:H}=size;
+    const x=Math.floor(region.x*W+1e-7),y=Math.floor(region.y*H+1e-7);
+    return {x,y,w:Math.max(1,Math.min(W,Math.ceil((region.x+region.w)*W-1e-7))-x),h:Math.max(1,Math.min(H,Math.ceil((region.y+region.h)*H-1e-7))-y)};
+  }
+  function regionSettingsHTML(){
+    let html=hint('선택한 영역만 GIF로 만들어요. 녹화 중에는 브라우저에서 공유한 전체 화면을 이 기기에 임시 기록해요.');
+    const size=regionSourceSize();
+    if(!size.width||captureState.state==='selecting'||(!captureActive()&&!recording?.region))return html;
+    const ready=captureState.state==='ready'&&!busy, r=regionPixels(recording?.region||captureRegion,size), disabled=ready?'':'disabled';
+    const surface=({monitor:'전체 화면',window:'프로그램 창',browser:'브라우저 탭'})[captureState.selectedSurface]||'선택한 공유 화면';
+    html+=divider()+`<span id="captureSourceInfo" class="capture-source">공유 대상: <strong>${surface}</strong> · ${size.width} × ${size.height} px</span><p class="group-title">2. 녹화 영역 · 원본 ${size.width} × ${size.height} px</p><div class="row">${field('captureRegionX','X (px)',r.x,'number',`min="0" max="${size.width-1}" step="1" ${disabled}`)}${field('captureRegionY','Y (px)',r.y,'number',`min="0" max="${size.height-1}" step="1" ${disabled}`)}</div><div class="row">${field('captureRegionW','너비 (px)',r.w,'number',`min="${Math.min(16,size.width)}" max="${size.width}" step="1" ${disabled}`)}${field('captureRegionH','높이 (px)',r.h,'number',`min="${Math.min(16,size.height)}" max="${size.height}" step="1" ${disabled}`)}</div>`;
+    if(ready)html+=`<div class="row">${btn('regionApply','영역 확정',false,'primary')}${btn('regionFull','전체 영역')}</div>`+hint('최소16×16px. 드래그나 숫자로 범위를 고르고 ‘영역 확정’을 눌러 주세요. 범위를 바꾸면 다시 확정해야 해요.');
+    else html+=hint('녹화 시작 때 지정한 영역을 유지해요. 다시 지정하려면 새 화면을 선택해 주세요.');
+    return html+hint('녹화 중 공유 대상이나 창 크기를 바꾸면 영역이 달라질 수 있어요.');
+  }
+  function updateRegionFields(){
+    const r=regionPixels();for(const [key,value] of [['X',r.x],['Y',r.y],['W',r.w],['H',r.h]])if($('captureRegion'+key))$('captureRegion'+key).value=value;
+  }
+  function setRegionPixels(r){
+    const {width:W,height:H}=regionSourceSize();if(!W||!H)return false;
+    if(![r.x,r.y,r.w,r.h].every(Number.isFinite)||r.w<=0||r.h<=0){toast('영역 너비와 높이는 양수로 입력해 주세요.');return false;}
+    const minW=Math.min(16,W),minH=Math.min(16,H),x=Math.round(clamp(r.x,0,W-minW)),y=Math.round(clamp(r.y,0,H-minH));
+    const w=Math.round(clamp(r.w,minW,W-x)),h=Math.round(clamp(r.h,minH,H-y));
+    captureRegion={x:x/W,y:y/H,w:w/W,h:h/H};invalidateRegionConfirmation();updateRegionFields();renderRegionOverlay();return true;
+  }
+  function applyRegionInputs(){
+    if(tool!=='region'||captureState.state!=='ready'||busy)return false;
+    const values=['X','Y','W','H'].map(key=>Number($('captureRegion'+key)?.value));
+    return setRegionPixels({x:values[0],y:values[1],w:values[2],h:values[3]});
+  }
+  function captureStepsHTML(){
+    const s=captureState.state;
+    const step=recording?.region?4:['countdown','recording','paused','stopping'].includes(s)||s==='ready'&&regionConfirmed?3:s==='ready'?2:1;
+    return ['화면 공유','영역 확정','선택 영역 녹화','프레임 가져오기'].map((label,i)=>`<li class="capture-step ${i+1<step?'done':i+1===step?'active':''}" ${i+1===step?'aria-current="step"':''}><b>${i+1}</b>${label}</li>`).join('');
+  }
+  function regionReadyText(){return regionConfirmed?'3. 선택 영역을 녹화할 준비가 됐어요':'2. 범위를 고르고 영역을 확정해 주세요';}
+  function updateRegionConfirmationUI(){
+    if(tool!=='region')return;
+    const b=$('settings').querySelector('[data-action="startRecord"]');if(b)b.disabled=busy||!regionConfirmed||!!regionPointer||!regionSourceSize().width;
+    const status=$('settings').querySelector('.capture-status strong');if(status&&captureState.state==='ready')status.textContent=regionReadyText();
+    if($('captureSteps'))$('captureSteps').innerHTML=captureStepsHTML();
+    syncRegionPreview();
+  }
+  function invalidateRegionConfirmation(){regionConfirmed=false;confirmedRegion=null;confirmedSourceSize=null;updateRegionConfirmationUI();}
+  function confirmCaptureRegion(){
+    if(regionPointer){toast('드래그를 마친 뒤 영역을 확정해 주세요.');return;}
+    if(!applyRegionInputs())return;
+    confirmedRegion=clone(captureRegion);confirmedSourceSize=regionSourceSize();regionConfirmed=true;updateRegionConfirmationUI();toast('영역을 확정했어요. 선택 영역 녹화를 시작할 수 있어요.');
+  }
+  const regionPreview=document.createElement('section');regionPreview.id='regionOutputPreview';regionPreview.className='region-live-preview';regionPreview.hidden=true;
+  regionPreview.innerHTML='<header class="region-preview-head"><h3 class="region-preview-title">선택 영역 미리보기</h3><span class="region-preview-meta" id="regionPreviewMeta"></span></header><canvas id="regionPreviewCanvas" aria-label="GIF에 담길 선택 영역 미리보기"></canvas><p class="region-preview-note" id="regionPreviewNote"></p>';
+  document.querySelector('.stage-footer').after(regionPreview);
+  function regionPreviewVisible(){const v=$('stageVideo');return tool==='region'&&!v.hidden&&v.videoWidth>0&&v.videoHeight>0&&(captureActive()||!!recording?.region)&&captureState.state!=='selecting';}
+  function cancelRegionPreview(){if(!regionPreviewRequest)return;const v=$('stageVideo');if(regionPreviewRequest.kind==='video')v.cancelVideoFrameCallback?.(regionPreviewRequest.id);else cancelAnimationFrame(regionPreviewRequest.id);regionPreviewRequest=null;}
+  function drawRegionPreview(){
+    if(!regionPreviewVisible())return;
+    const v=$('stageVideo'),p=regionPixels(recording?.region||captureRegion),canvas=$('regionPreviewCanvas'),scale=Math.min(360/p.w,180/p.h),w=Math.max(1,Math.round(p.w*scale)),h=Math.max(1,Math.round(p.h*scale));
+    if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}
+    if(v.readyState>=2){try{canvas.getContext('2d').drawImage(v,p.x,p.y,p.w,p.h,0,0,w,h);}catch{}}
+    $('regionPreviewMeta').textContent=p.w+' × '+p.h+' px';
+    $('regionPreviewNote').textContent=captureState.state==='ready'?(regionConfirmed?'확정한 범위예요. 이 부분만 GIF에 담겨요.':'범위를 확인한 뒤 ‘영역 확정’을 눌러 주세요.'):'녹화 시작 때 확정한 범위만 GIF에 담겨요.';
+  }
+  function scheduleRegionPreview(){
+    const v=$('stageVideo');if(regionPreviewRequest||!regionPreviewVisible()||v.paused||v.ended)return;
+    const tick=()=>{regionPreviewRequest=null;if(!regionPreviewVisible())return;drawRegionPreview();scheduleRegionPreview();};
+    regionPreviewRequest=typeof v.requestVideoFrameCallback==='function'?{kind:'video',id:v.requestVideoFrameCallback(tick)}:{kind:'raf',id:requestAnimationFrame(tick)};
+  }
+  function syncRegionPreview(){regionPreview.hidden=!regionPreviewVisible();if(regionPreview.hidden){cancelRegionPreview();return;}drawRegionPreview();scheduleRegionPreview();}
+  function renderRegionOverlay(){
+    const overlay=$('captureRegionOverlay'),box=$('captureRegionBox'),v=$('stageVideo'),wrap=$('stageWrap');
+    const show=tool==='region'&&!v.hidden&&v.videoWidth&&(captureActive()||recording?.region)&&captureState.state!=='selecting';
+    overlay.hidden=!show;syncRegionPreview();if(!show)return;
+    const vr=v.getBoundingClientRect(),wr=wrap.getBoundingClientRect();
+    Object.assign(overlay.style,{left:vr.left-wr.left+wrap.scrollLeft+'px',top:vr.top-wr.top+wrap.scrollTop+'px',width:vr.width+'px',height:vr.height+'px'});
+    const r=recording?.region||captureRegion;
+    Object.assign(box.style,{left:r.x*vr.width+'px',top:r.y*vr.height+'px',width:r.w*vr.width+'px',height:r.h*vr.height+'px'});
+    overlay.classList.toggle('passive',captureState.state!=='ready'||busy);
+  }
+  function regionPoint(e){const r=$('captureRegionOverlay').getBoundingClientRect();return {x:clamp((e.clientX-r.left)/r.width,0,1),y:clamp((e.clientY-r.top)/r.height,0,1)};}
+  $('captureRegionOverlay').addEventListener('pointerdown',e=>{
+    if(tool!=='region'||captureState.state!=='ready'||busy||e.button!==0)return;
+    regionPointer={start:regionPoint(e),previous:clone(captureRegion)};invalidateRegionConfirmation();e.currentTarget.setPointerCapture(e.pointerId);e.preventDefault();
+  });
+  $('captureRegionOverlay').addEventListener('pointermove',e=>{
+    if(!regionPointer)return;const p=regionPoint(e),s=regionPointer.start,size=regionSourceSize();
+    setRegionPixels({x:Math.min(s.x,p.x)*size.width,y:Math.min(s.y,p.y)*size.height,w:Math.max(16,Math.abs(s.x-p.x)*size.width),h:Math.max(16,Math.abs(s.y-p.y)*size.height)});
+  });
+  $('captureRegionOverlay').addEventListener('pointerup',e=>{
+    if(!regionPointer)return;regionPointer=null;try{e.currentTarget.releasePointerCapture(e.pointerId);}catch{}updateRegionConfirmationUI();toast('범위를 골랐어요. 영역 확정을 눌러 주세요.');
+  });
+  $('captureRegionOverlay').addEventListener('pointercancel',()=>{if(regionPointer)captureRegion=regionPointer.previous;regionPointer=null;updateRegionFields();renderRegionOverlay();});
+  $('stageVideo').addEventListener('loadedmetadata',()=>{if(tool==='region'){renderSettings();renderRegionOverlay();}});
+  $('stageVideo').addEventListener('resize',()=>{const size=regionSourceSize();if(confirmedSourceSize&&(size.width!==confirmedSourceSize.width||size.height!==confirmedSourceSize.height)&&captureState.state==='ready')invalidateRegionConfirmation();renderRegionOverlay();if(tool==='region'&&captureState.state==='ready')renderSettings();});
+  for(const event of ['play','seeked','timeupdate'])$('stageVideo').addEventListener(event,syncRegionPreview);
+  $('stageVideo').addEventListener('pause',()=>{cancelRegionPreview();drawRegionPreview();});
+  $('stageWrap').addEventListener('scroll',renderRegionOverlay);
+  async function startRecording(){
+    if(tool==='region'){
+      if(regionPointer){toast('영역 드래그를 마친 뒤 녹화를 시작해 주세요.');return;}
+      const size=regionSourceSize();
+      if(!regionConfirmed||!confirmedRegion){toast('녹화할 범위를 정하고 영역 확정을 먼저 눌러 주세요.');return;}
+      if(size.width!==confirmedSourceSize?.width||size.height!==confirmedSourceSize?.height){invalidateRegionConfirmation();toast('공유 영상 크기가 바뀌었어요. 영역을 다시 확정해 주세요.');return;}
+      recordingRegion=clone(confirmedRegion);
+    }else recordingRegion=null;
+    try{await capture.start(recordSettings);}catch(e){toast(e.message);}
+  }
+
+  const capture = new window.GifCapture({onState:info=>{const changed=info.state!==captureState.state||info.remaining!==captureState.remaining;captureState=info;if(info.result){clearRecording();recording={...info.result,region:info.mode==='region'?clone(recordingRegion||captureRegion):null,url:URL.createObjectURL(info.result.blob)};extractSettings={start:0,end:Math.max(.02,Math.min(info.result.duration,info.maxSeconds||30))};toast('녹화를 마쳤어요. 구간을 골라 프레임으로 가져오세요.');}renderStatus();if(changed&&['record','tab','region','snapshot'].includes(tool))renderSettings();const timer=$('settings').querySelector('.capture-status span:last-child');if(timer)timer.textContent=time((info.elapsed||0)*1000);if(changed||info.result)renderCanvas();},onPreview:stream=>{const v=$('stageVideo');v.removeAttribute('src');v.srcObject=stream;v.hidden=!stream;if(stream){v.controls=false;v.play().then(renderRegionOverlay).catch(()=>{});}else{v.pause();$('captureRegionOverlay').hidden=true;syncRegionPreview();}},onProgress:info=>{captureState={...captureState,...info};const el=$('settings').querySelector('.capture-status span:last-child');if(el)el.textContent=time((info.elapsed||0)*1000);if(info.message)toast(info.message);},onError:error=>toast(error.message||String(error))});
+  async function selectCapture(mode){if(busy||captureActive()){toast('현재 공유를 종료한 뒤 새 화면을 선택해 주세요.');return;}if(recording)clearRecording();captureRegion={x:0,y:0,w:1,h:1};recordingRegion=null;regionPointer=null;invalidateRegionConfirmation();setTool(mode);try{await capture.select(mode==='snapshot'?'snapshot':mode==='tab'?'tab':mode==='region'?'region':'record');}catch(e){toast(e.message);}}
+  async function importRecording(){if(!recording||busy||captureActive())return;const start=Number($('extractStart')?.value??0),end=Number($('extractEnd')?.value??recording.duration);if(!Number.isFinite(start)||!Number.isFinite(end)||start<0||end<=start||end>recording.duration+.15){toast('녹화 길이 안에서 시작보다 큰 끝 시간을 입력해 주세요.');return;}if(Math.ceil((end-start)*state.out.fps)>600-count()){toast('총600프레임 이내로 구간이나 FPS를 줄여 주세요.');return;}const signal=beginTask('녹화에서 프레임을 꺼내요'),prepared=[];try{const extracted=await window.extractGifFrames(recording.blob,{start,end,fps:state.out.fps,width:state.out.width,region:recording.region||undefined,maxFrames:600-count(),signal,onProgress:p=>progress(p.message||`${p.current||p.done||0} / ${p.total||0} 프레임 추출`,p.current||p.done||0,p.total||0)});for(const [i,f] of extracted.frames.entries()){if(signal.aborted)throw new DOMException('취소','AbortError');const id=await prepareSource(f.blob,`녹화 프레임 ${i+1}.png`);prepared.push(frameFromSource(id,f.delay));progress(`${i+1} / ${extracted.frames.length} 프레임 준비`,i+1,extracted.frames.length);}if(signal.aborted)throw new DOMException('취소','AbortError');addPrepared(prepared,prepared.length+'개 녹화 프레임을 추가했어요.');clearRecording();setTool('crop',true);}catch(e){collectSources();toast(e.name==='AbortError'?'프레임 추출을 취소했어요. 녹화는 다시 사용할 수 있어요.':e.message);}finally{finishTask();}}
+  async function takeSnapshot(){if(busy)return;if(count()>=600){toast('최대600프레임까지 추가할 수 있어요.');return;}const signal=beginTask('현재 화면을 한 장 담아요');try{const f=await capture.snapshot();if(signal.aborted)throw new DOMException('취소','AbortError');const id=await prepareSource(f.blob,`화면 캡처 ${count()+1}.png`);if(signal.aborted||count()>=600){collectSources();throw new DOMException('취소','AbortError');}addPrepared([frameFromSource(id)],'현재 공유 화면을 한 장 담았어요.');}catch(e){toast(e.name==='AbortError'?'한 장 캡처를 취소했어요.':e.message);}finally{finishTask();}}
+  async function makeGif(){if(locked()||!count()||captureActive())return;if(overlayDraft)applyDraft();const sequence=frameSequence();if(sequence.length>600){toast('재생 방향을 포함해 최대600프레임까지 만들 수 있어요. 프레임을 줄여 주세요.');return;}const signal=beginTask('GIF를 만들어요'),c=cropPixels(),started=performance.now();try{await document.fonts?.ready;exporter=new window.GifExport({onProgress:p=>{if(p.phase==='encoding')progress(`GIF 인코딩 ${p.done} / ${sequence.length}`,p.done,sequence.length);}});const repeat=state.out.repeat==='once'?-1:state.out.repeat==='infinite'?0:Math.max(1,state.out.count-1);await exporter.start({width:c.w,height:c.h,colors:state.out.colors,repeat,dedupe:state.out.dedupe,total:sequence.length,signal});for(const [i,frame] of sequence.entries()){if(signal.aborted)throw new DOMException('취소','AbortError');progress(`프레임 준비 ${i+1} / ${sequence.length}`,i,sequence.length);const rendered=await compose(frame);const rgba=rendered.getContext('2d',{willReadFrequently:true}).getImageData(0,0,rendered.width,rendered.height).data;await exporter.addFrame(rgba,frame.delay);rendered.width=0;rendered.height=0;}progress('GIF 파일을 마무리해요.');const encoded=await exporter.finish();if(signal.aborted)throw new DOMException('취소','AbortError');releaseResult();result={...encoded,url:URL.createObjectURL(encoded.blob),seconds:(performance.now()-started)/1000};dirty=false;showResult();toast('GIF가 완성됐어요. 저장해 주세요.');}catch(e){if(e.name==='AbortError'||signal.aborted)toast('GIF 만들기를 취소했어요. 편집한 프레임은 유지돼요.');else toast('GIF를 만들지 못했어요. '+e.message);}finally{exporter?.cancel();finishTask();}}
+  function fileName(){const now=new Date();const stamp=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');return (state.title.replace(/[\\/:*?"<>|\u0000-\u001f]/g,'_').trim().slice(0,80)||'송쌤과학_GIF')+'_'+stamp+'.gif';}
+  function showResult(){
+    const panel=$('resultPanel');panel.replaceChildren();panel.hidden=false;
+    const reducedMotion=matchMedia('(prefers-reduced-motion:reduce)').matches;
+    const head=document.createElement('div');head.className='result-heading';head.innerHTML='<span class="eyebrow">ALL DONE</span><h2>움직이는 수업 자료가 완성됐어요.</h2>';
+    const img=document.createElement('img');img.id='resultPreview';img.alt='생성된 GIF 미리보기';img.className='result-preview';
+    panel.append(head);
+    if(reducedMotion){
+      img.hidden=true;
+      const previewUrl=result.url,previewButton=document.createElement('button');
+      previewButton.id='resultPreviewToggle';previewButton.type='button';previewButton.className='btn';previewButton.textContent='GIF 미리보기 재생';previewButton.setAttribute('aria-controls',img.id);previewButton.setAttribute('aria-pressed','false');
+      previewButton.addEventListener('click',()=>{
+        const start=img.hidden;
+        if(start){img.src=previewUrl;img.hidden=false;}
+        else {img.removeAttribute('src');img.hidden=true;}
+        previewButton.textContent=start?'GIF 미리보기 정지':'GIF 미리보기 재생';previewButton.setAttribute('aria-pressed',String(start));
+      });
+      panel.append(previewButton);
+    }else img.src=result.url;
+    const summary=document.createElement('p');summary.className='result-meta';summary.textContent=`${result.width} × ${result.height} px · ${result.frameCount} 프레임 · ${time(result.duration)} · ${bytes(result.blob.size)} · ${result.seconds.toFixed(1)} 초 소요`;
+    const filename=document.createElement('p');filename.className='result-filename';filename.textContent=fileName();
+    const actions=document.createElement('div');actions.className='row';actions.innerHTML=btn('download','GIF 저장',false,'primary')+btn('closeResult','설정 바꿔 다시 만들기');
+    panel.append(img,summary,filename,actions);panel.scrollIntoView({behavior:reducedMotion?'instant':'smooth',block:'nearest'});
+  }
+  function download(){if(!result){toast('GIF를 먼저 만들어 주세요.');return;}const a=document.createElement('a');a.href=result.url;a.download=fileName();document.body.append(a);a.click();a.remove();toast('GIF 파일을 저장했어요.');}
+  function showModal(title,html){modalReturn=document.activeElement;$('modalTitle').textContent=title;$('modalBody').innerHTML=html;$('modalOverlay').hidden=false;$('modalClose').focus();}
+  function closeModal(){$('modalOverlay').hidden=true;if(modalReturn?.isConnected)modalReturn.focus();}
+  function newProject(){if(locked())return;const reset=()=>{capture.close();captureRegion={x:0,y:0,w:1,h:1};recordingRegion=null;regionPointer=null;invalidateRegionConfirmation();stopPlayback();clearRecording();releaseResult();state={frames:[],out:defaults(),crop:null,title:'나의 수업 GIF'};undo=[];redo=[];selected.clear();cursor=0;dirty=false;overlayDraft=null;collectSources();tool='images';closeModal();render();setTool('images');};if(count()||recording){showModal('새 작업을 시작할까요?',`<p>현재 사진과 녹화는 페이지를 닫으면 사라져요. 필요한 결과를 GIF로 저장해 주세요.</p><div class="row">${btn('dismissModal','계속 편집')}${btn('confirmNew','새 작업 시작',false,'danger')}</div>`);$('modalBody').querySelector('[data-action="confirmNew"]').onclick=reset;}else reset();}
+  function help(){showModal('GIF 스튜디오 사용 안내',`<h3>파일이 어디로 가나요?</h3><p>사진·화면 영상·자막은 이 브라우저 안에서만 처리해요. 서버 업로드·로그인·외부 변환 API가 없어요. Pretendard 글꼴을 읽을 때만 외부 요청이 발생하며, 글꼴이 없어도 만들 수 있어요.</p><h3>세 단계면 완성돼요</h3><ol><li>이미지를 불러오거나 공유 화면을 녹화해요.</li><li>프레임 순서·시간·영역을 다듬고 설명을 넣어요.</li><li>GIF 만들기 후 실제 결과를 확인하고 저장해요.</li></ol><p>녹화는 PC Chrome·Edge의 HTTPS/localhost를 권장해요. 브라우저 선택창에서 대상을 직접 고르고, macOS에서는 화면 녹화 권한이 필요할 수 있어요. 모바일에서 화면 공유 API가 없으면 이미지 제작만 사용할 수 있어요.</p><h3>공유 화면 영역 녹화</h3><p>Windows와 Mac에서 같은 웹 사이트를 사용해요. 브라우저 선택창에서 전체 화면·창·탭을 공유한 뒤, 사이트 미리보기에서 드래그하거나 X·Y·너비·높이로 범위를 정하고 ‘영역 확정’을 눌러요. 아래의 선택 영역 미리보기로 GIF에 담길 부분을 확인할 수 있어요. 범위를 바꾸면 다시 확정해야 해요. 선택 영역만 GIF로 만들며 공유 전체 영상은 이 기기에 임시 기록돼요. 녹화 시작 후 영역은 고정돼요.</p><h3>기본값과 한도</h3><p>녹화10FPS·가로800px·최대15초, 선택 시30초. 최대600프레임·출력 긴 쪽1280px·이미지당50MB·임시 녹화128MiB를 기준으로 해요. GIF는 소리가 없고 팔레트당 최대256색이에요. 매우 짧은 표시 시간은 재생 앱에서 보정될 수 있어요.</p><p>사진·녹화는 영구 저장되지 않아요. 새로고침하거나 창을 닫기 전에 결과를 저장해 주세요.</p><h3>단축키</h3><table><tbody><tr><td>이미지 열기</td><td>Ctrl/Cmd+O</td></tr><tr><td>실행 취소 · 다시 실행</td><td>Ctrl/Cmd+Z · Shift+Z / Ctrl+Y</td></tr><tr><td>GIF 만들기 · 저장</td><td>Ctrl/Cmd+Enter · S</td></tr><tr><td>재생 · 프레임 이동</td><td>Space · ← →</td></tr><tr><td>선택 삭제 · 도구 선택</td><td>Delete · 1~9 / 영역 녹화0</td></tr><tr><td>도움말 · 레일 접기</td><td>F1 · [</td></tr></tbody></table><p>단축키는 이 페이지가 활성화돼 있을 때만 동작해요.</p>`);}
+  async function action(name){const actions={pick:()=>$('imageInput').click(),images:()=>{setTool('images');$('imageInput').click();},demo:loadDemo,record:()=>selectCapture('record'),tab:()=>selectCapture('tab'),region:()=>selectCapture('region'),regionApply:confirmCaptureRegion,regionFull:()=>{if(captureState.state==='ready'){captureRegion={x:0,y:0,w:1,h:1};invalidateRegionConfirmation();updateRegionFields();renderRegionOverlay();}},snapshot:()=>selectCapture('snapshot'),selectCapture:()=>selectCapture(tool),startRecord:startRecording,pauseRecord:()=>capture.pause(),resumeRecord:()=>capture.resume(),stopRecord:()=>capture.stop().catch(e=>toast(e.message)),closeCapture:()=>{capture.close();invalidateRegionConfirmation();renderCanvas();},takeSnapshot,extract:importRecording,sort:()=>commit(()=>{state.frames.sort((a,b)=>a.name.localeCompare(b.name,'ko',{numeric:true}));cursor=0;},'파일 이름순으로 정렬했어요.'),selectAll:()=>{selected=new Set(state.frames.map(f=>f.id));renderTimeline();renderSettings();},duplicate:()=>{if(count()+selected.size>600){toast('최대600프레임까지 추가할 수 있어요.');return;}commit(()=>{state.frames=state.frames.flatMap(f=>selected.has(f.id)?[f,{...clone(f),id:uid(),name:f.name+' 복제'}]:[f]);},'선택 프레임을 복제했어요.');},delete:deleteSelected,moveEarlier:()=>moveSelected(-1),moveLater:()=>moveSelected(1),trimBefore:()=>commit(()=>{state.frames=state.frames.slice(cursor);cursor=0;},'현재 프레임 이전을 지웠어요.'),trimAfter:()=>commit(()=>{state.frames=state.frames.slice(0,cursor+1);},'현재 프레임 이후를 지웠어요.'),delaySelected:()=>changeDelay('selected'),delayAll:()=>changeDelay('all'),faster:()=>changeDelay('all',.5),slower:()=>changeDelay('all',2),applyCrop:()=>applyCrop(readCrop()),resetCrop:()=>commit(()=>{state.crop=null;overlayDraft=null;},'자르기를 초기화했어요.'),addAnnotation:()=>addAnnotation(readAnnotation()),clearAnnotations:()=>commit(()=>{if(activeFrame())activeFrame().annotations=[];},'현재 프레임의 설명을 지웠어요.'),clearAllAnnotations:()=>commit(()=>{for(const f of state.frames)f.annotations=[];},'모든 설명을 지웠어요.'),presetSmall:()=>setPreset('small'),presetBalanced:()=>setPreset('balanced'),presetClear:()=>setPreset('clear'),make:makeGif,download,closeResult:()=>{$('resultPanel').hidden=true;setTool('export');},dismissModal:closeModal};try{if(actions[name])await actions[name]();}catch(e){toast(e.message||'작업을 완료하지 못했어요. 다시 시도해 주세요.');}}
+  document.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(b&&!b.disabled)action(b.dataset.action);});
+  document.querySelectorAll('#rail [data-tool]').forEach(b=>b.addEventListener('click',()=>setTool(b.dataset.tool)));
+  $('settings').addEventListener('input',e=>{if(/^captureRegion[XYWH]$/.test(e.target.id)&&captureState.state==='ready')invalidateRegionConfirmation();});
+  $('settings').addEventListener('change',e=>{const el=e.target,id=el.id;if(locked())return;
+    if(['direction','repeat','colors','dedupe'].includes(id))commit(()=>{state.out[id]=id==='colors'?Number(el.value):id==='dedupe'?el.checked:el.value;});
+    if(id==='repeatCount')commit(()=>state.out.count=Math.round(clamp(el.value,2,100)));
+    if(['captureFPS','exportFPS'].includes(id))commit(()=>state.out.fps=Number(el.value));
+    if(['captureRegionX','captureRegionY','captureRegionW','captureRegionH'].includes(id)){applyRegionInputs();return;}
+    if(id==='maxSeconds')recordSettings.maxSeconds=Number(el.value);if(id==='countdown')recordSettings.countdown=Number(el.value);
+    if(id==='extractStart')extractSettings.start=Number(el.value);if(id==='extractEnd')extractSettings.end=Number(el.value);
+    if(id==='fitMode')commit(()=>state.out.fit=el.value);if(id==='matte')commit(()=>state.out.matte=el.value);
+    if(id==='outputWidth'||id==='outputHeight'){let w=Number($('outputWidth').value),h=Number($('outputHeight').value);if($('sizeLock').checked){if(id==='outputWidth')h=Math.round(state.out.height*w/state.out.width);else w=Math.round(state.out.width*h/state.out.height);}updateSize(w,h);}
+    if(id==='sizePreset'){let w=Number(el.value),h=Math.round(state.out.height*w/state.out.width);if(h>1280){w=Math.round(w*1280/h);h=1280;}updateSize(w,h);}
+    if(id==='annotationKind'){annotationKind=el.value;overlayDraft=null;renderSettings();renderCanvas();}
+    if(['cropX','cropY','cropW','cropH'].includes(id)){overlayDraft={type:'crop',crop:readCrop()};renderCanvas();}
+  });
+  $('imageInput').addEventListener('change',e=>importFiles(e.target.files));
+  $('addImages').onclick=()=>action('pick');$('newProject').onclick=newProject;$('undo').onclick=()=>restore('undo');$('redo').onclick=()=>restore('redo');$('makeGif').onclick=makeGif;$('saveGif').onclick=download;$('demoButton').onclick=loadDemo;$('helpButton').onclick=help;$('privacyButton').onclick=help;$('modalClose').onclick=closeModal;
+  $('themeButton').onclick=()=>{const root=document.documentElement;root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('ss.theme',root.dataset.theme);}catch{}updateChromeLabels();};
+  $('railToggle').onclick=()=>{document.documentElement.classList.toggle('rail-collapsed');try{localStorage.setItem('ss.rail',document.documentElement.classList.contains('rail-collapsed')?'collapsed':'expanded');}catch{}updateChromeLabels();setTimeout(fitCanvas,220);};
+  $('projectName').addEventListener('change',e=>commit(()=>state.title=e.target.value.trim().slice(0,80)||'나의 수업 GIF'));
+  $('prevFrame').onclick=()=>setCurrent((cursor-1+count())%count());$('nextFrame').onclick=()=>setCurrent((cursor+1)%count());$('play').onclick=playToggle;
+  $('zoomOut').onclick=()=>{viewFit=false;zoom=clamp(zoom*.8,.1,3);fitCanvas();};$('zoomIn').onclick=()=>{viewFit=false;zoom=clamp(zoom*1.25,.1,3);fitCanvas();};$('fitView').onclick=()=>{viewFit=true;fitCanvas();};
+  $('cancelTask').onclick=()=>{aborter?.abort();exporter?.cancel();};
+  $('modalOverlay').addEventListener('click',e=>{if(e.target===$('modalOverlay'))closeModal();});
+  $('timeline').addEventListener('click',e=>{const f=e.target.closest('[data-index]');if(f&&!locked())setCurrent(Number(f.dataset.index),e.ctrlKey||e.metaKey,e.shiftKey);});
+  let dragId=null;$('timeline').addEventListener('dragstart',e=>{const b=e.target.closest('[data-id]');if(!b||locked())return;dragId=b.dataset.id;e.dataTransfer.setData('text/plain',dragId);e.dataTransfer.effectAllowed='move';});
+  $('timeline').addEventListener('dragover',e=>{if(dragId){e.preventDefault();e.dataTransfer.dropEffect='move';}});
+  $('timeline').addEventListener('drop',e=>{if(!dragId)return;e.preventDefault();e.stopPropagation();const b=e.target.closest('[data-id]'),id=dragId;dragId=null;if(!b||b.dataset.id===id)return;const target=b.dataset.id;commit(()=>{const from=state.frames.findIndex(f=>f.id===id);const [moving]=state.frames.splice(from,1);const to=state.frames.findIndex(f=>f.id===target);state.frames.splice(to,0,moving);cursor=to;selected=new Set([moving.id]);},'프레임 순서를 바꿨어요.');});
+  $('timeline').addEventListener('dragend',()=>dragId=null);
+  document.addEventListener('dragover',e=>{if(e.dataTransfer.types.includes('Files')){e.preventDefault();$('stageWrap').classList.add('drag-over');}});document.addEventListener('dragleave',e=>{if(!e.relatedTarget)$('stageWrap').classList.remove('drag-over');});document.addEventListener('drop',e=>{if(e.dataTransfer.files.length){e.preventDefault();$('stageWrap').classList.remove('drag-over');importFiles(e.dataTransfer.files);}});
+  document.addEventListener('paste',e=>{if(e.target.closest('input,textarea,[contenteditable]'))return;const files=[...e.clipboardData.items].filter(x=>x.kind==='file'&&x.type.startsWith('image/')).map(x=>x.getAsFile()).filter(Boolean);if(files.length){e.preventDefault();importFiles(files);}});
+  document.addEventListener('keydown',e=>{
+    const openModal=!$('modalOverlay').hidden,openProgress=!$('progressOverlay').hidden;
+    if(openModal||openProgress){const overlay=openProgress?$('progressOverlay'):$('modalOverlay');if(e.key==='Tab'){const nodes=[...overlay.querySelectorAll('button,input,select,textarea,a[href]')].filter(x=>!x.disabled&&!x.hidden);const first=nodes[0],last=nodes[nodes.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}if(e.key==='Escape'){e.preventDefault();if(openProgress)$('cancelTask').click();else closeModal();}return;}
+    const typing=e.target.closest('input,textarea,select,[contenteditable]'),mod=e.ctrlKey||e.metaKey,key=e.key.toLowerCase();
+    if(mod&&key==='o'){e.preventDefault();if(!locked()&&!captureActive())$('imageInput').click();return;}
+    if(mod&&key==='s'){e.preventDefault();download();return;}
+    if(typing)return;
+    if(mod&&key==='z'){e.preventDefault();restore(e.shiftKey?'redo':'undo');}
+    else if(mod&&key==='y'){e.preventDefault();restore('redo');}
+    else if(mod&&key==='enter'){e.preventDefault();makeGif();}
+    else if(key===' '){e.preventDefault();playToggle();}
+    else if(key==='delete'||key==='backspace'){e.preventDefault();if(!locked())deleteSelected();}
+    else if(key==='arrowleft'){e.preventDefault();if(!locked())setCurrent(Math.max(0,cursor-1),false,e.shiftKey);}
+    else if(key==='arrowright'){e.preventDefault();if(!locked())setCurrent(Math.min(count()-1,cursor+1),false,e.shiftKey);}
+    else if(key==='f1'){e.preventDefault();help();}
+    else if(key==='['){e.preventDefault();$('railToggle').click();}
+    else if(key==='escape'){overlayDraft=null;pointerDraft=null;if(regionPointer){captureRegion=regionPointer.previous;regionPointer=null;updateRegionFields();updateRegionConfirmationUI();}stopPlayback();renderCanvas();}
+    else if(key==='enter'&&overlayDraft){e.preventDefault();applyDraft();}
+    else if(/^[0-9]$/.test(key))setTool(Object.keys(names)[key==='0'?9:Number(key)-1]);
+  });
+  addEventListener('beforeunload',e=>{if((dirty&&count())||captureActive()||recording){e.preventDefault();e.returnValue='';}});
+  addEventListener('pagehide',()=>{cancelRegionPreview();capture.close();exporter?.cancel();});
+  const layoutChanged=()=>{fitCanvas();renderRegionOverlay();};addEventListener('resize',layoutChanged);new ResizeObserver(layoutChanged).observe($('stageWrap'));
+  if($('today'))$('today').textContent=new Date().toLocaleDateString('ko-KR',{month:'long',day:'numeric',weekday:'long'});
+  function updateChromeLabels(){const dark=document.documentElement.dataset.theme==='dark';$('themeButton').setAttribute('aria-pressed',String(dark));$('themeButton').setAttribute('aria-label',dark?'밝은 화면으로 전환':'어두운 화면으로 전환');$('themeButton').title=dark?'밝은 화면으로 전환':'어두운 화면으로 전환';const collapsed=document.documentElement.classList.contains('rail-collapsed');$('railToggle').setAttribute('aria-expanded',String(!collapsed));$('railToggle').setAttribute('aria-label',collapsed?'도구 레일 펼치기':'도구 레일 접기');}
+  updateChromeLabels();render();setTool('images');
+  window.GifStudio={getState:()=>clone(state),getCaptureRegion:()=>clone(recording?.region||captureRegion),getResult:()=>result?{width:result.width,height:result.height,frameCount:result.frameCount,duration:result.duration,size:result.blob.size}:null};
+})();
+
+</script>
+</body>
+</html>
